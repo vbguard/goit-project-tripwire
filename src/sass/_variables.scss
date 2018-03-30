@@ -3,3 +3,13 @@ $primary-color: #fff;
 
 // Font
 $raleway: 'Raleway', sans-serif;
+
+//For media - use mixin mq
+$breakpoints: (
+    "phone":        320px,
+    "phone-wide":   480px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1200px,
+    "desktop-wide": 1440px
+  );

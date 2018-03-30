@@ -1,0 +1,170 @@
+.container {
+  background-color: darkgray;
+}
+.description__title {
+  font-size: 12px;
+  font-family: "Acrom";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description__subtitle.description__subtitle {
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(0, 0, 0);
+  line-height: 1.444;
+  text-align: left;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 22px;
+}
+.description__subtitle::before {
+  @include pseudo;
+  background-color: rgb(0, 0, 0);
+  width: 14px;
+  height: 3px;
+  top: 4px;
+  left: 4px;
+}
+.description__header {
+  max-width: 180px;
+  margin: auto;
+}
+.description__meta {
+  width: 200px;
+  margin: 18px auto 24px;
+}
+.description__img {
+  width: 297px;
+  height: 111px;
+  margin: auto;
+}
+.description__paragraph:first-child {
+  margin-bottom: 18px;
+}
+.description__paragraph-title {
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.444;
+  text-align: left;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.description__paragraph-text {
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(63, 65, 68);
+  line-height: 1.444;
+  text-align: left;
+}
+.description__list {
+  width: 200px;
+  margin: 0 auto 40px;
+  padding-left: 18px;
+}
+.description__item {
+  position: relative;
+  margin-bottom: 18px;
+}
+.description__item::before {
+  @include pseudo;
+  background-color: rgb(255, 107, 8);
+  position: absolute;
+  left: -16px;
+  top: 4px;
+  width: 7px;
+  height: 34px;
+}
+.description__item::after {
+  @include pseudo;
+  left: -28px;
+  top: 14px;
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.444;
+  text-align: left;
+  content: "[ 001 ]";
+  transform: rotate(90deg);
+}
+
+.description__list-title {
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.444;
+  text-align: center;
+  width: 240px;
+  margin: 0 auto 16px;
+}
+
+.description__item-title {
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.444;
+  text-align: left;
+}
+.description__price-title span{
+  display: inline-block;
+  font-size: 11.31px;
+  font-family: "Acrom";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  text-align: left;
+  background-color: rgb(22, 235, 254);
+}
+.description__price-title span:first-child {
+  margin-bottom: 6px;
+}
+
+.description__item-text {
+  font-size: 9px;
+  font-family: "Acrom";
+  color: rgb(63, 65, 68);
+  line-height: 1.444;
+  text-align: left;
+}
+
+.description__old-price {
+  display: inline-block;
+  font-size: 11.31px;
+  font-family: "Acrom";
+  color: rgb(60, 59, 64);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 29.08px;
+  text-align: left;
+  text-decoration: line-through;
+}
+
+.description__sale-price {
+  display: inline-block;
+  font-size: 21.24px;
+  font-family: "Acrom";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 29.08px;
+  text-align: left;
+}
+.description__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 200px;
+}
