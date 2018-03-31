@@ -1,0 +1,27 @@
+// Section 01
+
+// Masthead Background
+.masthead-wrap {
+
+  background: #181c27 url('../img/masthead-bg-mask.png') url('../img/masthead-bg-text.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-color: #181c27;
+  // background-image: url(../img/masthead-bg-mask.png);
+}
+
+// Logo
+.masthead__logo {
+  margin: 0;
+}
+
+.logo__link {
+  content: '';
+  width: 29;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
