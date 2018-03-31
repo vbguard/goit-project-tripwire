@@ -1,14 +1,33 @@
 /*
   Import partials below
 */
+
 @import 'normalize';
 @import '_reset';
 @import '_helpers';
 @import '_variables';
-@import 'mixin.scss';
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+@import 'mixin';
 @import 'main';
 @import 'fonts';
-
+@import 'section-01';
+@import 'section-02';
+@import 'section-03';
+@import 'section-04';
+@import 'section-05';
+@import 'section-06';
+@import 'section-07';
+@import 'section-08';
+@import 'section-09';
+@import 'section-10';
+@import 'section-11';
+@import 'section-12';
+@import 'section-13';
+@import 'section-14';
+@import 'section-15';
+@import 'section-16';
+@import 'section-17';
+@import 'section-18';
+@import 'section-19';
+@import 'section-20';
 
 // add you scss in here!
