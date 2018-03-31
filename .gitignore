@@ -57,8 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# ignore index.html, but you can transf another name *.html
-#src/index.html
+# not add to remote repo folder build
+build/
 
 # not add MacOS System file
 .DS_Store
