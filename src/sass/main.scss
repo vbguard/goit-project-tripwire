@@ -8,4 +8,19 @@ img {
 .container {
   max-width: 320px;
   margin: auto;
+  @include mq("phone-wide") {
+    max-width: 480px;
+  }
+  @include mq("tablet") {
+    max-width: 768px;
+  }
+  @include mq("tablet-wide") {
+    max-width: 960px;
+  }
+  @include mq("desktop") {
+    max-width: 1200px;
+  }
+  @include mq("desktop-wide") {
+    max-width: 1440px;
+  }
 }
