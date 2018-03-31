@@ -2,9 +2,27 @@
   background-color: darkgray;
 }
 
+.description__course {
+  @include mq("tablet") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 54px;
+  }
+}
+.description__course-list {
+  @include mq("tablet") {
+    width: 636px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
 .description__title {
   font-size: 12px;
-  font-family: "Acrom";
+  font-family: $acrom-extrabold;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
@@ -15,11 +33,15 @@
     font-size: 18px;
     margin-bottom: 24px;
   }
+  @include mq("tablet") {
+    font-size: 26.92px;
+    line-height: 33.68px;
+  }
 }
 
 .description__subtitle {
   font-size: 9px;
-  font-family: "Acrom";
+  font-family: $acrom-medium;
   color: rgb(0, 0, 0);
   line-height: 1.444;
   text-align: left;
@@ -27,6 +49,12 @@
   position: relative;
   @include mq("phone-wide") {
     font-size: 13.5px;
+    padding-left: 40px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 13.46px;
+    padding-left: 50px;
   }
 }
 
@@ -37,14 +65,24 @@
   height: 3px;
   top: 4px;
   left: 4px;
+  @include mq("phone-wide") {
+    width: 20px;
+  }
+  @include mq("tablet") {
+    width: 30px;
+  }
 }
 
 .description__header {
-  max-width: 180px;
+  width: 180px;
   margin: 0 auto 22px;
   @include mq("phone-wide") {
-    max-width: 276px;
+    width: 276px;
     margin: 0 auto 34px;
+  }
+  @include mq("tablet") {
+    order: 2;
+    width: 218px;
   }
 }
 
@@ -55,9 +93,13 @@
     width: 306px;
     margin: 30px auto 40px;
   }
+  @include mq("tablet") {
+    order: 3;
+    width: 280px;
+  }
 }
 
-.description__img {
+.description__img-pc {
   width: 298px;
   height: 112px;
   margin: auto;
@@ -66,77 +108,118 @@
     width: 446px;
     height: 168px;
   }
+  @include mq("tablet") {
+    width: 274px;
+    height: 170px;
+  }
 }
-
+.description__img-guy {
+  display: none;
+  @include mq("tablet") {
+    margin: auto;
+    display: block;
+    width: 226px;
+    height: 203px;
+  }
+  @include mq("tablet") {
+    order: 4;
+  }
+}
+.description__paragraph {
+  @include mq("tablet") {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .description__paragraph:first-child {
   margin-bottom: 18px;
 }
 
 .description__paragraph-title {
   font-size: 9px;
-  font-family: "Acrom";
+  font-family: $acrom-extrabold;
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  min-height: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.444;
   text-align: left;
   margin-bottom: 8px;
   display: inline-block;
+  > span {
+    background-color: rgb(0, 0, 0);
+    line-height: 1.444;
+  }
   @include mq("phone-wide") {
     font-size: 13.5px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 1.625;
+    width: 100px;
   }
 }
 
 .description__paragraph-text {
   font-size: 9px;
-  font-family: "Acrom";
+  font-family: $acrom-regular;
   color: rgb(63, 65, 68);
   line-height: 1.444;
   text-align: left;
   @include mq("phone-wide") {
     font-size: 13.5px;
   }
+  @include mq("tablet") {
+    font-size: 7.85px;
+    line-height: 1.5;
+    width: 160px;
+  }
 }
 
 .description__list {
-  width: 200px;
+  max-width: 200px;
   margin: 0 auto 40px;
   padding-left: 18px;
+  @include mq("phone-wide") {
+    width: 300px;
+  }
+  @include mq("tablet") {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 470px;
+  }
 }
 
 .description__item {
   position: relative;
   margin-bottom: 18px;
-}
-
-.description__item::before {
-  @include pseudo;
-  background-color: rgb(255, 107, 8);
-  position: absolute;
-  left: -16px;
-  top: 4px;
-  width: 7px;
-  height: 34px;
-}
-
-.description__item::after {
-  @include pseudo;
-  left: -28px;
-  top: 14px;
-  font-size: 9px;
-  font-family: "Acrom";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.444;
-  text-align: left;
-  content: "[ 001 ]";
-  transform: rotate(90deg);
+  &::after {
+    @include pseudo;
+    width: 8px;
+    height: 50px;
+    left: -15px;
+    top: 8px;
+    font-size: 13px;
+    font-family: $acrom-bold;
+    background-color: rgb(255, 107, 8);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    content: "[ 001 ]";
+    white-space: nowrap;
+    overflow: hidden;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  @include mq("tablet") {
+    flex-basis: 130px;
+  }
 }
 
 .description__list-title {
   font-size: 9px;
-  font-family: "Acrom";
+  font-family: $acrom-extrabold;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
@@ -144,60 +227,110 @@
   text-align: center;
   width: 240px;
   margin: 0 auto 16px;
+  @include mq("phone-wide") {
+    width: 364px;
+    font-size: 13.5px;
+    margin: 0 auto 30px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 1.625;
+    flex-basis: 106px;
+    text-align: left;
+  }
 }
 
 .description__item-title {
   font-size: 9px;
-  font-family: "Acrom";
+  font-family: $acrom-bold;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.444;
   text-align: left;
+  @include mq("phone-wide") {
+    font-size: 13.5px;
+    margin-bottom: 8px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 11.78px;
+  }
+}
+
+.description__item-text {
+  font-size: 9px;
+  font-family: $acrom-regular;
+  color: rgb(63, 65, 68);
+  line-height: 1.444;
+  text-align: left;
+  @include mq("phone-wide") {
+    font-size: 13.5px;
+  }
+  @include mq("tablet") {
+    font-size: 7.85px;
+    line-height: 1.5;
+  }
 }
 
 .description__price-title span {
   display: inline-block;
   font-size: 11.31px;
-  font-family: "Acrom";
+  font-family: $acrom-medium;
   color: rgb(0, 0, 0);
   line-height: 1.714;
   text-align: left;
   background-color: rgb(22, 235, 254);
+  @include mq("phone-wide") {
+    font-size: 16.97px;
+  }
+  @include mq("tablet") {
+    font-size: 7.85px;
+    line-height: 1.714;
+  }  
 }
 
 .description__price-title span:first-child {
   margin-bottom: 6px;
-}
-
-.description__item-text {
-  font-size: 9px;
-  font-family: "Acrom";
-  color: rgb(63, 65, 68);
-  line-height: 1.444;
-  text-align: left;
+  @include mq("phone-wide") {
+    margin-bottom: 8px;
+  }
 }
 
 .description__old-price {
   display: inline-block;
   font-size: 11.31px;
-  font-family: "Acrom";
+  font-family: $acrom-medium;
   color: rgb(60, 59, 64);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 29.08px;
   text-align: left;
   text-decoration: line-through;
+  @include mq("phone-wide") {
+    font-size: 16.97px;
+  }
+  @include mq("tablet") {
+    font-size: 7.85px;
+    line-height: 2.571;
+  }
 }
 
 .description__sale-price {
   display: inline-block;
   font-size: 21.24px;
-  font-family: "Acrom";
+  font-family: $acrom-medium;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 29.08px;
   text-align: left;
+  @include mq("phone-wide") {
+    font-size: 28.24px;
+    line-height: 43.63px;
+  }
+  @include mq("tablet") {
+    font-size: 13.04px;
+    line-height: 20.19px;
+  }
 }
 
 .description__price {
@@ -206,4 +339,11 @@
   align-items: center;
   margin: auto;
   width: 200px;
+  @include mq("phone-wide") {
+    width: 300px;
+  }
+  @include mq("tablet") {
+    width: 140px;
+    display: none;
+  }
 }

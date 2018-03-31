@@ -12,3 +12,13 @@ $acrom-extrabold: 'Acrom-ExtraBold', sans-serif;
 // family GILROY
 $gilroy-light: 'Gilroy-Light', sans-serif;
 $gilroy-extrabold: 'Gilroy-ExtraBold', sans-serif;
+
+//For media - use mixin mq
+$breakpoints: (
+    "phone":        320px,
+    "phone-wide":   480px,
+    "tablet":       768px,
+    "tablet-wide":  960px,
+    "desktop":      1200px,
+    "desktop-wide": 1440px
+  );
