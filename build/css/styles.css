@@ -12,8 +12,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext");
-
 html {
   line-height: 1.15;
   /* 1 */
@@ -421,6 +419,52 @@ img {
   src: url("../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff");
 }
 
-.text-class {
-  color: red;
+.section-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 320px;
+  height: auto;
+  text-align: center;
+  background-color: grey;
+}
+
+.section-12__header {
+  width: 194px;
+  padding-bottom: 20px;
+  padding-top: 14px;
+}
+
+.section-12__title {
+  margin: 0;
+  font-family: "Acrom-ExtraBold",serif;
+  font-size: 12px;
+}
+
+.section-12__text {
+  position: relative;
+  text-align: left;
+  font-family: "Acrom",serif;
+  font-size: 9px;
+  padding-left: 32px;
+}
+
+.section-12__text::before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 3px;
+  background-color: black;
+  top: 7px;
+  left: -21px;
+}
+
+.section-12__image {
+  width: 172px;
+  height: 194px;
+  background-image: url(../img/section12-1320.png);
+  background-size: cover;
+  background-position: center;
 }

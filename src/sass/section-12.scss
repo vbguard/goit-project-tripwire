@@ -1,0 +1,49 @@
+.section-12{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 320px;
+  height: auto;
+  text-align: center;
+  background-color: grey;
+}
+
+.section-12__header{  
+  width: 194px;
+  padding-bottom: 20px;
+  padding-top: 14px;
+}
+
+.section-12__title{
+  margin: 0;
+  font-family: "Acrom-ExtraBold",serif;
+  font-size: 12px;
+}
+
+.section-12__text{
+  position: relative;
+  text-align: left;
+  font-family: "Acrom",serif;
+  font-size: 9px;
+  padding-left: 32px;
+
+  &::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 3px;
+    background-color: black;
+    top: 7px;
+    left: -21px;
+  }
+}
+
+.section-12__image{
+  width: 172px;
+  height: 194px;
+  background-image: url(../img/section12-1320.png);
+  background-size: cover;
+  background-position: center;  
+}
