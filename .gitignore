@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
+=======
+# ignore index.html, but you can transf another name *.html
+#scr/index.html
+
+# not add MacOS System file
+.DS_Store
+>>>>>>> 06bf1896e7762326fe5e5197ff3c0c28882d0656

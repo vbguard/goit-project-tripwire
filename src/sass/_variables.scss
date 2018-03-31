@@ -1,15 +1,13 @@
 // Color
 $primary-color: #fff;
 
-// Font
-$raleway: 'Raleway', sans-serif;
+// Font-Family
+// family ACROM
+$acrom-regular: 'Acrom', sans-serif;
+$acrom-medium: 'Acrom-Medium', sans-serif;
+$acrom-bold: 'Acrom-Bold', sans-serif;
+$acrom-extrabold: 'Acrom-ExtraBold', sans-serif;
 
-//For media - use mixin mq
-$breakpoints: (
-    "phone":        320px,
-    "phone-wide":   480px,
-    "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1200px,
-    "desktop-wide": 1440px
-  );
+// family GILROY
+$gilroy-light: 'Gilroy-Light', sans-serif;
+$gilroy-extrabold: 'Gilroy-ExtraBold', sans-serif;
