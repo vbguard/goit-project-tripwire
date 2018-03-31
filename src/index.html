@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>goit-project-tripwire</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -19,20 +19,32 @@
         <h3 class="section18__title-important">[ Важно! ]</h3>
         <div class="section18-price">
           <div class="section18-price__worth">
-            <p class="section18-price__text">[Ценность видео-курса и бонусов]</p>
+            <span class="section18-price__text">[ Ценность видео-курса и бонусов ]</span>
             <span class="section18-price__dash"></span>
             <span class="section18-price__number">1835 грн</span>
           </div>
           <div class="section18-price__price-today">
-            <p class="section18-price__text section18-price__text--highlight">[Цена Сегодня]</p>
+            <span class="section18-price__text">
+              <mark class="section18-price__text--highlight">[ Цена Сегодня ]</mark>
+            </span>
             <span class="section18-price__number section18-price__number--big">399</span>
             <span class="section18-price__unit">грн.</span>
           </div>
         </div>
-        <p class="section18__text section18__text--bold">Эта цена — наш подарок для первых 150 человек, решивших улучшить жизнь свою и своих семей через IT</p>
-        <p class="section18__text section18__text--normal">Ведь наша цель — создать бренд Украины как сильной IT страны!</p>
-        <p class="section18__text section18__text--highlight">Однако как только первые 150 «копий» курса разойдется — цена поднимется. </p>
-        <button class="section18__button">Забрать видео-курс за 399 грн</button>
+        <div class="section18-content section18-content--margin-top">
+          <ul class="section18-content__list-text">
+            <li class="section18-content__item-text">
+              <p class="section18-content__text section18-content__text--bold">Эта цена — наш подарок для первых 150 человек, решивших улучшить жизнь свою и своих семей через IT</p>
+            </li>
+            <li class="section18-content__item-text">
+              <p class="section18-content__text section18-content__text--normal">Ведь наша цель — создать бренд Украины как сильной IT страны!</p>
+            </li>
+            <li class="section18-content__item-text">
+              <p class="section18-content__text section18-content__text--highlight">Однако как только первые 150 «копий» курса разойдется — цена поднимется.</p>
+            </li>
+          </ul>
+          <button class="section18-content__button">Забрать видео-курс за 399 грн</button>
+        </div>
       </section>
     </div>
   </div>
@@ -112,7 +124,7 @@
     </div>
   </footer>
 
-<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
 </body>
 
 </html>

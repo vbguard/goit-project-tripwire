@@ -1,0 +1,170 @@
+// width-320px
+.wrapper-section18 {
+  background-color: $primary-white-color;
+}
+
+.section18 {
+  padding: 0 36px 52px;
+}
+
+.section18__title-important {
+  @include font(
+    $selected-text-black,
+    $acrom-extrabold,
+    12px,
+    700,
+    normal,
+    uppercase
+  );
+  @include center(auto, auto, center);
+  margin-top: 0;
+}
+
+.section18-price {
+  @include center(auto, auto, center);
+  width: 247px;
+  height: 183px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
+  background-color: #052139;
+  padding: 50px;
+}
+
+.section18-price__worth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section18-price__text {
+  @include font($primary-white-color, $acrom-regular, 9px, 500, 12.89px, none);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  flex-basis: 60px;
+  display: inline-block;
+
+  &--highlight {
+    background-color: $selected-text-aqua;
+    color: $selected-text-black;
+  }
+}
+
+.section18-price__dash {
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  border: 1px solid $primary-white-color;
+}
+
+.section18-price__number {
+  @include font(
+    $primary-white-color,
+    $acrom-extrabold,
+    10px,
+    700,
+    normal,
+    uppercase
+  );
+
+  &--big {
+    font-size: 26px;
+    line-height: 20px;
+  }
+}
+
+.section18-price__price-today {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section18-price__unit {
+  @include font($primary-white-color, $acrom-extrabold, 16px, 700, 12px, none);
+}
+
+.section18-content {
+  @include center(auto, auto, center);
+
+  &--margin-top {
+    margin-top: 26px;
+  }
+}
+
+.section18-content__list-text {
+  @include center(auto, auto, left);
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+  width: 247px;
+}
+
+.section18-content__item-text:not(:last-child) {
+  margin-bottom: 10px;
+  padding: 0 26px;
+}
+
+.section18-content__item-text {
+  list-style: none;
+
+  &:last-child {
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url("../img/section18-slash.svg");
+      width: 14px;
+      height: 19px;
+      fill: #000000;
+      margin-right: 10px;
+    }
+  }
+}
+
+.section18-content__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+
+  &--bold {
+    @include font($selected-text-black, $acrom-bold, 10px, 700, 12.57px, none);
+  }
+
+  &--normal {
+    @include font(#3f4144, $acrom-regular, 8px, 400, 12.57px, none);
+  }
+
+  &--highlight {
+    @include font(
+      $selected-text-orange,
+      $acrom-regular,
+      10px,
+      500,
+      14.37px,
+      none
+    );
+    width: 212px;
+  }
+}
+
+.section18-content__button {
+  outline: none;
+  border: none;
+  width: 196px;
+  height: 27px;
+  box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
+  background-color: $color-button;
+  @include font($primary-white-color, $acrom-extrabold, 6px, 400, 9.73px, uppercase);
+  letter-spacing: 1.2px;
+
+  &:hover{
+  box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+  background-color: $color-hover-button;
+  }
+
+  &:active {
+  box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+  background-color: $color-clic-button;
+  }
+}
+

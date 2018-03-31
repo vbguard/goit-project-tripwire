@@ -1,1 +1,18 @@
 // Mixin pallette;
+
+// Mixin typography;
+
+@mixin font($color,$font-family,$font-size,$font-weight,$line-height,$text-transform) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+@mixin center($margin-r, $margin-l, $text-align) {
+  margin-right: $margin-r;
+  margin-left: $margin-l;
+  text-align: $text-align;
+}
