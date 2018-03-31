@@ -58,7 +58,7 @@ typings/
 .env
 
 # ignore index.html, but you can transf another name *.html
-#scr/index.html
+src/index.html
 
 # not add MacOS System file
 .DS_Store
