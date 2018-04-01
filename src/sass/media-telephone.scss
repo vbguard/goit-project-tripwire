@@ -146,6 +146,11 @@
 }
 
 @media (max-width:768px){
+  .nav-items__item-title::before{
+    width: 4px;
+    height: 4px;
+  }
+
   .section-article{
     margin-left: auto;
     margin-right: auto;
