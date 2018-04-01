@@ -50,7 +50,7 @@ img {
   }
 
   &__text{
-    font-family: $acrom-extrabold;
+    font-family: $acrom-medium;
     color: $primary-black;
     line-height: 1.444;
     position: relative;
@@ -64,7 +64,6 @@ img {
     height: 2px;
     position: absolute;
     left: -24px;
-    top: 5px;
   }
 }
 
@@ -97,7 +96,6 @@ img {
     width: 4px;
     height: 4px;
     position: absolute;
-    top: 3px;
     left: -18px;
   }
 
@@ -114,14 +112,14 @@ img {
   margin-left: auto;
 
   &__title{
-    font-family: $acrom;
+    font-family: $acrom-extrabold;
     color: $primary-white;
     font-weight: bold;
     line-height: 1.444;
   }
 
   &__text-title{
-    font-family: $acrom-extrabold;
+    font-family: $acrom-bold;
     color: $primary-black;
     font-weight: bold;
     line-height: 1.2;
@@ -150,6 +148,19 @@ img {
   src: url("../fonts/Acrom W00 Regular/Acrom W00 Regular.ttf");
   src: url("../fonts/Acrom W00 Regular/Acrom W00 Regular.woff");
   src: url("../fonts/Acrom W00 Regular/Acrom W00 Regular.woff2");
+}
+@font-face {
+  font-family: "Acrom-Medium";
+  src: url("../fonts/Acrom W00 Medium/Acrom W00 Medium.ttf");
+  src: url("../fonts/Acrom W00 Medium/Acrom W00 Medium.woff");
+  src: url("../fonts/Acrom W00 Medium/Acrom W00 Medium.woff2");
+}
+
+@font-face {
+  font-family: "Acrom-Bold";
+  src: url("../fonts/Acrom W00 Bold/Acrom W00 Bold.ttf");
+  src: url("../fonts/Acrom W00 Bold/Acrom W00 Bold.woff");
+  src: url("../fonts/Acrom W00 Bold/Acrom W00 Bold.woff2");
 }
 
 @font-face {
