@@ -1,5 +1,5 @@
 .section {
-  padding: 30px 36px;
+  padding: 30px 68px;
   @include mq("phone-wide") {
     padding: 44px 56px;
   }
@@ -26,6 +26,10 @@
   }
 }
 .bonus__meta {
+  max-width: 196px;
+  @include mq("phone-wide") {
+    max-width: 294px;
+  }
   @include mq("tablet") {
     flex: 0 0 258px;
     position: relative;
@@ -66,7 +70,7 @@
     font-size: 30px;
   }
   @include mq("desktop-wide") {
-    font-size: 36px;
+    font-size: 33px;
     line-height: 1.25;
   }
 }
@@ -78,26 +82,62 @@
   text-align: left;
   position: relative;
   margin-bottom: 38px;
+  padding-left: 36px;
+  &::before {
+    @include pseudo;
+    background-color: rgb(0, 0, 0);
+    width: 14px;
+    height: 2px;
+    top: 6px;
+    left: 0;
+    margin-left: 12px;
+    @include mq("phone-wide") {
+      width: 20px;
+      height: 4px;
+      margin-left: 18px;
+    }
+    @include mq("tablet") {
+      width: 30px;
+    }
+    @include mq("tablet-wide") {
+      width: 36px;
+      margin-left: 20px;
+    }
+    @include mq("desktop") {
+      width: 32px;
+      height: 4px;
+    }
+    @include mq("desktop-wide") {
+      width: 38px;
+      height: 6px;
+      margin-left: 24px;
+    }
+  }
   @include mq("phone-wide") {
     font-size: 13.5px;
     margin-bottom: 60px;
+    padding-left: 58px;
   }
   @include mq("tablet") {
     font-size: 8.97px;
     line-height: 1.5;
     margin-bottom: 36px;
+    padding-left: 68px;
   }
   @include mq("tablet-wide") {
     font-size: 11.22px;
     margin-bottom: 46px;
+    padding-left: 78px;
   }
   @include mq("desktop") {
     font-size: 10px;
     margin-bottom: 40px;
+    padding-left: 74px;
   }
   @include mq("desktop-wide") {
     font-size: 12px;
     margin-bottom: 50px;
+    padding-left: 88px;
   }
 }
 .bonus__list {
@@ -191,6 +231,11 @@
   color: $primary-color;
 }
 .bonus__form {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  text-align: center;
+  padding-top: 44px;
   width: 244px;
   height: 231px;
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.15);
@@ -198,56 +243,113 @@
     box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
     width: 370px;
     height: 348px;
+    padding-top: 64px;
   }
   @include mq("tablet") {
     box-shadow: 0px 11px 22px 0px rgba(0, 0, 0, 0.15);
     width: 312px;
     height: 294px;
+    padding-top: 66px;
   }
   @include mq("tablet-wide") {
     box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
     width: 390px;
     height: 366px;
+    padding-top: 68px;
   }
   @include mq("desktop") {
     width: 348px;
     height: 326px;
+    padding-top: 62px;
   }
   @include mq("desktop-wide") {
     width: 418px;
     height: 392px;
+    padding-top: 64px;
     box-shadow: 0px 17px 32px 0px rgba(0, 0, 0, 0.15);
   }
 }
-.bonus__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 44px;
-}
-.bonus__form label {
+.bonus__form-label {
   display: block;
+  margin: auto;
   font-size: 5.31px;
   font-family: $acrom-bold;
   color: rgba(0, 0, 0, 0.361);
   line-height: 1.5;
   text-align: left;
-}
-.bonus__form label {
+  max-width: 160px;
   margin-bottom: 12px;
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+  &:focus {
+    color: rgb(255, 107, 8);
+    outline: none;
+  }
+  &:focus .bonus__form input {
+    border-bottom: 1px solid rgb(255, 107, 8);
+  }
+  @include mq("phone-wide") {
+    font-size: 7.97px;
+  }
+  @include mq("tablet") {
+    font-size: 6.73px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 8.41px;
+  }
+  @include mq("desktop") {
+    font-size: 7.5px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 9px;
+  }
 }
 .bonus__form input {
   display: inline-block;
   width: 160px;
   text-align: left;
+  padding: 6px 0;
   border: 0;
   border-bottom: 1px solid rgb(191, 191, 191);
+  @include mq("phone-wide") {
+    padding: 8px 0;
+    width: 240px;
+  }
+  @include mq("tablet") {
+    width: 202px;
+  }
+  @include mq("tablet-wide") {
+    padding: 10px 0;
+    width: 252px;
+  }
+  @include mq("destop") {
+    width: 226px;
+  }
+  @include mq("destop-wide") {
+    width: 270px;
+  }
 }
-input::placeholder {
+.bonus__form input::placeholder {
   font-size: 6.19px;
   font-family: $acrom-regular;
   color: rgb(0, 0, 0);
   line-height: 1.286;
+  @include mq("phone-wide") {
+    font-size: 9.29px;
+  }
+  @include mq("tablet") {
+    font-size: 7.85px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 9.81px;
+  }
+  @include mq("desktop") {
+    font-size: 8.75px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 10.5px;
+  }
 }
 .bonus__form-button {
   width: 116px;
