@@ -60,20 +60,13 @@ img {
     content: ' ';
     display: block;
     background-color: $primary-black;
-    width: 14px;
-    height: 2px;
     position: absolute;
-    left: -24px;
   }
 }
 
 .section-list{
   margin-left: auto;
   margin-right: auto;
-}
-
-.section-picture{
-  @extend %image;
 }
 
 .nav-items{
