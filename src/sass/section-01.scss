@@ -1,27 +1,191 @@
 // Section 01
-
 // Masthead Background
-.masthead-wrap {
+.masthead {
+  background: url('../img/masthead-bg-line_320.png'), url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_320.png'), #181c27;
+  background-position: 50% 0, 50% 180px, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 296px, 212px, cover;
+}
 
-  background: #181c27 url('../img/masthead-bg-mask.png') url('../img/masthead-bg-text.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  // background-color: #181c27;
-  // background-image: url(../img/masthead-bg-mask.png);
+.masthead-wrap {
+  padding: 10px 12px 26px 12px;
+}
+
+// --->>>> 4 line bg <<<<------
+// .background-line {
+//     max-width: 320px;
+//   height: auto;
+//   position: relative;
+//   padding: 0 12px;
+//   &::before {
+//     height: 409px;
+//     opacity: 0.2;
+//     border: 1px dotted white;
+//     content: '';
+//      border-width: 0.208px;
+//       border-color: rgb(255, 255, 255);
+//       border-style: dotted;
+//       opacity: 0.2;
+//       position: absolute;
+//       left: 207px;
+//       top: -1px;
+//       width: 1px;
+//       height: 409px;
+//       z-index: 11;
+//   }
+//   &__block--first {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 409px;
+//     opacity: 0.2;
+//     border: 1px dotted white;
+//   }
+// }
+// .masthead-wrap {
+//   &--leftright {
+//   padding: 0 12px;
+//   }
+//   &--topbottom {
+//     padding: 10px 0 26px 0;
+//     z-index: 2;
+//   }
+// }
+// Masthrad HEADER
+.masthead__navigation {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // Logo
 .masthead__logo {
   margin: 0;
+  display: inline-block;
+  font-size: 0;
+  text-indent: -9999px;
 }
 
 .logo__link {
-  content: '';
-  width: 29;
-  height: 5px;
-  background-color: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 44px;
+  height: 15px;
+}
+
+.logo__image {
+  width: 44px;
+  height: 15px;
+}
+
+// menu
+.menu {
+  &--button {
+    width: 18px;
+    height: 11px;
+    background-image: url('../img/burg_menu.png');
+    text-indent: -9999px;
+    font-size: 0;
+  }
+}
+
+// Masthead HERO
+.hero {
+  &__title {
+    margin: 0;
+    margin: auto;
+    max-width: 164px;
+    color: $primary-color;
+    font-family: $acrom-extrabold;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    &--weight {
+      font-family: $acrom-bold;
+    }
+  }
+  &__subtitle {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 106px;
+    max-width: 243px;
+    position: relative;
+    color: $primary-color;
+    font-family: $acrom-bold;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: -0.25px;
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: -17px;
+      content: '<';
+      color: #17ecff;
+      font-family: $acrom-extrabold;
+      font-size: 15px;
+      line-height: 8px;
+      text-transform: uppercase;
+    }
+    &::after {
+      position: absolute;
+      bottom: 4px;
+      right: -20px;
+      content: '/>';
+      color: #17ecff;
+      font-family: $acrom-extrabold;
+      font-size: 15px;
+      line-height: 8px;
+      text-transform: uppercase;
+    }
+  }
+  &__subject {
+    margin: 0;
+    margin-left: 26.51px;
+    max-width: 223px;
+    height: 23px;
+    color: $primary-color;
+    font-family: $acrom-extrabold;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    &-text {
+      max-width: 245px;
+      margin-top: 10px;
+      margin-bottom: 26px;
+      margin-left: 26.51px;
+      color: #afb0b3;
+      font-family: $acrom-medium;
+      font-size: 9px;
+      line-height: 13px;
+    }
+  }
+}
+
+// Button HERO
+.hero__button {
+  display: block;
+  margin: auto;
+  width: 145px;
+  height: 36px;
+  background-color: #ff6b08;
+  box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
+  color: $primary-color;
+  font-family: $acrom-extrabold;
+  font-size: 8px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    width: 146px;
+    height: 37px;
+    background-color: #17ecff;
+    box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+  }
+  &:active {
+    background-color: #06a4b2;
+    box-shadow: 0 3px 4px rgba(6, 164, 178, 0.26);
+  }
 }
