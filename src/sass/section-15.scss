@@ -9,6 +9,12 @@
   @include mq("tablet-wide") {
     padding: 54px 80px;
   }
+  @include mq("desktop") {
+    padding: 62px 234px;
+  }
+  @include mq("desktop-wide") {
+    padding: 76px 282px;
+  }
 }
 .received {
   display: flex;
@@ -26,6 +32,12 @@
   }
   @include mq("tablet-wide") {
     flex: 0 0 410px;
+  }
+  @include mq("desktop") {
+    flex: 0 0 366px;
+  }
+  @include mq("desktop-wide") {
+    flex: 0 0 440px;
   }
 }
 .received__title {
@@ -50,6 +62,15 @@
     font-size: 33.65px;
     margin-bottom: 64px;
   }
+  @include mq("desktop") {
+    font-size: 30px;
+    margin-bottom: 58px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 36px;
+    margin-bottom: 68px;
+    line-height: 1.25;
+  }
 }
 .received__list {
   @include mq("tablet") {
@@ -64,6 +85,12 @@
   @include mq("tablet-wide") {
     flex: 0 0 184px;
   }
+  @include mq("desktop") {
+    flex: 0 0 166px;
+  }
+  @include mq("desktop-wide") {
+    flex: 0 0 198px;
+  }
 }
 .received__item:not(:last-child) {
   margin-bottom: 20px;
@@ -71,6 +98,12 @@
     margin-bottom: 28px;
   }
   @include mq("tablet-wide") {
+    margin-bottom: 40px;
+  }
+  @include mq("desktop") {
+    margin-bottom: 32px;
+  }
+  @include mq("desktop-wide") {
     margin-bottom: 40px;
   }
 }
@@ -104,6 +137,15 @@
     font-size: 11.22px;
     margin-bottom: 14px;
   }
+  @include mq("desktop") {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 12px;
+    margin-bottom: 14px;
+    line-height: 1.625;
+  }
 }
 .received__item-text {
   font-size: 9px;
@@ -121,15 +163,27 @@
   @include mq("tablet-wide") {
     font-size: 9.81px;
   }
+  @include mq("desktop") {
+    font-size: 8.75px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 10.5px;
+  }
 }
 .received__button-block {
   @include mq("tablet") {
     position: absolute;
-    left: 164px;
+    left: 190px;
     bottom: 6px;
   }
   @include mq("tablet-wide") {
-    left: 206px;
+    left: 240px;
+  }
+  @include mq("desktop") {
+    left: 184px;
+  }
+  @include mq("desktop-wide") {
+    left: 250px;
   }
 }
 .received__description {
@@ -143,18 +197,27 @@
   position: relative;
   &::before {
     @include pseudo;
-    background-image: url("../img/section15-slash.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 4.916px;
+    background-color: rgb(0, 0, 0);
+    width: 1px;
     height: 9.916px;
     fill: #000000;
     top: 0;
     left: -6px;
+    transform: rotate(30deg) translateY(25%);
     @include mq("phone-wide") {
-      width: 14px;
+      width: 2px;
       height: 18px;
       left: -10px;
+    }
+    @include mq("tablet") {
+      left: -12px;
+    }
+    @include mq("desktop") {
+      height: 22px;
+    }
+    @include mq("desktop-wide") {
+      height: 26px;
+      left: -14px;
     }
   }
   @include mq("phone-wide") {
@@ -165,10 +228,16 @@
     line-height: 1.5;
     display: block;
     margin-bottom: 12px;
+    max-width: 80px;
   }
   @include mq("tablet-wide") {
     font-size: 11.22px;
     margin-bottom: 14px;
+    max-width: 100px;
+  }
+  @include mq("desktop") {
+    font-size: 10px;
+    max-width: 104px;
   }
 }
 .received__button {
@@ -197,17 +266,20 @@
   }
   @include mq("tablet") {
     font-size: 6.73px;
-    line-height: 1.5;
     width: 133px;
     height: 29px;
     box-shadow: 0px 7px 10px 0px rgba(196, 87, 15, 0.26);
   }
   @include mq("tablet-wide") {
     font-size: 8.41px;
-    line-height: 1.5;
     width: 166px;
     height: 36px;
     box-shadow: 0px 9px 13px 0px rgba(196, 87, 15, 0.26);
+  }
+  @include mq("desktop") {
+    font-size: 7.5px;
+    width: 148px;
+    height: 32px;
   }
 }
 .received__img {
@@ -221,5 +293,13 @@
   @include mq("tablet-wide") {
     width: 320px;
     height: 386px;
+  }
+  @include mq("desktop") {
+    width: 286px;
+    height: 344px;
+  }
+  @include mq("desktop-wide") {
+    width: 344px;
+    height: 414px;
   }
 }

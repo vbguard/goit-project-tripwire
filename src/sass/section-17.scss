@@ -1,0 +1,298 @@
+.section {
+  padding: 30px 36px;
+  @include mq("phone-wide") {
+    padding: 44px 56px;
+  }
+  @include mq("tablet") {
+    padding: 48px 64px;
+  }
+  @include mq("tablet-wide") {
+    padding: 60px 80px;
+  }
+  @include mq("desktop") {
+    padding: 60px 244px;
+  }
+  @include mq("desktop-wide") {
+    padding: 72px 292px;
+  }
+}
+.bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq("tablet") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.bonus__meta {
+  @include mq("tablet") {
+    flex: 0 0 258px;
+    position: relative;
+  }
+  @include mq("tablet-wide") {
+    flex: 0 0 322px;
+  }
+  @include mq("desktop") {
+    flex: 0 0 286px;
+  }
+  @include mq("desktop-wide") {
+    flex: 0 0 344px;
+  }
+}
+.bonus__title {
+  font-size: 12px;
+  font-family: $acrom-extrabold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 12px;
+  @include mq("phone-wide") {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  @include mq("tablet") {
+    font-size: 26.92px;
+    line-height: 1.25;
+    text-align: left;
+  }
+  @include mq("tablet-wide") {
+    font-size: 33.65px;
+    margin-bottom: 24px;
+  }
+  @include mq("desktop") {
+    font-size: 30px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+.bonus__subtitle {
+  font-size: 9px;
+  font-family: $acrom-medium;
+  color: rgb(0, 0, 0);
+  line-height: 1.444;
+  text-align: left;
+  position: relative;
+  margin-bottom: 38px;
+  @include mq("phone-wide") {
+    font-size: 13.5px;
+    margin-bottom: 60px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 1.5;
+    margin-bottom: 36px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 11.22px;
+    margin-bottom: 46px;
+  }
+  @include mq("desktop") {
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+}
+.bonus__list {
+  margin-bottom: 18px;
+  @include mq("phone-wide") {
+    margin-bottom: 26px;
+  }
+  @include mq("tablet") {
+    margin-bottom: 0;
+  }
+}
+.bonus__item {
+  @include mq("tablet") {
+    max-width: 166px;
+  }
+  @include mq("tablet-wide") {
+    max-width: 206px;
+  }
+  @include mq("desktop") {
+    max-width: 184px;
+  }
+  @include mq("desktop-wide") {
+    max-width: 270px;
+  }
+}
+.bonus__item:first-child {
+  margin-bottom: 24px;
+  @include mq("phone-wide") {
+    margin-bottom: 38px;
+  }
+  @include mq("tablet") {
+    margin-bottom: 20px;
+  }
+  @include mq("tablet-wide") {
+    margin-bottom: 26px;
+  }
+}
+.bonus__item-title {
+  font-size: 8.96px;
+  font-family: $acrom-extrabold;
+  color: rgb(0, 0, 0);
+  line-height: 1.625;
+  text-align: left;
+  position: relative;
+  margin-bottom: 10px;
+  @include mq("phone-wide") {
+    font-size: 13.44px;
+    margin-bottom: 14px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    margin-bottom: 10px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 11.22px;
+    margin-bottom: 14px;
+  }
+  @include mq("desktop") {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+}
+.bonus__item-text {
+  font-size: 7.84px;
+  font-family: $acrom-regular;
+  color: rgb(63, 65, 68);
+  line-height: 1.5;
+  text-align: left;
+  @include mq("phone-wide") {
+    font-size: 11.76px;
+  }
+  @include mq("tablet") {
+    font-size: 7.85px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 9.81px;
+  }
+  @include mq("desktop") {
+    font-size: 8.75px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 10.5px;
+  }
+}
+.bonus__item-marked {
+  background-color: rgb(0, 0, 0);
+  color: $primary-color;
+}
+.bonus__form {
+  width: 244px;
+  height: 231px;
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.15);
+  @include mq("phone-wide") {
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+    width: 370px;
+    height: 348px;
+  }
+  @include mq("tablet") {
+    box-shadow: 0px 11px 22px 0px rgba(0, 0, 0, 0.15);
+    width: 312px;
+    height: 294px;
+  }
+  @include mq("tablet-wide") {
+    box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
+    width: 390px;
+    height: 366px;
+  }
+  @include mq("desktop") {
+    width: 348px;
+    height: 326px;
+  }
+  @include mq("desktop-wide") {
+    width: 418px;
+    height: 392px;
+    box-shadow: 0px 17px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+.bonus__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 44px;
+}
+.bonus__form label {
+  display: block;
+  font-size: 5.31px;
+  font-family: $acrom-bold;
+  color: rgba(0, 0, 0, 0.361);
+  line-height: 1.5;
+  text-align: left;
+}
+.bonus__form label {
+  margin-bottom: 12px;
+}
+.bonus__form input {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid rgb(191, 191, 191);
+}
+input::placeholder {
+  font-size: 6.19px;
+  font-family: $acrom-regular;
+  color: rgb(0, 0, 0);
+  line-height: 1.286;
+}
+.bonus__form-button {
+  width: 116px;
+  height: 23px;
+  background-color: rgb(255, 107, 8);
+  border: 0;
+  box-shadow: 0px 3px 4px 0px rgba(196, 87, 15, 0.26);
+  font-size: 5.31px;
+  font-family: $acrom-extrabold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  &:hover {
+    background-color: #17ecff;
+  }
+  &:target {
+    background-color: #06a4b2;
+  }
+  @include mq("phone-wide") {
+    font-size: 7.87px;
+    box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+    width: 174px;
+    height: 35px;
+  }
+  @include mq("tablet") {
+    font-size: 6.73px;
+    width: 147px;
+    height: 29px;
+    box-shadow: 0px 7px 10px 0px rgba(196, 87, 15, 0.26);
+  }
+  @include mq("tablet-wide") {
+    font-size: 8.41px;
+    width: 184px;
+    height: 36px;
+    box-shadow: 0px 9px 13px 0px rgba(196, 87, 15, 0.26);
+  }
+  @include mq("desktop") {
+    font-size: 7.5px;
+    width: 163px;
+    height: 32px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 9px;
+    width: 196px;
+    height: 39px;
+  }
+}
