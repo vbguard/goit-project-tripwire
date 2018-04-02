@@ -73,12 +73,46 @@
   }
 }
 .received__list {
+  counter-reset: list;
   @include mq("tablet") {
     display: flex;
     flex-wrap: wrap;
   }
 }
+.received__item-counter {
+  display: inline-block;
+}
 .received__item {
+  display: flex;
+  &::before {
+    display: inline-block;
+    counter-increment: list;
+    content: "0" counter(list) "." url("../img/section15-17-aqua-square.svg");
+    font-size: 10.71px;
+    font-family: "Acrom-ExtraBold";
+    margin-right: 10px;
+    text-align: right;
+    line-height: 1.2;
+    width: 26px;
+    @include mq("phone-wide") {
+      font-size: 16.07px;
+      margin-right: 16px;
+    }
+    @include mq("tablet") {
+      font-size: 16.82px;
+    }
+    @include mq("tablet-wide") {
+      font-size: 21.03px;
+      margin-right: 20px;
+    }
+    @include mq("desktop-wide") {
+      font-size: 18.75px;
+    }
+    @include mq("desktop-wide") {
+      font-size: 22.5px;
+      margin-right: 22px;
+    }
+  }
   @include mq("tablet") {
     flex: 0 0 150px;
   }

@@ -150,18 +150,39 @@
     margin-bottom: 0;
   }
 }
-.bonus__item {
+.bonus__item-counter {
   display: inline-block;
+}
+.bonus__item {
+  display: flex;
   &::before {
     display: inline-block;
     counter-increment: list;
-    content: "0" counter(list) "."
-      url("../img/section15-17-aqua-square.svg");
-    font-size: 16.3px;
+    content: "0" counter(list) "." url("../img/section15-17-aqua-square.svg");
+    font-size: 16.8px;
+    line-height: 1.2;
     font-family: "Acrom-ExtraBold";
     margin-right: 10px;
     text-align: right;
     width: 26px;
+    @include mq("phone-wide") {
+      font-size: 25.21px;
+      margin-right: 16px;
+    }
+    @include mq("tablet") {
+      font-size: 16.82px;
+    }
+    @include mq("tablet-wide") {
+      font-size: 21.03px;
+      margin-right: 20px;
+    }
+    @include mq("desktop-wide") {
+      font-size: 18.75px;
+    }
+    @include mq("desktop-wide") {
+      font-size: 22.5px;
+      margin-right: 20px;
+    }
   }
   @include mq("tablet") {
     max-width: 166px;
