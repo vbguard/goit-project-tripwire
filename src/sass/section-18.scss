@@ -142,22 +142,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-
-  @media (min-width: 480px) and (max-width: 767px) {
-    margin-bottom: 48px;
-  }
-  @media (min-width: 768px) and (max-width: 959px) {
-    margin-bottom: 16px;
-  }
-  @media (min-width: 960px) and (max-width: 1199px) {
-    margin-bottom: 26px;
-  }
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    margin-bottom: 24px;
-  }
-  @media (min-width: 1440px) {
-    margin-bottom: 24px;
-  }
 }
 
 .section18-price__text {
@@ -176,22 +160,27 @@
   @media (min-width: 480px) and (max-width: 767px) {
     flex-basis: 88px;
     font-size: 12px;
+    line-height: 20px;
   }
   @media (min-width: 768px) and (max-width: 959px) {
     flex-basis: 62px;
-    font-size: 9px;
+    font-size: 9px; 
+    line-height: 20px;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
     flex-basis: 76px;
     font-size: 12px;
+    line-height: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1439px) {
     flex-basis: 70px;
     font-size: 10px;
+    line-height: 20px;
   }
   @media (min-width: 1440px) {
     flex-basis: 82px;
     font-size: 12px;
+    line-height: 20px;
   }
 }
 
