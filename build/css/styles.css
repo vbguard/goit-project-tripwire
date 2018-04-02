@@ -893,6 +893,11 @@ input[type="radio"].visually-hidden {
   width: 80%;
 }
 
+.list__item:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -1218,51 +1223,86 @@ input[type="radio"].visually-hidden {
     padding: 0 68px;
     display: flex;
     width: 100%;
+    position: relative;
   }
 
   .list__item {
     flex-basis: 25%;
     margin-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .list__item:nth-child(1) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(2) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(3) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(4) {
+    flex: 2 0 0;
   }
 
   .list__item--11:first-child::before {
     width: 58px;
     height: 50px;
+    right: 10%;
   }
 
   .list__item--11--01::after {
     font-size: 28px;
+    top: 14%;
+    right: -3%;
   }
 
   .list__item--11--01::before {
     width: 29px;
     height: 98px;
+    top: 14%;
+    right: 10%;
   }
 
   .list__item--11--02::after {
     font-size: 28px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--02::before {
     width: 40px;
     height: 79px;
+    top: 14%;
+    right: 7%;
   }
 
   .list__item--11--03::after {
     font-size: 28px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--03::before {
     width: 40px;
     height: 79px;
+    top: 14%;
+    right: 7%;
   }
 
   .rewards__meta {
-    font-size: 16px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
   }
 
   .rewards__title {
     font-size: 9px;
+    width: 84%;
+    z-index: 1;
   }
 
   .rewards--year {
@@ -1274,7 +1314,8 @@ input[type="radio"].visually-hidden {
   }
 
   .rewards__text {
-    font-size: 17px;
+    font-size: 9px;
+    width: 78%;
   }
 
   .promo__image {
@@ -1395,50 +1436,86 @@ input[type="radio"].visually-hidden {
     padding: 0 80px;
     margin: 65px 0 0 0;
     width: 100%;
+    position: relative;
   }
 
   .list__item {
     margin-bottom: 0;
+    padding-top: 30px;
+    margin-right: 10px;
+  }
+
+  .list__item:nth-child(1) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(2) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(3) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(4) {
+    flex: 2 0 0;
   }
 
   .list__item--11:first-child::before {
     width: 73px;
     height: 62px;
+    right: 10%;
   }
 
   .list__item--11--01::after {
     font-size: 35px;
+    top: 14%;
+    right: -3%;
   }
 
   .list__item--11--01::before {
     width: 37px;
     height: 122px;
+    top: 14%;
+    right: 10%;
   }
 
   .list__item--11--02::after {
     font-size: 35px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--02::before {
     width: 50px;
     height: 99px;
+    top: 14%;
+    right: 7%;
   }
 
   .list__item--11--03::after {
     font-size: 35px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--03::before {
     width: 50px;
     height: 99px;
+    top: 14%;
+    right: 7%;
   }
 
   .rewards__meta {
-    font-size: 16px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
   }
 
   .rewards__title {
     font-size: 11px;
+    width: 84%;
+    z-index: 1;
   }
 
   .rewards--year {
@@ -1450,7 +1527,8 @@ input[type="radio"].visually-hidden {
   }
 
   .rewards__text {
-    font-size: 11px;
+    font-size: 9px;
+    width: 78%;
   }
 
   .promo__image {
@@ -1521,7 +1599,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 0;
     width: 34%;
-    right: 92px;
+    right: 20%;
   }
 
   .promo__discription h3 {
@@ -1540,59 +1618,94 @@ input[type="radio"].visually-hidden {
     width: 60%;
     font-size: 10px;
     position: absolute;
-    width: 25%;
+    width: 16%;
     bottom: 0;
-    left: 11%;
+    left: 22%;
   }
 
   .rewards__list {
     padding: 0 244px;
     margin: 65px 0 0 0;
     width: 100%;
+    position: relative;
   }
 
   .list__item {
     margin-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .list__item:nth-child(1) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(2) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(3) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(4) {
+    flex: 2 0 0;
   }
 
   .list__item--11:first-child::before {
     width: 64px;
     height: 55px;
+    right: 10%;
   }
 
   .list__item--11--01::after {
     font-size: 31px;
+    top: 14%;
+    right: -3%;
   }
 
   .list__item--11--01::before {
     width: 32px;
     height: 109px;
+    top: 14%;
+    right: 10%;
   }
 
   .list__item--11--02::after {
     font-size: 31px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--02::before {
     width: 45px;
     height: 88px;
+    top: 14%;
+    right: 7%;
   }
 
   .list__item--11--03::after {
     font-size: 31px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--03::before {
     width: 45px;
     height: 88px;
+    top: 14%;
+    right: 7%;
   }
 
   .rewards__meta {
-    font-size: 16px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
   }
 
   .rewards__title {
     font-size: 10px;
+    width: 84%;
+    z-index: 1;
   }
 
   .rewards--year {
@@ -1605,6 +1718,7 @@ input[type="radio"].visually-hidden {
 
   .rewards__text {
     font-size: 10px;
+    width: 78%;
   }
 
   .promo__image {
@@ -1692,7 +1806,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 0;
     width: 34%;
-    right: 92px;
+    right: 20%;
   }
 
   .promo__discription h3 {
@@ -1711,59 +1825,94 @@ input[type="radio"].visually-hidden {
     width: 60%;
     font-size: 12px;
     position: absolute;
-    width: 25%;
+    width: 16%;
     bottom: 0;
-    left: 11%;
+    left: 22%;
   }
 
   .rewards__list {
     padding: 0 294px;
     margin: 65px 0 0 0;
     width: 100%;
+    position: relative;
   }
 
   .list__item {
     margin-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .list__item:nth-child(1) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(2) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(3) {
+    flex: 2 0 0;
+  }
+
+  .list__item:nth-child(4) {
+    flex: 2 0 0;
   }
 
   .list__item--11:first-child::before {
     width: 77px;
     height: 66px;
+    right: 10%;
   }
 
   .list__item--11--01::after {
     font-size: 37px;
+    top: 14%;
+    right: -3%;
   }
 
   .list__item--11--01::before {
     width: 39px;
     height: 133px;
+    top: 14%;
+    right: 10%;
   }
 
   .list__item--11--02::after {
     font-size: 37px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--02::before {
     width: 54px;
     height: 105px;
+    top: 14%;
+    right: 7%;
   }
 
   .list__item--11--03::after {
     font-size: 37px;
+    top: 15%;
+    right: -9%;
   }
 
   .list__item--11--03::before {
     width: 54px;
     height: 105px;
+    top: 14%;
+    right: 7%;
   }
 
   .rewards__meta {
-    font-size: 16px;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
   }
 
   .rewards__title {
     font-size: 12px;
+    width: 84%;
+    z-index: 1;
   }
 
   .rewards--year {
@@ -1776,6 +1925,7 @@ input[type="radio"].visually-hidden {
 
   .rewards__text {
     font-size: 12px;
+    width: 78%;
   }
 
   .promo__image {

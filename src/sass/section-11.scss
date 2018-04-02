@@ -107,7 +107,7 @@
     position: absolute;
     top: 0;
     width: 34%;
-    right: 92px;
+    right: 20%;
   }
   @include mq("desktop-wide") {
     display: flex;
@@ -115,7 +115,7 @@
     position: absolute;
     top: 0;
     width: 34%;
-    right: 92px;
+    right: 20%;
   }
 }
 
@@ -236,17 +236,17 @@
     width: 60%;
     font-size: 10px;
     position: absolute;
-    width: 25%;
+    width: 16%;
     bottom: 0;
-    left: 11%;
+    left: 22%;
   }
   @include mq("desktop-wide") {
     width: 60%;
     font-size: 12px;
     position: absolute;
-    width: 25%;
+    width: 16%;
     bottom: 0;
-    left: 11%;
+    left: 22%;
   }
 
   &::before {
@@ -273,21 +273,25 @@
     padding: 0 68px;
     display: flex;
     width: 100%;
+    position: relative;
   }
   @include mq("tablet-wide") {
     padding: 0 80px;
     margin: 65px 0 0 0;
     width: 100%;
+    position: relative;
   }
   @include mq("desktop") {
     padding: 0 244px;
     margin: 65px 0 0 0;
     width: 100%;
+    position: relative;
   }
   @include mq("desktop-wide") {
     padding: 0 294px;
     margin: 65px 0 0 0;
     width: 100%;
+    position: relative;
   }
 }
 
@@ -298,15 +302,92 @@
   @include mq("tablet") {
     flex-basis: 25%;
     margin-bottom: 0;
+    padding-top: 30px;
   }
   @include mq("tablet-wide") {
     margin-bottom: 0;
+    padding-top: 30px;
+    margin-right: 10px;
   }
   @include mq("desktop") {
     margin-bottom: 0;
+    padding-top: 30px;
   }
   @include mq("desktop-wide") {
     margin-bottom: 0;
+    padding-top: 30px;
+  }
+}
+
+.list__item:nth-child(1) {
+  @include mq("phone-wide") {
+
+  }
+  @include mq("tablet") {
+    flex: 2 0 0;
+  }
+  @include mq("tablet-wide") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop-wide") {
+    flex: 2 0 0;
+  }
+}
+
+.list__item:nth-child(2) {
+  @include mq("phone-wide") {
+
+  }
+  @include mq("tablet") {
+    flex: 2 0 0;
+  }
+  @include mq("tablet-wide") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop-wide") {
+    flex: 2 0 0;
+  }
+}
+
+.list__item:nth-child(3) {
+  @include mq("phone-wide") {
+
+  }
+  @include mq("tablet") {
+    flex: 2 0 0;
+  }
+  @include mq("tablet-wide") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop-wide") {
+    flex: 2 0 0;
+  }
+}
+
+.list__item:nth-child(4) {
+  @include mq("phone-wide") {
+
+  }
+  @include mq("tablet") {
+    flex: 2 0 0;
+  }
+  @include mq("tablet-wide") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop") {
+    flex: 2 0 0;
+  }
+  @include mq("desktop-wide") {
+    flex: 2 0 0;
   }
 }
 
@@ -335,18 +416,22 @@
       @include mq("tablet") {
         width: 58px;
         height: 50px;
+        right: 10%;
       }
       @include mq("tablet-wide") {
         width: 73px;
         height: 62px;
+        right: 10%;
       }
       @include mq("desktop") {
         width: 64px;
         height: 55px;
+        right: 10%;
       }
       @include mq("desktop-wide") {
         width: 77px;
         height: 66px;
+        right: 10%;
       }
     }
   }
@@ -376,15 +461,23 @@
     }
     @include mq("tablet") {
       font-size: 28px;
+      top: 14%;
+      right: -3%;
     }
     @include mq("tablet-wide") {
       font-size: 35px;
+      top: 14%;
+      right: -3%;
     }
     @include mq("desktop") {
       font-size: 31px;
+      top: 14%;
+      right: -3%;
     }
     @include mq("desktop-wide") {
       font-size: 37px;
+      top: 14%;
+      right: -3%;
     }
   }
 
@@ -409,18 +502,26 @@
     @include mq("tablet") {
       width: 29px;
       height: 98px;
+      top: 14%;
+      right: 10%;
     }
     @include mq("tablet-wide") {
       width: 37px;
       height: 122px;
+      top: 14%;
+      right: 10%;
     }
     @include mq("desktop") {
       width: 32px;
       height: 109px;
+      top: 14%;
+      right: 10%;
     }
     @include mq("desktop-wide") {
       width: 39px;
       height: 133px;
+      top: 14%;
+      right: 10%;
     }
   }
 }
@@ -449,15 +550,23 @@
     }
     @include mq("tablet") {
       font-size: 28px;
+      top: 15%;
+      right: -9%;
     }
     @include mq("tablet-wide") {
       font-size: 35px;
+      top: 15%;
+      right: -9%;
     }
     @include mq("desktop") {
       font-size: 31px;
+      top: 15%;
+      right: -9%;
     }
     @include mq("desktop-wide") {
       font-size: 37px;
+      top: 15%;
+      right: -9%;
     }
   }
 
@@ -482,18 +591,26 @@
     @include mq("tablet") {
       width: 40px;
       height: 79px;
+      top: 14%;
+      right: 7%;
     }
     @include mq("tablet-wide") {
       width: 50px;
       height: 99px;
+      top: 14%;
+      right: 7%;
     }
     @include mq("desktop") {
       width: 45px;
       height: 88px;
+      top: 14%;
+      right: 7%;
     }
     @include mq("desktop-wide") {
       width: 54px;
       height: 105px;
+      top: 14%;
+      right: 7%;
     }
   }
 }
@@ -523,15 +640,23 @@
     }
     @include mq("tablet") {
       font-size: 28px;
+      top: 15%;
+      right: -9%;
     }
     @include mq("tablet-wide") {
       font-size: 35px;
+      top: 15%;
+      right: -9%;
     }
     @include mq("desktop") {
       font-size: 31px;
+      top: 15%;
+      right: -9%;
     }
     @include mq("desktop-wide") {
       font-size: 37px;
+      top: 15%;
+      right: -9%;
     }
   }
 
@@ -556,18 +681,26 @@
     @include mq("tablet") {
       width: 40px;
       height: 79px;
+      top: 14%;
+      right: 7%;
     }
     @include mq("tablet-wide") {
       width: 50px;
       height: 99px;
+      top: 14%;
+      right: 7%;
     }
     @include mq("desktop") {
       width: 45px;
       height: 88px;
+      top: 14%;
+      right: 7%;
     }
     @include mq("desktop-wide") {
       width: 54px;
       height: 105px;
+      top: 14%;
+      right: 7%;
     }
   }
 }
@@ -587,16 +720,24 @@
     font-size: 12px;
   }
   @include mq("tablet") {
-    font-size: 16px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
   }
   @include mq("tablet-wide") {
-    font-size: 16px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
   }
   @include mq("desktop") {
-    font-size: 16px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
   }
   @include mq("desktop-wide") {
-    font-size: 16px;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -617,15 +758,23 @@
   }
   @include mq("tablet") {
     font-size: 9px;
+    width: 84%;
+    z-index: 1;
   }
   @include mq("tablet-wide") {
     font-size: 11px;
+    width: 84%;
+    z-index: 1;
   }
   @include mq("desktop") {
     font-size: 10px;
+    width: 84%;
+    z-index: 1;
   }
   @include mq("desktop-wide") {
     font-size: 12px;
+    width: 84%;
+    z-index: 1;
   }
 }
 
@@ -686,16 +835,20 @@
     font-size: 13px;
   }
   @include mq("tablet") {
-    font-size: 17px;
+    font-size: 9px;
+    width: 78%;
   }
   @include mq("tablet-wide") {
-    font-size: 11px;
+    font-size: 9px;
+    width: 78%;
   }
   @include mq("desktop") {
     font-size: 10px;
+    width: 78%;
   }
   @include mq("desktop-wide") {
     font-size: 12px;
+    width: 78%;
   }
 }
 
@@ -751,4 +904,9 @@
     padding-top: 78px;
     flex-basis: 55%;
   }
+}
+
+.list__item:last-child{
+  margin-bottom: 0;
+  margin-right: 0;
 }
