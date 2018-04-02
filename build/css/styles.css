@@ -459,8 +459,6 @@ input[type="radio"].visually-hidden {
 }
 
 .section-9__header {
-  margin-right: 60px;
-  padding-bottom: 40px;
   background-image: url("../img/section-09-4stap.jpg");
   background-repeat: no-repeat;
   background-size: 90px;
@@ -571,10 +569,6 @@ input[type="radio"].visually-hidden {
 .section-10 {
   margin: auto;
   text-align: center;
-}
-
-.section__image {
-  padding: 0 10px;
 }
 
 .section-10__name {
@@ -813,6 +807,7 @@ input[type="radio"].visually-hidden {
 @media only screen and (min-width: 480px) {
   .section-9__header {
     background-size: 140px;
+    padding-bottom: 60px;
   }
 
   .section__title {
@@ -848,7 +843,7 @@ input[type="radio"].visually-hidden {
   .section-9 {
     display: flex;
     margin-bottom: 66px;
-    padding: 0 60px;
+    margin: 0 60px;
   }
 
   .section-9__header,
@@ -858,8 +853,8 @@ input[type="radio"].visually-hidden {
 
   .section-9__header {
     background-position: right;
-    padding: 0;
     padding-right: 130px;
+    padding-bottom: 40px;
   }
 
   .section__title {
@@ -989,8 +984,8 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 960px) {
-  .section-10 {
-    padding: 0 80px;
+  .section-9 {
+    margin: 0 80px;
   }
 
   .section-10 {
@@ -1083,6 +1078,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1200px) {
   .section-9 {
     padding: 0 240px;
+    margin: 0;
   }
 
   .section-10 {
@@ -1137,6 +1133,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .section-9 {
     padding: 0 290px;
+    margin: 0;
   }
 
   .section-10 {
@@ -1147,5 +1144,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 768px) {
   .section-9__header {
     background-position: bottom left;
+    margin: 0 60px;
+    padding-bottom: 40px;
   }
 }
