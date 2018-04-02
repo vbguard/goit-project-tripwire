@@ -1,24 +1,22 @@
 // MAIN css
 // for all section container max width individual @media rules ANOTHER!!!!
+
 .container {
   max-width: 320px;
   margin: auto;
-
-  @media screen and (min-width: 480) {
+  @include mq("phone-wide") {
     max-width: 480px;
   }
-  @media screen and (min-width: 768) {
+  @include mq("tablet") {
     max-width: 768px;
   }
-  @media screen and (min-width: 960) {
+  @include mq("tablet-wide") {
     max-width: 960px;
   }
-  @media screen and (min-width: 1200) {
+  @include mq("desktop") {
     max-width: 1200px;
   }
-  @media screen and (min-width: 1440) {
+  @include mq("desktop-wide") {
     max-width: 1440px;
   }
 }
-
-
