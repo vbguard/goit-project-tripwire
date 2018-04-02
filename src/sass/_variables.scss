@@ -1,4 +1,5 @@
 // Color
+$primary-color: #fff;
 $primary-white-color: #fff;
 $selected-text-aqua: #16ebfe;
 $selected-text-black: #000000;
@@ -18,8 +19,17 @@ $acrom: 'acrom';
 $gilroy:  "Gilroy-Light";
 $gilroy-light: 'Gilroy-Light', sans-serif;
 $gilroy-extrabold: 'Gilroy-ExtraBold', sans-serif;
-  
-=======
+
+//For media - use mixin mq
+$breakpoints: (
+    "phone":        320px,
+    "phone-wide":   480px,
+    "tablet":       768px,
+    "tablet-wide":  960px,
+    "desktop":      1200px,
+    "desktop-wide": 1440px
+  );
+
 $primary-white: #fff;
 $primary-black: #000;
 $text-color: #3f4144;

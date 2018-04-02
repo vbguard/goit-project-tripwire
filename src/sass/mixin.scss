@@ -1,4 +1,12 @@
-// Mixin pallette;
+//For Pseudo
+@mixin pseudo($display: inline-block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// For Media
+
 @mixin mq($width, $type: min) {
   @if map_has_key($breakpoints, $width) {
     $width: map_get($breakpoints, $width);
@@ -20,7 +28,6 @@ $breakpoints: (
   "desktop": 1200px,
   "desktop-wide": 1440px
 );
-=======
 
 // Mixin typography;
 

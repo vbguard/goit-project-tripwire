@@ -1,4 +1,24 @@
-// MAIN SCSS
+
+// MAIN css
+// for all section container max width individual @media rules ANOTHER!!!!
+
+.container {
+  max-width: 320px;
+  margin: auto;
+  @include mq("phone-wide") {
+    max-width: 480px;
+  }
+  @include mq("tablet") {
+    max-width: 768px;
+  }
+  @include mq("tablet-wide") {
+    max-width: 960px;
+  }
+  @include mq("desktop") {
+    max-width: 1200px;
+  }
+  @include mq("desktop-wide") {
+
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
@@ -28,6 +48,7 @@
     max-width: 1200px;
   }
   @media (min-width: 1440px) {
+
     max-width: 1440px;
 
 .title-underlining{
@@ -148,3 +169,4 @@
 .text-hidden{
   color: $primary-white;
 }
+
