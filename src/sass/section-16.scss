@@ -12,6 +12,7 @@
     padding: 76px 282px;
   }
 }
+
 .description__course {
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@
     margin-bottom: 64px;
   }
 }
+
 .description__title {
   font-size: 12px;
   font-family: $acrom-extrabold;
@@ -68,6 +70,7 @@
   text-align: left;
   padding-left: 30px;
   position: relative;
+
   &::before {
     @include pseudo;
     background-color: rgb(0, 0, 0);
@@ -118,8 +121,6 @@
     padding-left: 88px;
   }
 }
-
-
 
 .description__header {
   max-width: 196px;
@@ -173,12 +174,13 @@
     height: 170px;
     margin-bottom: 50px;
   }
-  @include mq("tablet") {
+  @include mq("tablet-wide") {
     width: 344px;
     height: 212px;
     margin-bottom: 64px;
   }
 }
+
 .description__img-guy {
   display: none;
   @include mq("tablet") {
@@ -187,17 +189,26 @@
     height: 203px;
     order: 4;
   }
-  @include mq("tablet") {
+  @include mq("tablet-wide") {
     width: 282px;
     height: 256px;
+    margin-right: 68px;
+  }  
+  @include mq("desktop") {
+    margin-right: 62px;
+  }
+  @include mq("desktop-wide") {
+    margin-right: 72px;
   }
 }
+
 .description__paragraph {
   @include mq("tablet") {
     display: flex;
     justify-content: space-between;
   }
 }
+
 .description__paragraph:first-child {
   margin-bottom: 18px;
   @include mq("phone-wide") {
@@ -215,6 +226,7 @@
   margin-bottom: 8px;
   display: inline-block;
   line-height: 1.444;
+
   > span {
     background-color: rgb(0, 0, 0);
   }
@@ -265,6 +277,7 @@
     font-size: 10.5px;
   }
 }
+
 .description__course-list {
   display: flex;
   flex-direction: column;
@@ -280,7 +293,14 @@
   @include mq("tablet-wide") {
     max-width: 800px;
   }
+  @include mq("desktop") {
+    max-width: 712px;
+  }
+  @include mq("desktop-wide") {
+    max-width: 856px;
+  }
 }
+
 .description__list {
   max-width: 196px;
   margin: 0;
@@ -293,24 +313,42 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 474px;
+    margin-bottom: 0px;
   }
   @include mq("tablet-wide") {
     max-width: 600px;
+    flex: 0 0 567px;
+  }
+  @include mq("desktop") {
+    flex: 0 0 530px;
+  }
+  @include mq("desktop-wide") {
+    flex: 0 0 640px;
+    
   }
 }
 
 .description__item {
   position: relative;
   margin-bottom: 18px;
+
   &:nth-child(-n + 2) {
     margin-right: 42px;
     @include mq("tablet-wide") {
-      margin-right: 66px;
+      margin-right: 40px;
+    }
+    @include mq("desktop-wide") {
+      margin-right: 70px;
     }
   }
+
   &:nth-child(4) {
-    margin-right: 66px;
+    margin-right: 40px;
+    @include mq("desktop-wide") {
+      margin-right: 70px;
+    }
   }
+
   &::before {
     @include pseudo;
     width: 7px;
@@ -330,6 +368,11 @@
     overflow: hidden;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+    @include mq("tablet-wide") {
+      left: -20px;
+      width: 12px;
+      height: 38px;
+    }
   }
   @include mq("tablet") {
     flex: 0 0 130px;
@@ -362,15 +405,17 @@
     text-align: left;
   }
   @include mq("tablet-wide") {
-    flex: 0 0 142px;
+    flex: 0 0 128px;
     font-size: 11.22px;
     line-height: 1.625;
   }  
   @include mq("desktop") {
     font-size: 10px;
+    flex: 0 0 114px;
   }
   @include mq("desktop-wide") {
     font-size: 12px;
+    flex: 0 0 134px;
   }
 }
 
@@ -473,6 +518,7 @@
     line-height: 25.24px;
   }  
 }
+
 .description__price-marked {
   display: inline-block;
   font-size: 11.31px;
@@ -497,11 +543,13 @@
   }
   @include mq("desktop") {
     font-size: 8.75px;
+    max-width: 110px;
   }
   @include mq("desktop-wide") {
     font-size: 10.5px;
   }
 }
+
 .description__price-marked mark{
   background-color: rgb(22, 235, 254);
 }
@@ -517,12 +565,12 @@
   @include mq("tablet") {
     max-width: 164px;
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     right: 64px;
     transform: translate(50%, 50%);
   }
   @include mq("tablet-wide") {
     right: 80px;
     max-width: 204px;
-  }
+  }  
 }
