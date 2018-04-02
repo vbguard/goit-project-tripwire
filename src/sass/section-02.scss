@@ -1,0 +1,127 @@
+// Main - Section-02
+// Section background
+.earn {
+  background-image: url('../img/YOU.png');
+  background-repeat: no-repeat;
+  background-position: 5px 162px;
+  background-size: 52px;
+}
+
+// section padding top & bottom
+.section-02 {
+  padding-bottom: 28px;
+}
+
+// Heading for section
+.earn__heading {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  &-caption {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+    @include heading-style ($acrom-extrabold, 10px, 11px, #000, uppercase, left);
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+  &-title {
+    margin: 0;
+    @include heading-style ($acrom-extrabold, 14px, 16px, #000, uppercase, left);
+    &--bold {
+      font-family: $acrom-bold;
+    }
+    &--bgc {
+      display: inline-block;
+      padding: 0 2px;
+      background-color: rgb(0, 0, 0);
+      color: $primary-color;
+      text-align: center;
+    }
+  }
+}
+
+// all item in section -->
+.earn__subject {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 9px;
+  font-family: $acrom-medium;
+  color: rgb(0, 0, 0);
+  line-height: 13px;
+}
+
+.earn__image {
+  max-height: 88px;
+  margin-bottom: 28px;
+  object-fit: cover;
+}
+
+// section earn list
+.earn__list-title {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 9px;
+  font-family: $acrom-extrabold;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 13px;
+}
+
+.earn__list {
+  margin-top: 14px;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.earn__list-item {
+  margin-bottom: 14px;
+  padding-left: 24px;
+  max-width: 268px;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    display: inline-block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #000;
+  }
+}
+
+.earn__list-text {
+  margin: 0;
+  font-size: 9px;
+  font-family: $acrom-regular;
+  color: rgb(0, 0, 0);
+  line-height: 13px;
+  letter-spacing: -0.05px;
+  &--bold {
+    font-family: $acrom-bold;
+    letter-spacing: -0.25px;
+  }
+}
+
+.earn__lead {
+  max-width: 196px;
+  margin: 0;
+  margin: auto;
+  font-size: 9px;
+  font-family: $acrom-medium;
+  color: rgb(255, 107, 8);
+  line-height: 13px;
+  text-align: center;
+}

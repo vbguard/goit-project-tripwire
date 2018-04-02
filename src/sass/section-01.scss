@@ -11,47 +11,6 @@
   padding: 10px 12px 26px 12px;
 }
 
-// --->>>> 4 line bg <<<<------
-// .background-line {
-//     max-width: 320px;
-//   height: auto;
-//   position: relative;
-//   padding: 0 12px;
-//   &::before {
-//     height: 409px;
-//     opacity: 0.2;
-//     border: 1px dotted white;
-//     content: '';
-//      border-width: 0.208px;
-//       border-color: rgb(255, 255, 255);
-//       border-style: dotted;
-//       opacity: 0.2;
-//       position: absolute;
-//       left: 207px;
-//       top: -1px;
-//       width: 1px;
-//       height: 409px;
-//       z-index: 11;
-//   }
-//   &__block--first {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 409px;
-//     opacity: 0.2;
-//     border: 1px dotted white;
-//   }
-// }
-// .masthead-wrap {
-//   &--leftright {
-//   padding: 0 12px;
-//   }
-//   &--topbottom {
-//     padding: 10px 0 26px 0;
-//     z-index: 2;
-//   }
-// }
 // Masthrad HEADER
 .masthead__navigation {
   margin-bottom: 14px;
@@ -179,8 +138,7 @@
   text-align: center;
   text-decoration: none;
   &:hover {
-    width: 146px;
-    height: 37px;
+    transform: scale(1.01);
     background-color: #17ecff;
     box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
   }

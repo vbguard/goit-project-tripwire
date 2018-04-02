@@ -1,1 +1,14 @@
 // Mixin pallette;
+
+@mixin heading-style ($font-family, $font-size, $line-height, $color-text, $text-transform, $text-align) {
+  display: inline-block;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-text;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}
+
+// @mixin heading-title ()
+// @include text-decor ($font-family, $font-size, $font-weight, $line-height);
