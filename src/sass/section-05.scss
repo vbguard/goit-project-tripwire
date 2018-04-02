@@ -1,8 +1,207 @@
+// Section 05
+// section padding top & bottom
+.section-05 {
+  padding: 10px 12px 26px 12px;
+}
+// Heading for section
+.slider__heading {
+  max-width: 198px;
+  margin: auto;
+  text-align: center;
+  &-caption {
+    margin: 0;
+    padding-left: 26px;
+    position: relative;
+    text-transform: initial;
+    letter-spacing: -0.1px;
+    @include heading-style ($acrom-medium, 9px, 13px, #000, initial, left);
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 1.5px;
+      background-color: #000;
+    }
+
+    &--bgc {
+      padding: 0 2px;
+      color: $primary-color;
+      background-color: #000;
+    }
+  }
+  &-title {
+    margin: 0;
+    margin-bottom: 28px;
+    max-width: 137px ;
+    @include heading-style ($acrom-extrabold, 12px, 16px, #000, uppercase, left);
+    &--bold {
+      font-family: $acrom-bold;
+    }
+  }
+}
+
+.slider-box {
+  position: relative;
+  max-width: 196px;
+  margin: auto;
+  margin-top: 26px;
+}
+
 .slider-comment {
   margin: auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.15);
   width: 196px;
   height: 142px;
-  overflow: auto;
+}
+
+.slider-content {
+  position: relative;
+  width: 196px;
+  height: 142px;
+  margin: 0;
+}
+
+// Content for slider
+
+.users-comment__data {
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 12px 12px 8px;
+}
+
+.users-comment__image--box {
+  width: 36px;
+  height: 36px;
+}
+
+.users-comment__data--title {
+  margin: 0;
+  margin-top: 8px;
+  max-width: 36px;
+  font-size: 3.5px;
+  font-family: $acrom-extrabold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 6.25px;
+  text-align: left;
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding: 12px 0 12px 8px;
+  width: 128px;
+  height: 142px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
+    width: 6px;
+    border: none;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-button,
+  &::-webkit-scrollbar-track-piece,
+  &::-webkit-scrollbar-corner,
+  &::-webkit-resizer {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    border-radius: 6px;
+    background-color: #000;
+    display: inline-block;
+    width: 3px;
+    height: 25px;
+  }
+  &::-webkit-scrollbar-track {
+    background-image: url("https://i.imgur.com/GvV1R30.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+  }
+}
+
+.users-comment__card--text {
+  margin: 0;
+  font-size: 3.6px;
+  font-family: $acrom-regular;
+  color: rgb(63, 65, 68);
+  line-height: 6.25px;
+  text-align: left;
+}
+
+// slider control
+.slider-control {
+  &__number {}
+  &__btn {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    display: inline-block;
+    max-width: 24px;
+    list-style: none;
+  }
+}
+
+.prev,
+.next {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  font-size: 9px;
+  text-align: center;
+  color: $primary-color;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  z-index: 166;
+}
+
+.slick-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0.5;
+  >li {
+    display: inline-block;
+    margin-right: 14px;
+    line-height: 0.5;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+  >li>button[type="button"] {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 2.6px;
+    font-family: $acrom-extrabold;
+    color: rgb(0, 0, 0);
+    outline: none;
+  }
+}
+
+.slick-active {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -4px;
+    display: inline-block;
+    width: 10px;
+    height: 0px;
+    border-width: 0.5px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: #000;
+  }
+  &>button[type="button"] {
+    transform: scale(1.5);
+  }
 }

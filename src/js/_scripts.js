@@ -1,7 +1,9 @@
 // on slider
 $(document).ready(function(){
   $('.slider-comment').slick({
-    dots: true
+    dots: true,
+    nextArrow: $('.prev'),
+    prevArrow: $('.next'),
   });
 });
 

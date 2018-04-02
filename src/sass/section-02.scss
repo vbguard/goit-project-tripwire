@@ -9,7 +9,7 @@
 
 // section padding top & bottom
 .section-02 {
-  padding-bottom: 28px;
+  padding: 0 12px 28px 12px;
 }
 
 // Heading for section
@@ -42,7 +42,7 @@
     }
     &--bgc {
       display: inline-block;
-      padding: 0 2px;
+      padding: 0 3px;
       background-color: rgb(0, 0, 0);
       color: $primary-color;
       text-align: center;
@@ -73,7 +73,6 @@
   font-size: 9px;
   font-family: $acrom-extrabold;
   color: rgb(0, 0, 0);
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 13px;
 }
@@ -108,10 +107,10 @@
   font-family: $acrom-regular;
   color: rgb(0, 0, 0);
   line-height: 13px;
-  letter-spacing: -0.05px;
+  letter-spacing: -0.1px;
   &--bold {
     font-family: $acrom-bold;
-    letter-spacing: -0.25px;
+    letter-spacing: 0px;
   }
 }
 
