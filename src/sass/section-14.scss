@@ -4,7 +4,6 @@
 }
 
 .container{
-  max-width: 194px;
   margin-bottom: 26px;
 }
 
@@ -26,8 +25,8 @@
 .section-14__image{
   position: relative;
   width: 239px;
-  height: 184px;  
-  object-fit: cover; 
+  height: 184px;
+  object-fit: cover;
   display: block;
 }
 
@@ -36,7 +35,7 @@
   display: block;
   width: 240px;
   padding-left: 10px;
-  color: #ff6b08;  
+  color: #ff6b08;
   font-family: "Acrom-Medium",serif;
   font-size: 9px;
   text-align: left;
@@ -65,7 +64,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  &--bgcolor{    
+  &--bgcolor{
     background-color: black;
     color: white;
   }
@@ -80,7 +79,7 @@
   line-height: 12px;
   width: 192px;
   word-spacing: -1px;
-  
+
 
   &::before{
     content: '';
@@ -116,7 +115,7 @@
 }
 
 .section-14__list-item{
-  position: relative;  
+  position: relative;
   padding-left: 18px;
 
   &:not(:last-child){
@@ -140,27 +139,27 @@
   transform: rotate(270deg);
 }
 
-.list-number__001:before{  
+.list-number__001:before{
   content: '[ 001 ]';
 }
 
-.list-number__002:before{  
+.list-number__002:before{
   content: '[ 002 ]';
 }
 
-.list-number__003:before{  
+.list-number__003:before{
   content: '[ 003 ]';
 }
 
-.list-number__004:before{  
+.list-number__004:before{
   content: '[ 004 ]';
 }
 
-.list-number__005:before{  
+.list-number__005:before{
   content: '[ 005 ]';
 }
 
-.list-number__006:before{  
+.list-number__006:before{
   content: '[ 006 ]';
 }
 
@@ -190,34 +189,34 @@
     width: 358px;
     height: 276px;
   }
-  
+
   .section-14__text--orange{
     width: 360px;
     padding-left: 10px;
     font-size: 13.5px;
     margin-bottom: 16px;
-  
-  
+
+
     &:before{
       width: 1px;
       height: 12px;
       left: 0px;
     }
   }
-  
+
   .section-14__title{
     font-size: 18px;
     width: 292px;
     margin-bottom: 20px;
   }
-  
+
   .section-14__text{
     font-size: 13.5px;
     padding-left: 36px;
     line-height: 12px;
     width: 290px;
-    
-  
+
+
     &::before{
       width: 12px;
       height: 2px;
@@ -233,15 +232,15 @@
     margin-bottom: 14px;
     margin-bottom: 18px;
   }
-  
+
   .section-14__list{
     flex-basis: 296px;
   }
-  
-  .section-14__list-item{ 
+
+  .section-14__list-item{
     padding-left: 26px;
     width: 270px;
-  
+
     &:not(:last-child){
       margin-bottom: 12px;
     }
@@ -252,7 +251,7 @@
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   .list-item__text{
     font-size: 13.5px;
     width: 100%;
@@ -288,21 +287,21 @@
     width: 312px;
     height: 240px;
   }
-  
+
   .section-14__text--orange{
     width: 168px;
     padding-left: 10px;
     font-size: 9px;
     margin-bottom: 20px;
-  
-  
+
+
     &:before{
       width: 2px;
       height: 16px;
       left: 0px;
     }
   }
-  
+
   .section-14__title{
     font-size: 27px;
     width: 274px;
@@ -310,14 +309,14 @@
     text-align: left;
     line-height: 44px;
   }
-  
+
   .section-14__text{
     font-size: 9px;
     padding-left: 42px;
     line-height: 12px;
     width: 210px;
-    
-  
+
+
     &::before{
       width: 30px;
     }
@@ -328,7 +327,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 186px;    
+    height: 186px;
   }
 
   .section-14__list-title{
@@ -336,7 +335,7 @@
     width: 112px;
     margin-bottom: 0px;
   }
-  
+
   .section-14__list{
     display: flex;
     flex-direction: row;
@@ -345,11 +344,11 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  
-  .section-14__list-item{ 
+
+  .section-14__list-item{
     padding-left: 22px;
     width: 142px;
-  
+
     &:not(:last-child){
       margin-bottom: 0px;
     }
@@ -364,7 +363,7 @@
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   .list-item__text{
     font-size: 9px;
     width: 100%;
@@ -396,35 +395,35 @@
     width: 390px;
     height: 298px;
   }
-  
+
   .section-14__text--orange{
     width: 206px;
     padding-left: 32px;
     font-size: 11.22px;
     margin-bottom: 24px;
-  
-  
+
+
     &:before{
       width: 2px;
       height: 20px;
       left: 0px;
     }
   }
-  
+
   .section-14__title{
     font-size: 33.65px;
     width: 344px;
     margin-bottom: 24px;
     line-height: 58px;
   }
-  
+
   .section-14__text{
     font-size: 11.22px;
     padding-left: 50px;
     line-height: 12px;
     width: 262px;
-    
-  
+
+
     &::before{
       width: 34px;
     }
@@ -432,7 +431,7 @@
 
   // -------secondary block------
   .section-14__secondary-block{
-    height: 232px;    
+    height: 232px;
   }
 
   .section-14__list-title{
@@ -440,12 +439,12 @@
     width: 142px;
     margin-bottom: 0px;
   }
-  
+
   .section-14__list{
     flex-basis: 592px;
   }
-  
-  .section-14__list-item{ 
+
+  .section-14__list-item{
     padding-left: 26px;
     width: 182px;
   }
@@ -455,7 +454,7 @@
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   .list-item__text{
     font-size: 10px;
     width: 90%;
@@ -485,54 +484,54 @@
     width: 347px;
     height: 268px;
   }
-  
+
   .section-14__text--orange{
     width: 184px;
     padding-left: 28px;
     font-size: 10px;
     margin-bottom: 24px;
-  
-  
+
+
     &:before{
       width: 2px;
       height: 20px;
       left: 0px;
     }
   }
-  
+
   .section-14__title{
     font-size: 30px;
     width: 306px;
     margin-bottom: 24px;
     line-height: 52px;
   }
-  
+
   .section-14__text{
     font-size: 10px;
     padding-left: 50px;
     line-height: 12px;
     width: 234px;
-    
-  
+
+
     &::before{
       width: 30px;
     }
   }
   // -------secondary block------
   .section-14__secondary-block{
-    height: 206px;    
+    height: 206px;
   }
 
   .section-14__list-title{
     font-size: 15px;
     width: 126px;
   }
-  
+
   .section-14__list{
     flex-basis: 528px;
   }
-  
-  .section-14__list-item{ 
+
+  .section-14__list-item{
     padding-left: 24px;
     width: 152px;
   }
@@ -542,7 +541,7 @@
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   .list-item__text{
     font-size: 9px;
     width: 90%;
@@ -565,35 +564,35 @@
     width: 414px;
     height: 320px;
   }
-  
+
   .section-14__text--orange{
     width: 222px;
     padding-left: 32px;
     font-size: 12px;
     margin-bottom: 24px;
-  
-  
+
+
     &:before{
       width: 2px;
       height: 20px;
       left: 0px;
     }
   }
-  
+
   .section-14__title{
     font-size: 36px;
     width: 366px;
     margin-bottom: 30px;
     line-height: 62px;
   }
-  
+
   .section-14__text{
     font-size: 12px;
     padding-left: 60px;
     line-height: 12px;
     width: 282px;
-    
-  
+
+
     &::before{
       width: 36px;
     }
@@ -601,19 +600,19 @@
 
   // -------secondary block------
   .section-14__secondary-block{
-    height: 246px;    
+    height: 246px;
   }
 
   .section-14__list-title{
     font-size: 18px;
     width: 146px;
   }
-  
+
   .section-14__list{
     flex-basis: 636px;
   }
-  
-  .section-14__list-item{ 
+
+  .section-14__list-item{
     padding-left: 30px;
     width: 182px;
   }
@@ -623,7 +622,7 @@
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   .list-item__text{
     font-size: 10.5px;
     width: 90%;

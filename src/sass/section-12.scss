@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.container{
-  max-width: 194px;
-}
-
 .section-12{
   display: flex;
   flex-direction: column;
@@ -15,10 +11,10 @@
   text-align: center;
 }
 
-.section-12__header{ 
+.section-12__header{
   padding-bottom: 28px;
   padding-top: 14px;
-  width: 100%
+  width: 100%;
 }
 
 .section-12__title{
@@ -34,7 +30,7 @@
   font-size: 9px;
   padding-left: 32px;
   line-height: 14px;
-  
+
 
   &::before{
     content: '';
@@ -55,8 +51,8 @@
 .section-12__image{
   width: 194px;
   height: 172px;
-  margin-bottom: 24px; 
-  object-fit: cover; 
+  margin-bottom: 24px;
+  object-fit: cover;
   display: block;
 }
 
@@ -67,7 +63,7 @@
   text-align: left;
   padding-bottom: 20px;
 }
-      
+
 .section-12__item{
   width: 100%;
   position: relative;
@@ -86,7 +82,7 @@
     top: 4px;
     left: -12px;;
   }
-}        
+}
 
 .section-12__list-title{
   font-family: "Acrom-ExtraBold",serif;
@@ -94,7 +90,7 @@
   margin-bottom: 2px;
   text-transform: uppercase;
   letter-spacing: -0.2px;
-  
+
 
   &--spacing{
     letter-spacing: -1px;
@@ -112,22 +108,22 @@
     max-width: 292px;
   }
 
-  .section-12__header{ 
+  .section-12__header{
     padding-bottom: 40px;
     padding-top: 20px;
     width: 100%
   }
-  
+
   .section-12__title{
     font-size: 22px;
     margin-bottom: 24px;
   }
-  
+
   .section-12__text{
     font-size: 13.5px;
     padding-left: 48px;
     line-height: 22px;
-      
+
     &::before{
       top: 6px;
       left: 8px;
@@ -137,33 +133,33 @@
   .section-12__image{
     width: 293px;
     height: 259px;
-    margin-bottom: 38px;  
+    margin-bottom: 38px;
   }
-  
+
   .section-12__list{
     width: 100%;
     padding-left: 20px;
     padding-bottom: 32px;
   }
-        
-  .section-12__item{  
+
+  .section-12__item{
     &:not(:last-child){
       margin-bottom: 28px;
     }
-  
+
     &:before{
       width: 6px;
       height: 6px;
       top: 6px;
       left: -16px;;
     }
-  }        
-    
+  }
+
   .section-12__list-title{
     font-size: 13.5px;
     margin-bottom: 6px;
   }
-  
+
   .section-12__list-text{
     font-size: 13.5px;
   }
@@ -181,12 +177,12 @@
     flex-wrap: wrap
   }
 
-  .section-12__header{ 
+  .section-12__header{
     padding-bottom: 26px;
     padding-top: 0;
     width: 236px;
   }
-  
+
   .section-12__title{
     font-size: 26.92px;
     margin-bottom: 18px;
@@ -196,12 +192,12 @@
       color: white;
     }
   }
-  
+
   .section-12__text{
     font-size: 9px;
     padding-left: 47px;
     line-height: 15px;
-      
+
     &::before{
       top: 6px;
       left: 8px;
@@ -214,33 +210,33 @@
     width: 310px;
     height: 330px;
     margin-bottom: 0;
-    margin-right: 60px; 
+    margin-right: 60px;
   }
-  
+
   .section-12__list{
     width: 230px;
     padding-left: 22px;
     padding-bottom: 0px;
   }
-        
-  .section-12__item{  
+
+  .section-12__item{
     &:not(:last-child){
       margin-bottom: 24px;
     }
-  
+
     &:before{
       width: 6px;
       height: 6px;
       top: 6px;
       left: -16px;;
     }
-  }        
-    
+  }
+
   .section-12__list-title{
     font-size: 9px;
     margin-bottom: 6px;
   }
-  
+
   .section-12__list-text{
     font-size: 8px;
   }
@@ -256,22 +252,22 @@
     height: 413px;
   }
 
-  .section-12__header{ 
+  .section-12__header{
     padding-bottom: 54px;
     padding-top: 0;
     width: 296px;
   }
-  
+
   .section-12__title{
     font-size: 33.65px;
     margin-bottom: 24px;
   }
-  
+
   .section-12__text{
     font-size: 11.22px;
     padding-left: 56px;
     line-height: 18px;
-      
+
     &::before{
       top: 6px;
       left: 8px;
@@ -283,31 +279,31 @@
     width: 388px;
     height: 413px;
   }
-  
+
   .section-12__list{
     width: 291px;
     padding-left: 28px;
     padding-bottom: 0px;
   }
-        
-  .section-12__item{  
+
+  .section-12__item{
     &:not(:last-child){
       margin-bottom: 24px;
     }
-  
+
     &:before{
       width: 9px;
       height: 8px;
       left: -20px;
       top: 1px;
     }
-  }        
-    
+  }
+
   .section-12__list-title{
     font-size: 11.22px;
     margin-bottom: 6px;
   }
-  
+
   .section-12__list-text{
     font-size: 11.22px;
   }
@@ -322,7 +318,7 @@
   .section-12{
     height: 370px;
 
-    &__header{ 
+    &__header{
       padding-bottom: 28px;
       padding-top: 0;
       width: 264px;
@@ -337,7 +333,7 @@
       font-size: 10px;
       padding-left: 56px;
       line-height: 18px;
-        
+
       &::before{
         top: 6px;
         left: 8px;
@@ -349,37 +345,37 @@
       width: 346px;
       height: 370px;
     }
-    
+
     &__list{
       width: 256px;
       padding-left: 28px;
       padding-bottom: 0px;
     }
-          
-    &__item{  
+
+    &__item{
       &:not(:last-child){
         margin-bottom: 24px;
       }
-    
+
       &:before{
         width: 9px;
         height: 8px;
         left: -20px;
         top: 1px;
       }
-    }        
-      
+    }
+
     &__list-title{
       font-size: 10px;
       margin-bottom: 6px;
     }
-    
+
     &__list-text{
       font-size: 10px;
     }
   }
 
-  
+
 }
 
 // ------------------------------1440
@@ -393,22 +389,22 @@
     height: 442px;
   }
 
-  .section-12__header{ 
+  .section-12__header{
     padding-bottom: 54px;
     padding-top: 0;
     width: 316px;
   }
-  
+
   .section-12__title{
     font-size: 36px;
     margin-bottom: 24px;
   }
-  
+
   .section-12__text{
     font-size: 12px;
     padding-left: 56px;
     line-height: 22px;
-      
+
     &::before{
       top: 6px;
       left: 8px;
@@ -420,31 +416,31 @@
     width: 416px;
     height: 442px;
   }
-  
+
   .section-12__list{
     width: 308px;
     padding-left: 28px;
     padding-bottom: 0px;
   }
-        
-  .section-12__item{  
+
+  .section-12__item{
     &:not(:last-child){
       margin-bottom: 24px;
     }
-  
+
     &:before{
       width: 9px;
       height: 8px;
       left: -20px;
       top: 1px;
     }
-  }        
-    
+  }
+
   .section-12__list-title{
     font-size: 12px;
     margin-bottom: 6px;
   }
-  
+
   .section-12__list-text{
     font-size: 12px;
   }
