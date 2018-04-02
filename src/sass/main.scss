@@ -1,7 +1,22 @@
-// MAIN SCSS
+// MAIN css
+// for all section container max width individual @media rules ANOTHER!!!!
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+.container {
+  max-width: 320px;
+  margin: auto;
+  @include mq("phone-wide") {
+    max-width: 480px;
+  }
+  @include mq("tablet") {
+    max-width: 768px;
+  }
+  @include mq("tablet-wide") {
+    max-width: 960px;
+  }
+  @include mq("desktop") {
+    max-width: 1200px;
+  }
+  @include mq("desktop-wide") {
+    max-width: 1440px;
+  }
 }

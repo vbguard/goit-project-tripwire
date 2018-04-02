@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
   Import partials below
 */
@@ -11,3 +12,20 @@
 
 // add you scss in here!
 @import 'block-16.scss';
+=======
+/*
+  Import partials below
+*/
+
+@import 'normalize';
+@import '_reset';
+@import '_helpers';
+@import '_variables';
+@import 'mixin';
+@import 'main';
+@import 'fonts';
+@import 'section-15';
+@import 'section-16';
+@import 'section-17';
+// add you scss in here!
+>>>>>>> a313926c624aee2c1f2581d564ddb2728667df2e
