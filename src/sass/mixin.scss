@@ -1,1 +1,22 @@
 // Mixin pallette;
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type==max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+//For media - use mixin mq
+$breakpoints: (
+  "phone": 320px,
+  "phone-wide": 480px,
+  "tablet": 768px,
+  "tablet-wide": 960px,
+  "desktop": 1200px,
+  "desktop-wide": 1440px
+);
