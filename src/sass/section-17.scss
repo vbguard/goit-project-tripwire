@@ -141,6 +141,7 @@
   }
 }
 .bonus__list {
+  counter-reset: list;
   margin-bottom: 18px;
   @include mq("phone-wide") {
     margin-bottom: 26px;
@@ -150,6 +151,18 @@
   }
 }
 .bonus__item {
+  display: inline-block;
+  &::before {
+    display: inline-block;
+    counter-increment: list;
+    content: "0" counter(list) "."
+      url("../img/section15-17-aqua-square.svg");
+    font-size: 16.3px;
+    font-family: "Acrom-ExtraBold";
+    margin-right: 10px;
+    text-align: right;
+    width: 26px;
+  }
   @include mq("tablet") {
     max-width: 166px;
   }
