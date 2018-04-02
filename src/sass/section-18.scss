@@ -1,23 +1,100 @@
-// width-320px
+
 .wrapper-section18 {
   background-color: $primary-white-color;
 }
 
 .section18 {
   padding: 0 36px 52px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 0 54px 70px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    padding: 0 62px 80px;
+    position: relative;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    padding: 0 76px 100px;
+    position: relative;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 0 240px 100px;
+    position: relative;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 290px 130px;
+    position: relative;
+  }
+}
+
+.section18-price-inner {
+ 
+  @media (min-width: 768px) and (max-width: 959px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 54px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 54px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 54px;
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 54px;
+  }
 }
 
 .section18__title-important {
-  @include font(
-    $selected-text-black,
-    $acrom-extrabold,
-    12px,
-    700,
-    normal,
-    uppercase
-  );
+  @include font($selected-text-black,$acrom-extrabold,12px,700,normal,uppercase);
   @include center(auto, auto, center);
   margin-top: 0;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 27px;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    right: 23%;
+    margin: 0;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 34px;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    right: 22%;
+    margin: 0;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    top: 9%;
+    right: 30%;
+  }
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    top: 6%;
+    right: 30%;
+  }
 }
 
 .section18-price {
@@ -27,6 +104,37 @@
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
   background-color: #052139;
   padding: 50px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 370px;
+    height: 274px;
+    padding: 74px;
+    margin: 0;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    width: 258px;
+    height: 192px;
+    padding: 56px;
+    margin: 0;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    width: 322px;
+    height: 240px;
+    padding: 66px;
+    margin: 0;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    width: 286px;
+    height: 214px;
+    padding: 60px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    width: 344px;
+    height: 256px;
+    padding: 74px;
+    margin: 0;
+  }
 }
 
 .section18-price__worth {
@@ -34,6 +142,22 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 48px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    margin-bottom: 16px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    margin-bottom: 26px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    margin-bottom: 24px;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 24px;
+  }
 }
 
 .section18-price__text {
@@ -48,6 +172,27 @@
     background-color: $selected-text-aqua;
     color: $selected-text-black;
   }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    flex-basis: 88px;
+    font-size: 12px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    flex-basis: 62px;
+    font-size: 9px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    flex-basis: 76px;
+    font-size: 12px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    flex-basis: 70px;
+    font-size: 10px;
+  }
+  @media (min-width: 1440px) {
+    flex-basis: 82px;
+    font-size: 12px;
+  }
 }
 
 .section18-price__dash {
@@ -55,21 +200,63 @@
   width: 25px;
   height: 1px;
   border: 1px solid $primary-white-color;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 36px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    width: 26px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    width: 32px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    width: 32px;
+  }
+  @media (min-width: 1440px) {
+    width: 32px;
+  }
 }
 
 .section18-price__number {
-  @include font(
-    $primary-white-color,
-    $acrom-extrabold,
-    10px,
-    700,
-    normal,
-    uppercase
-  );
+
+  @include font($primary-white-color,$acrom-extrabold,10px,700,normal,uppercase);
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 10px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 11px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 14px;
+  }
 
   &--big {
     font-size: 26px;
     line-height: 20px;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 36px;
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      font-size: 26px;
+    }
+    @media (min-width: 960px) and (max-width: 1199px) {
+      font-size: 32px;
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      font-size: 32px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 32px;
+    }
   }
 }
 
@@ -81,6 +268,22 @@
 
 .section18-price__unit {
   @include font($primary-white-color, $acrom-extrabold, 16px, 700, 12px, none);
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 10px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 11px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 14px;
+  }
 }
 
 .section18-content {
@@ -88,6 +291,30 @@
 
   &--margin-top {
     margin-top: 26px;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      margin-top: 34px;
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      margin-top: 0px;
+      flex-basis: 42%;
+      margin: 0;
+    }
+    @media (min-width: 960px) and (max-width: 1199px) {
+      margin-top: 0px;
+      margin: 0;
+      flex-basis: 42%;
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      margin-top: 0px;
+      margin: 0;
+      flex-basis: 42%;
+    }
+    @media (min-width: 1440px) {
+      margin-top: 0px;
+      margin: 0;
+      flex-basis: 42%;
+    }
   }
 }
 
@@ -96,11 +323,37 @@
   margin-top: 0;
   margin-bottom: 20px;
   padding-left: 0;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 26px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    margin-bottom: 26px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    margin-bottom: 26px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    margin-bottom: 26px;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 26px;
+  }
 }
 
 .section18-content__item-text:not(:last-child) {
   margin-bottom: 10px;
   padding: 0 26px;
+
+  @media (min-width: 960px) and (max-width: 1199px) {
+    padding: 0 44px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 0 44px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 44px;
+  }
 }
 
 .section18-content__item-text {
@@ -116,6 +369,16 @@
       height: 19px;
       fill: #000000;
       margin-right: 10px;
+
+      @media (min-width: 960px) and (max-width: 1199px) {
+        margin-right: 27px;
+      }
+      @media (min-width: 1200px) and (max-width: 1439px) {
+        margin-right: 27px;
+      }
+      @media (min-width: 1440px) {
+        margin-right: 27px;
+      }
     }
   }
 }
@@ -126,44 +389,107 @@
   display: inline-block;
 
   &--bold {
-    @include font($selected-text-black, $acrom-bold, 10px, 700, 12.57px, none);
+    @include font($selected-text-black, $acrom-bold, 10px, 700,normal, none);
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      font-size: 9px;
+    }
+    @media (min-width: 960px) and (max-width: 1199px) {
+      font-size: 12px;
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      font-size: 10px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 12px;
+    }
   }
 
   &--normal {
-    @include font(#3f4144, $acrom-regular, 8px, 400, 12.57px, none);
+    @include font(#3f4144, $acrom-regular, 8px, 400, normal, none);
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 12px;
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      font-size: 8px;
+    }
+    @media (min-width: 960px) and (max-width: 1199px) {
+      font-size: 10px;
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      font-size: 9px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 11px;
+    }
   }
 
   &--highlight {
-    @include font(
-      $selected-text-orange,
-      $acrom-regular,
-      10px,
-      500,
-      14.37px,
-      none
-    );
-    width: 212px;
+    @include font($selected-text-orange,$acrom-regular,10px,500,normal,none);
+    width: 84%;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      font-size: 9px;
+    }
+    @media (min-width: 960px) and (max-width: 1199px) {
+      font-size: 11px;
+      width: 58%;
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      font-size: 10px;
+      width: 58%;
+    }
+    @media (min-width: 1440px) {
+      font-size: 12px;
+      width: 58%;
+    }
   }
 }
 
 .section18-content__button {
   outline: none;
   border: none;
-  width: 196px;
+  width: 83%;
   height: 27px;
   box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
   background-color: $color-button;
   @include font($primary-white-color, $acrom-extrabold, 6px, 400, 9.73px, uppercase);
   letter-spacing: 1.2px;
 
-  &:hover{
-  box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
-  background-color: $color-hover-button;
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 10px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 8px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 8px;
+    width: 74%;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 8px;
+    width: 74%;
+  }
+  @media (min-width: 1440px) {
+    font-size: 8px;
+    width: 76%;
+  }
+
+  &:hover {
+   box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+   background-color: $color-hover-button;
   }
 
   &:active {
-  box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
-  background-color: $color-clic-button;
+   box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+   background-color: $color-clic-button;
   }
 }
 
