@@ -55,10 +55,9 @@
 .section-12__image{
   width: 194px;
   height: 172px;
-  background-image: url(../img/section12-320.png);
-  background-size: cover;
-  background-position: center; 
-  margin-bottom: 24px;  
+  margin-bottom: 24px; 
+  object-fit: cover; 
+  display: block;
 }
 
 .section-12__list{
@@ -138,7 +137,6 @@
   .section-12__image{
     width: 293px;
     height: 259px;
-    background-image: url(../img/section12-480.png);
     margin-bottom: 38px;  
   }
   
@@ -215,7 +213,6 @@
     order: -1;
     width: 310px;
     height: 330px;
-    background-image: url(../img/section12-768.png);
     margin-bottom: 0;
     margin-right: 60px; 
   }
@@ -285,7 +282,6 @@
   .section-12__image{
     width: 388px;
     height: 413px;
-    background-image: url(../img/section12-960.png);
   }
   
   .section-12__list{
@@ -352,7 +348,6 @@
     &__image{
       width: 346px;
       height: 370px;
-      background-image: url(../img/section12-1200.png);
     }
     
     &__list{
@@ -424,7 +419,6 @@
   .section-12__image{
     width: 416px;
     height: 442px;
-    background-image: url(../img/section12-1440.png);
   }
   
   .section-12__list{

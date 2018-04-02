@@ -26,10 +26,9 @@
 .section-14__image{
   position: relative;
   width: 239px;
-  height: 184px;
-  background-image: url(../img/section14-320.png);  
-  background-size: cover;
-  background-position: center; 
+  height: 184px;  
+  object-fit: cover; 
+  display: block;
 }
 
 .section-14__text--orange{
@@ -190,7 +189,6 @@
   .section-14__image{
     width: 358px;
     height: 276px;
-    background-image: url(../img/section14-480.png);
   }
   
   .section-14__text--orange{
@@ -277,19 +275,18 @@
   }
 
   .section-14{
-    align-items: none;
+    align-items: flex-start;
   }
 
   .section-14__main-block{
     flex-wrap: wrap;
     height: 240px;
-    align-items: none;
+    align-items: flex-start;
   }
 
   .section-14__image{
     width: 312px;
     height: 240px;
-    background-image: url(../img/section14-768.png);
   }
   
   .section-14__text--orange{
@@ -346,7 +343,7 @@
     flex-wrap: wrap;
     flex-basis: 475px;
     justify-content: space-between;
-    align-items: none;
+    align-items: flex-start;
   }
   
   .section-14__list-item{ 
@@ -398,7 +395,6 @@
   .section-14__image{
     width: 390px;
     height: 298px;
-    background-image: url(../img/section14-960.png);
   }
   
   .section-14__text--orange{
@@ -488,7 +484,6 @@
   .section-14__image{
     width: 347px;
     height: 268px;
-    background-image: url(../img/section14-1200.png);
   }
   
   .section-14__text--orange{
@@ -569,7 +564,6 @@
   .section-14__image{
     width: 414px;
     height: 320px;
-    background-image: url(../img/section14-1200.png);
   }
   
   .section-14__text--orange{
