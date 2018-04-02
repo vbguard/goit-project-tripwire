@@ -57,10 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
-build/
-
-# ignore index.html, but you can transf another name *.html
-src/index.html
-
 # not add MacOS System file
 .DS_Store

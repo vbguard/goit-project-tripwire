@@ -22,14 +22,14 @@ const sequence = require('run-sequence');
 
 gulp.task('html', () =>
   gulp
-    .src('./src/*.html')
+    .src('./src/index.html')
     .pipe(rigger())
     .pipe(
       htmlmin({
         collapseWhitespace: true,
       }),
     )
-    .pipe(gulp.dest('./build')),
+    .pipe(gulp.dest('build/')),
 );
 
 gulp.task('styles', () =>
@@ -99,7 +99,7 @@ gulp.task('fonts', () =>
 );
 
 gulp.task('watch', () => {
-  gulp.watch('src/*.html', ['html']).on('change', browserSync.reload);
+  gulp.watch('src/**/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('src/sass/**/*.scss', ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']);
 });
