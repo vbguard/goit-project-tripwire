@@ -1,14 +1,3 @@
-// Helper file's
-// for all image tag use in PAGE
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-// for hidden some tag with contents
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
