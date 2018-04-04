@@ -9,22 +9,22 @@
 
 // section padding top & bottom
 .section-02 {
-  padding: 0 12px 28px 12px;
+  padding-bottom: 28px;
     // Media for .section-02
     @media screen and (min-width: 480px) {
-      padding: 0 18px 38px 18px;
+      padding-bottom: 28px;
     }
     @media screen and (min-width: 768px) {
-      padding: 0 64px 32px 64px;
+      padding-bottom: 32px;
     }
     @media screen and (min-width: 960px) {
-      padding: 0 80px 42px 80px;
+      padding-bottom: 42px;
     }
     @media screen and (min-width: 1200px) {
-      padding: 0 244px 60px 244px;
+      padding-bottom: 60px;
     }
     @media screen and (min-width: 1440px) {
-      padding: 0 292px 72px 18px;
+      padding-bottom: 72px;
     }
 }
 
@@ -33,6 +33,12 @@
   max-width: 200px;
   margin: auto;
   text-align: center;
+
+  // Media for .earn__heading-caption
+  @media screen and (min-width: 480px) {
+    max-width: 297px;
+  }
+
   &-caption {
     margin: 0;
     margin-bottom: 10px;
@@ -51,13 +57,13 @@
     }
     // Media for .earn__heading-caption
     @media screen and (min-width: 480px) {
-      font-size: .9375rem;
-      line-height: 16.5px;
+      @include font-media(14.5, 16.5);
     }
   }
   &-title {
     margin: 0;
     @include heading-style ($acrom-extrabold, 14px, 16px, #000, uppercase, left);
+
     &--bold {
       font-family: $acrom-bold;
     }
@@ -67,6 +73,10 @@
       background-color: rgb(0, 0, 0);
       color: $primary-color;
       text-align: center;
+    }
+    // Media for .earn__heading-title
+    @media screen and (min-width: 480px) {
+      @include font-media(20.5, 25.5);
     }
   }
 }
@@ -79,12 +89,30 @@
   font-family: $acrom-medium;
   color: rgb(0, 0, 0);
   line-height: 13px;
+
+  @media screen and (min-width: 480px) {
+    @include font-media(13.5, 19.5);
+    margin-bottom: 24px;
+    max-width: 428px;
+  }
+}
+
+.earn__image-box {
+  margin-bottom: 28px;
+  max-height: 88px;
+  overflow: hidden;
+  object-fit: contain;
+  @media screen and (min-width: 480px) {
+    max-height: 132px;
+  }
+
 }
 
 .earn__image {
-  max-height: 88px;
-  margin-bottom: 28px;
-  object-fit: cover;
+  transform: translateY(-50px);
+  @media screen and (min-width: 480px) {
+    transform: translateY(-64px) scale(1);
+  }
 }
 
 // section earn list
@@ -96,6 +124,9 @@
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 13px;
+  @media screen and (min-width: 480px) {
+
+  }
 }
 
 .earn__list {
