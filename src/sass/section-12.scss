@@ -1,11 +1,10 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 .container{
   max-width: 320px;
   margin: auto;
+}
+
+.section-12__wrapper{
+  background-color: white;
 }
 
 .section-12{
@@ -200,7 +199,7 @@
     text-align: left;
 
     &--none{
-      color: white;
+      display: none;
     }
   }
   
