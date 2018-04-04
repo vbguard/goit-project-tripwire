@@ -2,9 +2,9 @@
   Import partials below
 */
 @import 'normalize';
-@import '_reset';
-@import '_helpers';
-@import '_variables';
+@import 'reset';
+@import 'helpers';
+@import 'variables';
 @import 'mixin.scss';
 @import 'main';
 @import 'fonts';
