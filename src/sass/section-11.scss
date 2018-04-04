@@ -1,8 +1,8 @@
 .promo {
-  padding: 0 13px;
+  padding: 0 13px 20px;
 
   @include mq("phone-wide") {
-    padding: 0 17px;
+    padding: 0 17px 20px;
   }
   @include mq("tablet") {
     padding: 0 68px;
@@ -852,7 +852,7 @@
   }
 }
 
-.rewards__text--widht {
+.rewards__text--width {
   width: 80%;
 
   @include mq("phone-wide") {

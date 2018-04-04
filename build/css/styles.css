@@ -1709,7 +1709,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo {
-  padding: 0 13px;
+  padding: 0 13px 20px;
 }
 
 .promo__title {
@@ -1935,7 +1935,7 @@ input[type="radio"].visually-hidden {
   margin-top: 8px;
 }
 
-.rewards__text--widht {
+.rewards__text--width {
   width: 80%;
 }
 
@@ -3332,7 +3332,7 @@ input[type="radio"].visually-hidden {
   }
 
   .promo {
-    padding: 0 17px;
+    padding: 0 17px 20px;
   }
 
   .promo__title {
