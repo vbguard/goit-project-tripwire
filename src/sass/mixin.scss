@@ -45,3 +45,12 @@ $breakpoints: (
   margin-left: $margin-l;
   text-align: $text-align;
 }
+
+@mixin heading-style($font-family-heading, $font-size-heading, $line-height-heading, $color-heading, $text-transform-heading, $text-align-heading) {
+  font-family: $font-family-heading;
+  font-size: $font-size-heading;
+  line-height: $line-height-heading;
+  color: $color-heading;
+  text-transform: $text-transform-heading;
+  text-align: $text-align-heading;
+}
