@@ -93,7 +93,7 @@
     margin-right: 10px;
     text-align: right;
     line-height: 1.2;
-    width: 26px;
+    width: 24px;
     @include mq("phone-wide") {
       font-size: 16.07px;
       margin-right: 16px;
@@ -205,6 +205,7 @@
   }
 }
 .received__button-block {
+  text-align: center;
   @include mq("tablet") {
     position: absolute;
     left: 190px;
@@ -221,16 +222,17 @@
   }
 }
 .received__description {
-  display: inline-block;
+  display: block;
   font-size: 9px;
   font-family: $acrom-medium;
   color: rgb(255, 107, 8);
   line-height: 1.444;
-  text-align: left;
+  text-align: center;
   margin-bottom: 22px;
   position: relative;
   &::before {
-    @include pseudo;
+    display: inline-block;
+    content: "";
     background-color: rgb(0, 0, 0);
     width: 1px;
     height: 9.916px;

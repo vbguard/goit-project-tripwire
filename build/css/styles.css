@@ -2259,7 +2259,7 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
   text-align: right;
   line-height: 1.2;
-  width: 26px;
+  width: 24px;
 }
 
 .received__item:not(:last-child) {
@@ -2288,21 +2288,24 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
+.received__button-block {
+  text-align: center;
+}
+
 .received__description {
-  display: inline-block;
+  display: block;
   font-size: 9px;
   font-family: "Acrom-Medium", sans-serif;
   color: #ff6b08;
   line-height: 1.444;
-  text-align: left;
+  text-align: center;
   margin-bottom: 22px;
   position: relative;
 }
 
 .received__description::before {
-  content: "";
   display: inline-block;
-  position: absolute;
+  content: "";
   background-color: black;
   width: 1px;
   height: 9.916px;
@@ -2373,7 +2376,7 @@ input[type="radio"].visually-hidden {
 
 .description__subtitle::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: black;
   width: 14px;
@@ -2461,7 +2464,7 @@ input[type="radio"].visually-hidden {
 
 .description__item::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   width: 7px;
   height: 34px;
@@ -2595,7 +2598,7 @@ input[type="radio"].visually-hidden {
 
 .bonus__subtitle::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: black;
   width: 14px;
