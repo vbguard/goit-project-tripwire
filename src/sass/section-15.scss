@@ -1,19 +1,19 @@
 .section {
-  padding: 20px 88px;
+  padding: 20px 0 22px;
   @include mq("phone-wide") {
-    padding: 30px 134px;
+    padding: 30px 0 34px;
   }
   @include mq("tablet") {
-    padding: 42px 64px;
+    padding: 44px 0 48px;
   }
   @include mq("tablet-wide") {
-    padding: 54px 80px;
+    padding: 54px 0 60px;
   }
   @include mq("desktop") {
-    padding: 62px 234px;
+    padding: 62px 0;
   }
   @include mq("desktop-wide") {
-    padding: 76px 282px;
+    padding: 76px 0;
   }
 }
 .received {
