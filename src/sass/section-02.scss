@@ -1,10 +1,37 @@
 // Main - Section-02
 // Section background
 .earn {
-  background-image: url('../img/YOU.png');
-  background-repeat: no-repeat;
-  background-position: 5px 162px;
-  background-size: 52px;
+  position: relative;
+  &::after {
+    position: absolute;
+    left: -50px;
+    top: 200px;
+    content: 'you';
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    z-index: -1;
+    font-size: 70px;
+    line-height: 1;
+    font-family: $acrom-extrabold;
+    color: rgba(0, 0, 0, 0.051);
+    @media screen and (min-width: 480px) {
+      font-size: 100px;
+      top: 300px;
+      left: -70px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-bottom: 32px;
+    }
+    @media screen and (min-width: 960px) {
+      padding-bottom: 42px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-bottom: 72px;
+    }
+  }
 }
 
 // section padding top & bottom
@@ -54,10 +81,15 @@
       width: 16px;
       height: 2px;
       background-color: #000;
+      @media screen and (min-width: 480px) {
+        width: 24px;
+        height: 3px;
+      }
     }
     // Media for .earn__heading-caption
     @media screen and (min-width: 480px) {
       @include font-media(14.5, 16.5);
+      padding-left: 42px;
     }
   }
   &-title {
@@ -104,6 +136,7 @@
   object-fit: contain;
   @media screen and (min-width: 480px) {
     max-height: 132px;
+    margin-bottom: 44px;
   }
 
 }
@@ -125,7 +158,8 @@
   text-transform: uppercase;
   line-height: 13px;
   @media screen and (min-width: 480px) {
-
+    @include font-media(13.5,19.5);
+    margin-top: 46px;
   }
 }
 
@@ -134,6 +168,11 @@
   margin-bottom: 30px;
   padding: 0;
   list-style: none;
+  @media screen and (min-width: 480px) {
+    @include font-media(13.5,19.5);
+    margin-top: 23px;
+    margin-bottom: 44px;
+  }
 }
 
 .earn__list-item {
@@ -150,6 +189,15 @@
     width: 5px;
     height: 5px;
     background: #000;
+    @media screen and (min-width: 480px) {
+      width: 8px;
+      height: 8px;
+      left: 18px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    padding-left: 36px;
+    max-width: 420px;
   }
 }
 
@@ -164,6 +212,10 @@
     font-family: $acrom-bold;
     letter-spacing: 0px;
   }
+  @media screen and (min-width: 480px) {
+    @include font-media(13.5,19.5);
+    margin-bottom: 24px;
+  }
 }
 
 .earn__lead {
@@ -175,4 +227,8 @@
   color: rgb(255, 107, 8);
   line-height: 13px;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    @include font-media(13.5,19.5);
+    max-width: 296px;
+  }
 }
