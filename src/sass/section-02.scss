@@ -10,6 +10,22 @@
 // section padding top & bottom
 .section-02 {
   padding: 0 12px 28px 12px;
+    // Media for .section-02
+    @media screen and (min-width: 480px) {
+      padding: 0 18px 38px 18px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 0 64px 32px 64px;
+    }
+    @media screen and (min-width: 960px) {
+      padding: 0 80px 42px 80px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 244px 60px 244px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 0 292px 72px 18px;
+    }
 }
 
 // Heading for section
@@ -32,6 +48,11 @@
       width: 16px;
       height: 2px;
       background-color: #000;
+    }
+    // Media for .earn__heading-caption
+    @media screen and (min-width: 480px) {
+      font-size: .9375rem;
+      line-height: 16.5px;
     }
   }
   &-title {
