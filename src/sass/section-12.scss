@@ -32,6 +32,7 @@
   font-size: 9px;
   padding-left: 28px;
   line-height: 14px;
+  
 
   &::before{
     content: '';
@@ -401,7 +402,7 @@
 
 @media (min-width:1440px){
   .container{
-    max-width: 827px;
+    max-width: 1440px;
   }
 
   .section-12{
