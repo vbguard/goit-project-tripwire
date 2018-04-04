@@ -2375,6 +2375,10 @@ input[type="radio"].visually-hidden {
   height: 5px;
 }
 
+body {
+  background-color: red;
+}
+
 @media only screen and (min-width: 480px) {
   .container {
     max-width: 480px;
