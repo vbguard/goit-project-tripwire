@@ -1,0 +1,108 @@
+// Valeriy section 06-08 in one file for 320 media
+.title-underlining {
+  font-family: $acrom-bold;
+}
+
+%header-title {
+  font-family: $acrom-extrabold;
+  color: $primary-black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.wrapper-section-six__container,
+.wrapper-section-seven__container,
+.wrapper-section-eight__container {
+  max-width: 1440px;
+  min-width: 320px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-header {
+  background-color: $primary-white;
+  margin-right: auto;
+  margin-left: auto;
+  &__title {
+    @extend %header-title;
+  }
+  &__text {
+    font-family: $acrom-medium;
+    color: $primary-black;
+    line-height: 1.444;
+    position: relative;
+  }
+  &__text::before {
+    content: ' ';
+    display: block;
+    background-color: $primary-black;
+    position: absolute;
+  }
+}
+
+.section-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-items {
+  list-style: none;
+  background-color: $primary-white;
+  &__item-title {
+    font-family: $acrom-extrabold;
+    color: $primary-black;
+    font-weight: bold;
+    line-height: 1.3;
+    position: relative;
+  }
+  &__item-title--pseudo::before {
+    content: " ";
+    display: block;
+    background-color: $primary-black;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: -18px;
+  }
+  &__item-text {
+    font-family: $acrom;
+    color: $text-color;
+    line-height: 1.5;
+  }
+}
+
+.section-information {
+  background-color: $primary-white;
+  margin-right: auto;
+  margin-left: auto;
+  &__title {
+    font-family: $acrom-extrabold;
+    color: $primary-white;
+    font-weight: bold;
+  }
+  &__text-title {
+    font-family: $acrom-bold;
+    color: $primary-black;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__text {
+    font-family: $acrom;
+    color: $text-color;
+    line-height: 1.444;
+    text-align: left;
+  }
+}
+
+.inform-word {
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.text-hidden {
+  color: $primary-white;
+}
