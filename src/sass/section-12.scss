@@ -1,15 +1,10 @@
-.container{
-  max-width: 320px;
-  margin: auto;
-}
-
 .section-12__wrapper{
   background-color: white;
 }
 
 .section-12{
   text-align: center;
-  padding: 14px 62px 22px 62px;
+  padding: 14px 0 22px 0;
 }
 
 .section-12__header{ 
@@ -105,12 +100,8 @@
 // ------------------------------------------480
 
 @media (min-width:480px){
-  .container{
-    max-width: 480px;
-  }
-
   .section-12{    
-    padding: 20px 94px 32px 94px;
+    padding: 20px 0 32px 0;
   }
 
   .section-12__header{ 
@@ -173,10 +164,6 @@
 
 // ------------------------------------------768
 @media (min-width:768px){
-  .container{
-    max-width: 768px;
-  }
-
   .section-12{
     max-height: 441px;
     display: flex;
@@ -184,7 +171,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 56px 64px; 
+    padding: 54px 0; 
   }
 
   .section-12__header{ 
@@ -256,12 +243,8 @@
 
 // ------------------------------------------960
 @media (min-width:960px){
-  .container{
-    max-width: 960px;
-  }
-
   .section-12{
-    padding: 72px 80px 68px 80px;
+    padding: 70px 0;
     max-height: 552px;
   }
 
@@ -328,13 +311,9 @@
 
 // ----------------------------1200
 @media (min-width:1200px){
-  .container{
-    max-width: 1200px;
-  }
-
   .section-12{
     max-height: 494px;
-    padding: 64px 234px;
+    padding: 64px ;
 
     &__header{ 
       padding-bottom: 28px;
@@ -400,12 +379,9 @@
 // ------------------------------1440
 
 @media (min-width:1440px){
-  .container{
-    max-width: 1440px;
-  }
-
   .section-12{
     max-height: 590px;
+    padding: 76px 0;
   }
 
   .section-12__header{ 
