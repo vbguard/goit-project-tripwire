@@ -59,3 +59,18 @@ typings/
 
 # not add MacOS System file
 .DS_Store
+
+# not add to remote repo
+build/
+src/html/
+src/index.html
+src/sass/normalize.scss
+src/sass/_reset.scss
+src/sass/_helpers.scss
+src/sass/_variables.scss
+src/sass/mixin.scss
+src/sass/main.scss
+src/sass/styles.scss
+src/sass/fonts.scss
+src/sass/mixin.scss
+

@@ -44,5 +44,7 @@
     "run-sequence": "^2.2.1",
     "stylelint": "^9.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
 }

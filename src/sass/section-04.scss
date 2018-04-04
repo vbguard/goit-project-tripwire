@@ -1,0 +1,146 @@
+// Main - Section-04
+// section padding top & bottom
+.section-04 {
+  padding: 2px 12px 26px 12px;
+}
+
+// Article
+.about-it__article {
+  text-align: center;
+}
+
+// Image in article
+.about-it__block-image {
+  max-height: 115px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.about-it__image {
+  transform: translateY(-48px) scale(1.02);
+}
+
+// article title
+.about-it__title {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 170px;
+  @include heading-style ($acrom-extrabold, 12px, 16px, $primary-color, uppercase, left) &--bgc {
+    display: inline-block;
+    padding: 0 2px;
+    background-color: rgb(0, 0, 0);
+    color: $primary-color;
+    text-align: center;
+    line-height: 12px;
+  }
+}
+
+.about-it__subtitle {
+  font-size: 9px;
+  font-family: $acrom-bold;
+  color: rgb(0, 0, 0);
+  line-height: 13px;
+  text-align: left;
+}
+
+.about-it__text {
+  display: inline-block;
+  font-size: 9px;
+  font-family: $acrom-regular;
+  color: rgb(63, 65, 68);
+  line-height: 14px;
+  text-align: left;
+  &--bgc {
+    padding: 0 2px 0 3px;
+    background-color: rgb(22, 235, 254);
+  }
+}
+
+// Heading for section
+.about-it__heading {
+  max-width: 197px;
+  margin: auto;
+  text-align: center;
+  &-caption {
+    margin: 0;
+    padding-left: 18px;
+    position: relative;
+    text-transform: initial;
+    @include heading-style ($acrom-medium, 9px, 13px, #000, initial, left);
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+  &-title {
+    margin: 0;
+    margin-bottom: 28px;
+    @include heading-style ($acrom-extrabold, 12px, 16px, #000, uppercase, left);
+    &--bold {
+      font-family: $acrom-bold;
+    }
+    &--letter {
+      letter-spacing: -0.1px;
+    }
+    &--bgc {
+      display: inline-block;
+      padding: 0 5px;
+      background-color: rgb(0, 0, 0);
+      color: $primary-color;
+      min-width: 182px;
+      text-align: center;
+    }
+  }
+}
+
+// about-it list
+.about-it__list {
+  margin: 0;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-it__items {
+  margin-bottom: 18px;
+  padding-left: 26px;
+  max-width: 274px;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    background-color: rgb(0, 0, 0);
+    width: 3.1px;
+    height: 3.1px;
+  }
+  &:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+}
+
+.about-it__item-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 9px;
+  font-family: $acrom-extrabold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 13px;
+}
+
+.about-it__item-descr {
+  margin: 0;
+  font-size: 9px;
+  font-family: $acrom-regular;
+  color: rgb(0, 0, 0);
+  line-height: 13px;
+}

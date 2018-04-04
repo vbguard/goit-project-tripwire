@@ -1,0 +1,114 @@
+// Main - Section-03
+// section padding top & bottom
+.section-03 {
+  padding: 20px 12px 32px 12px;
+}
+
+// Heading for section
+.facts__heading {
+  max-width: 194px;
+  margin: auto;
+  text-align: center;
+  &-caption {
+    margin: 0;
+    padding-left: 26px;
+    position: relative;
+    text-transform: initial;
+    @include heading-style ($acrom-medium, 9px, 13px, #000, initial, left);
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 1.5px;
+      background-color: #000;
+    }
+  }
+  &-title {
+    margin: 0;
+    margin-bottom: 28px;
+    @include heading-style ($acrom-extrabold, 12px, 16px, #000, uppercase, left);
+    &--bold {
+      font-family: $acrom-bold;
+    }
+    &--letter {
+      letter-spacing: -0.1px;
+    }
+    &--bgc {
+      display: inline-block;
+      background-color: rgb(0, 0, 0);
+      color: $primary-color;
+      min-width: 182px;
+      text-align: center;
+    }
+  }
+}
+
+// Facts List
+.facts__list {
+  margin: 0;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.facts__items {
+  margin-bottom: 20px;
+  padding-left: 26px;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: inline-block;
+    content: '';
+    background-color: rgb(255, 107, 8);
+    width: 6.3px;
+    height: 6.45px;
+  }
+  &:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+  &:nth-child(2) > .data > .data__subtitle, &:nth-child(3) > .data > .data__subtitle {
+    margin-bottom: 0;
+  }
+}
+
+// In list items data
+.data {
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: $acrom-extrabold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1;
+    &--size {
+      font-size: 8.5px;
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 9px;
+    font-family: $acrom-medium;
+    color: rgb(0, 0, 0);
+    line-height: 13px;
+    &--bgc {
+      display: inline-block;
+      padding: 0 2px;
+      text-align: center;
+      background-color: rgb(22, 235, 254);
+    }
+  }
+  &__descr {
+    margin: 0;
+    font-size: 9px;
+    font-family: $acrom-regular;
+    color: rgb(0, 0, 0);
+    line-height: 13px;
+  }
+}
