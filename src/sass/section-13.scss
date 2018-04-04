@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.container {
-  margin-bottom: 26px;
-}
-
 .section-13 {
   display: flex;
   flex-direction: column;
@@ -83,9 +79,6 @@
 
 // ------------------------------------------480
 @media (min-width:480px) {
-  .container {
-    max-width: 292px;
-  }
   .section-13__title {
     font-size: 18px;
     width: 216px;
@@ -124,9 +117,6 @@
 
 // ------------------------------------------768
 @media (min-width:768px) {
-  .container {
-    max-width: 639px;
-  }
   .section-13 {
     flex-direction: row;
     justify-content: space-between;
@@ -171,9 +161,6 @@
 
 // ------------------------------------------960
 @media (min-width:960px) {
-  .container {
-    max-width: 772px;
-  }
   .section-13 {
     height: 218px;
   }

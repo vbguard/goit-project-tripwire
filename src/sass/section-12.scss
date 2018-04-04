@@ -104,10 +104,6 @@
 // ------------------------------------------480
 
 @media (min-width:480px){
-  .container{
-    max-width: 292px;
-  }
-
   .section-12__header{
     padding-bottom: 40px;
     padding-top: 20px;
@@ -167,10 +163,6 @@
 
 // ------------------------------------------768
 @media (min-width:768px){
-  .container{
-    max-width: 639px;
-  }
-
   .section-12{
     height: 330px;
     align-items: flex-start;
@@ -244,10 +236,6 @@
 
 // ------------------------------------------960
 @media (min-width:960px){
-  .container{
-    max-width: 772px;
-  }
-
   .section-12{
     height: 413px;
   }
@@ -311,10 +299,6 @@
 
 // ----------------------------1200
 @media (min-width:1200px){
-  .container{
-    max-width: 689px;
-  }
-
   .section-12{
     height: 370px;
 
@@ -381,10 +365,6 @@
 // ------------------------------1440
 
 @media (min-width:1440px){
-  .container{
-    max-width: 827px;
-  }
-
   .section-12{
     height: 442px;
   }
