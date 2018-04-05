@@ -2220,7 +2220,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section {
-  padding: 20px 88px;
+  padding: 20px 0 22px;
 }
 
 .received {
@@ -2261,7 +2261,7 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
   text-align: right;
   line-height: 1.2;
-  width: 26px;
+  width: 24px;
 }
 
 .received__item:not(:last-child) {
@@ -2290,21 +2290,24 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
+.received__button-block {
+  text-align: center;
+}
+
 .received__description {
-  display: inline-block;
+  display: block;
   font-size: 9px;
   font-family: "Acrom-Medium", sans-serif;
   color: #ff6b08;
   line-height: 1.444;
-  text-align: left;
+  text-align: center;
   margin-bottom: 22px;
   position: relative;
 }
 
 .received__description::before {
-  content: "";
   display: inline-block;
-  position: absolute;
+  content: "";
   background-color: black;
   width: 1px;
   height: 9.916px;
@@ -2341,6 +2344,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.section {
+  padding: 22px 0 30px;
+}
+
 .description__course {
   display: flex;
   flex-direction: column;
@@ -2371,7 +2378,7 @@ input[type="radio"].visually-hidden {
 
 .description__subtitle::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: black;
   width: 14px;
@@ -2459,7 +2466,7 @@ input[type="radio"].visually-hidden {
 
 .description__item::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   width: 7px;
   height: 34px;
@@ -2556,7 +2563,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section {
-  padding: 30px 68px;
+  padding: 30px 0 20px;
 }
 
 .bonus {
@@ -2593,7 +2600,7 @@ input[type="radio"].visually-hidden {
 
 .bonus__subtitle::before {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: black;
   width: 14px;
@@ -3679,7 +3686,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 30px 134px;
+    padding: 30px 0 34px;
   }
 
   .received__title {
@@ -3724,6 +3731,10 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
     width: 215px;
     height: 46px;
+  }
+
+  .section {
+    padding: 34px 0 44px;
   }
 
   .description__title {
@@ -3805,7 +3816,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 44px 56px;
+    padding: 44px 0 30px;
   }
 
   .bonus__meta {
@@ -4081,7 +4092,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 42px 64px;
+    padding: 44px 0 48px;
   }
 
   .received {
@@ -4162,7 +4173,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 48px 64px;
+    padding: 48px 0;
   }
 
   .description__course {
@@ -4300,7 +4311,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 48px 64px;
+    padding: 48px 0;
   }
 
   .bonus {
@@ -4969,7 +4980,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 54px 80px;
+    padding: 54px 0 60px;
   }
 
   .received__content {
@@ -5026,7 +5037,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 54px 80px;
+    padding: 60px 0;
   }
 
   .description__course {
@@ -5138,7 +5149,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 60px 80px;
+    padding: 60px 0;
   }
 
   .bonus__meta {
@@ -5873,7 +5884,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 62px 234px;
+    padding: 62px 0;
   }
 
   .received__content {
@@ -5927,7 +5938,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 62px 234px;
+    padding: 62px 0;
   }
 
   .description__title {
@@ -6007,7 +6018,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 60px 244px;
+    padding: 62px 0;
   }
 
   .bonus__meta {
@@ -6697,7 +6708,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 76px 282px;
+    padding: 76px 0;
   }
 
   .received__content {
@@ -6752,7 +6763,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 76px 282px;
+    padding: 76px 0;
   }
 
   .description__title {
@@ -6840,7 +6851,7 @@ input[type="radio"].visually-hidden {
   }
 
   .section {
-    padding: 72px 292px;
+    padding: 76px 0;
   }
 
   .bonus__meta {
