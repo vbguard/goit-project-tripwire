@@ -2,6 +2,11 @@
   font-size: 13.5px;
   line-height: 19.5px;
 }
+
+@mixin font-text-8 () {
+  font-size: 8px;
+  line-height: 13.5px;
+}
 // Main - Section-03
 // section padding top & bottom
 .section-03 {
@@ -12,7 +17,7 @@
     padding-bottom: 48px;
   }
   @media screen and (min-width: 768px) {
-    padding-bottom: 32px;
+    padding-bottom: 52px;
   }
   @media screen and (min-width: 960px) {
     padding-bottom: 42px;
@@ -22,6 +27,26 @@
   }
   @media screen and (min-width: 1440px) {
     padding-bottom: 72px;
+  }
+}
+.facts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: relative;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 200px;
+      height: 110px;
+      position: absolute;
+      bottom: 28 px;
+      right: -10px;
+      background-image: url('../img/bg-analityc.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
+      z-index: -1;
+    }
   }
 }
 
@@ -34,7 +59,9 @@
     max-width: 296px;
   }
   @media screen and (min-width: 768px) {
-
+    display: inline-block;
+    flex: 0 0 220px;
+    margin: 0;
   }
   @media screen and (min-width: 960px) {
 
@@ -56,7 +83,9 @@
       @include font-text-13();
     }
     @media screen and (min-width: 768px) {
-
+      @include font-media(10, 17);
+      padding-left: 44px;
+      max-width: 160px;
     }
     @media screen and (min-width: 960px) {
 
@@ -82,7 +111,9 @@
         top: 9px;
       }
       @media screen and (min-width: 768px) {
-
+        width: 28px;
+        height: 3.5px;
+        top: 6px;
       }
       @media screen and (min-width: 960px) {
 
@@ -105,7 +136,8 @@
       @include font-media (18,24);
     }
     @media screen and (min-width: 768px) {
-
+      @include font-media(27, 33.5);
+      text-align: left;
     }
     @media screen and (min-width: 960px) {
 
@@ -139,10 +171,14 @@
   padding: 0;
   list-style: none;
   @media screen and (min-width: 480px) {
-
+    margin-top: 42px;
   }
   @media screen and (min-width: 768px) {
-
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 320px;
   }
   @media screen and (min-width: 960px) {
 
@@ -159,11 +195,31 @@
   margin-bottom: 20px;
   padding-left: 26px;
   position: relative;
+  &:nth-last-child(-n+1){
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 480px) {
     margin-bottom: 28px;
     padding-left: 38px;
+    &:nth-last-child(-n+1){
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) {
+    flex: 0 0 150px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    &:nth-child(2) {
+      order: 4;
+      margin-bottom: 0;
+    }
+    &:nth-child(3) {
+      order: 3;
+      margin-bottom: 0;
+    }
+    &:nth-last-child(-n+1) {
+      margin-bottom: 20px;
+    }
 
   }
   @media screen and (min-width: 960px) {
@@ -190,7 +246,7 @@
       left: 15px;
     }
     @media screen and (min-width: 768px) {
-
+      display: none;
     }
     @media screen and (min-width: 960px) {
 
@@ -225,7 +281,8 @@
       margin-bottom: 12px;
     }
     @media screen and (min-width: 768px) {
-
+      font-size: 16.5px;
+      margin-bottom: 10px;
     }
     @media screen and (min-width: 960px) {
 
@@ -242,7 +299,7 @@
         font-size: 13px;
       }
       @media screen and (min-width: 768px) {
-
+        font-size: 9px;
       }
       @media screen and (min-width: 960px) {
 
@@ -267,7 +324,9 @@
       margin-bottom: 18px;
     }
     @media screen and (min-width: 768px) {
-
+      font-size: 7.5px;
+      line-height: 13.5px;
+      margin-bottom: 12px;
     }
     @media screen and (min-width: 960px) {
 
@@ -279,7 +338,6 @@
 
     }
     &--bgc {
-      display: inline-block;
       padding: 0 2px;
       text-align: center;
       background-color: rgb(22, 235, 254);
@@ -295,7 +353,8 @@
       @include font-text-13();
     }
     @media screen and (min-width: 768px) {
-
+      font-size: 8px;
+      line-height: 12px;
     }
     @media screen and (min-width: 960px) {
 
