@@ -1,7 +1,8 @@
 // Section 05
 // section padding top & bottom
 .section-05 {
-  padding: 10px 12px 26px 12px;
+  padding-top: 10px;
+  padding-bottom: 26px;
   @media screen and (min-width: 480px) {
     padding-top: 14px;
     padding-bottom: 44px;
@@ -17,10 +18,12 @@
   @media screen and (min-width: 1200px) {
     padding-top: 64px;
     padding-bottom: 64px;
+    min-height: 487px;
   }
   @media screen and (min-width: 1440px) {
     padding-top: 76px;
     padding-bottom: 76px;
+    min-height: 584px;
   }
 }
 // Heading for section
@@ -37,13 +40,13 @@
     vertical-align: top;
   }
   @media screen and (min-width: 960px) {
-    max-width: 274px;
+    max-width: 214px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 245px;
+    max-width: 202px;
   }
   @media screen and (min-width: 1440px) {
-    max-width: 292px;
+    max-width: 234px;
   }
   &-caption {
     margin: 0;
@@ -61,18 +64,15 @@
       @include font-media (9,13.5);
     }
     @media screen and (min-width: 960px) {
-      padding-left: 44px;
-      max-width: 204px;
+      padding-left: 58px;
       @include font-media (11,16.5);
     }
     @media screen and (min-width: 1200px) {
-      padding-left: 44px;
-      max-width: 184px;
+      padding-left: 53px;
       @include font-media (10,15);
     }
     @media screen and (min-width: 1440px) {
-      padding-left: 44px;
-      max-width: 220px;
+      padding-left: 63px;
       @include font-media (12,18);
     }
     &::before {
@@ -131,20 +131,22 @@
     }
     @media screen and (min-width: 768px) {
       max-width: 160px;
+      margin: 0;
       margin-bottom: 36px;
       @include font-media (27, 33.5);
       text-align: left;
     }
     @media screen and (min-width: 960px) {
-      margin-bottom: 30px;
+      max-width: 200px;
+      margin-bottom: 44px;
       @include font-media (33.5, 42);
     }
     @media screen and (min-width: 1200px) {
-      margin-bottom: 26px;
+      margin-bottom: 40px;
       @include font-media (30, 37.5);
     }
     @media screen and (min-width: 1440px) {
-      margin-bottom: 32px;
+      margin-bottom: 48px;
       @include font-media (36, 45);
     }
     &--bold {
@@ -169,16 +171,22 @@
     width: 420px;
     height: 304px;
     margin: 0;
-    margin-left: 24px;
+    margin-left: 48px;
   }
   @media screen and (min-width: 960px) {
-
+    width: 526px;
+    height: 380px;
+    margin-left: 60px;
   }
   @media screen and (min-width: 1200px) {
-
+    width: 469px;
+    height: 339px;
+    margin-left: 41px;
   }
   @media screen and (min-width: 1440px) {
-
+    width: 562.5px;
+    height: 406.5px;
+    margin-left: 59px;
   }
 }
 
@@ -197,13 +205,16 @@
     height: 304px;
   }
   @media screen and (min-width: 960px) {
-
+    width: 526px;
+    height: 380px;
   }
   @media screen and (min-width: 1200px) {
-
+    width: 469px;
+    height: 339px;
   }
   @media screen and (min-width: 1440px) {
-
+    width: 562.5px;
+    height: 406.5px;
   }
 }
 
@@ -221,13 +232,16 @@
     height: 304px;
   }
   @media screen and (min-width: 960px) {
-
+    width: 526px;
+    height: 380px;
   }
   @media screen and (min-width: 1200px) {
-
+    width: 469px;
+    height: 339px;
   }
   @media screen and (min-width: 1440px) {
-
+    width: 562.5px;
+    height: 406.5px;
   }
 }
 
