@@ -129,7 +129,7 @@
     justify-content: space-between;
     position: absolute;
     top: 0;
-    width: 34%;
+    width: 36%;
     right: 20%;
   }
 }
@@ -208,7 +208,7 @@
     padding: 0;
   }
   @include mq("desktop-wide") {
-    font-size: 16px;
+    font-size: 10.5px;
     margin: 0;
     padding: 0;
   }
