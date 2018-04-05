@@ -1,32 +1,48 @@
-.promo {
-  padding: 0 13px 20px;
+.section-11 {
+  padding-top: 27px;
+  padding-bottom: 32px;
 
   @include mq("phone-wide") {
-    padding: 0 17px 20px;
+    padding-top: 41px;
+    padding-bottom: 33px;
   }
   @include mq("tablet") {
-    padding: 0 68px;
+    padding-top: 50px;
+  }
+  @include mq("tablet-wide") {
+    padding-top: 64px;
+  }
+  @include mq("desktop") {
+    padding-top: 60px;
+  }
+  @include mq("desktop-wide") {
+    padding-top: 74px;
+    padding-bottom: 75px;
+  }
+}
+
+.promo {
+  @include mq("phone-wide") {
+  }
+  @include mq("tablet") {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
   }
   @include mq("tablet-wide") {
-    padding: 0 80px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
   }
   @include mq("desktop") {
-    padding: 0 244px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
   }
   @include mq("desktop-wide") {
-    padding: 0 294px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -83,7 +99,6 @@
 
 .promo__discription {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     display: flex;
@@ -213,40 +228,35 @@
   margin-top: 20px;
 
   @include mq("phone-wide") {
-    width: 60%;
     font-size: 13px;
   }
   @include mq("tablet") {
-    width: 60%;
     font-size: 9px;
     position: absolute;
     width: 25%;
     bottom: 0;
-    left: 11%;
+    left: 3%;
   }
   @include mq("tablet-wide") {
-    width: 60%;
     font-size: 11px;
     position: absolute;
     width: 25%;
     bottom: 0;
-    left: 11%;
+    left: 3%;
   }
   @include mq("desktop") {
-    width: 60%;
     font-size: 10px;
     position: absolute;
-    width: 16%;
+    width: 25%;
     bottom: 0;
-    left: 22%;
+    left: 3%;
   }
   @include mq("desktop-wide") {
-    width: 60%;
+    width: 25%;
     font-size: 12px;
     position: absolute;
-    width: 16%;
     bottom: 0;
-    left: 22%;
+    left: 3%;
   }
 
   &::before {
@@ -263,6 +273,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
+  margin-top: 20px;
 
   @include mq("phone-wide") {
     width: 60%;
@@ -270,25 +281,21 @@
   }
   @include mq("tablet") {
     margin: 65px 0 0 0;
-    padding: 0 68px;
     display: flex;
     width: 100%;
     position: relative;
   }
   @include mq("tablet-wide") {
-    padding: 0 80px;
     margin: 65px 0 0 0;
     width: 100%;
     position: relative;
   }
   @include mq("desktop") {
-    padding: 0 244px;
     margin: 65px 0 0 0;
     width: 100%;
     position: relative;
   }
   @include mq("desktop-wide") {
-    padding: 0 294px;
     margin: 65px 0 0 0;
     width: 100%;
     position: relative;
@@ -297,7 +304,6 @@
 
 .list__item {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     flex-basis: 25%;
@@ -321,7 +327,6 @@
 
 .list__item:nth-child(1) {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     flex: 2 0 0;
@@ -339,7 +344,6 @@
 
 .list__item:nth-child(2) {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     flex: 2 0 0;
@@ -357,7 +361,6 @@
 
 .list__item:nth-child(3) {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     flex: 2 0 0;
@@ -375,7 +378,6 @@
 
 .list__item:nth-child(4) {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     flex: 2 0 0;
@@ -395,7 +397,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  
+
   &:first-child {
     &::before {
       content: "";
@@ -630,7 +632,6 @@
     position: absolute;
     top: 0;
     right: 18%;
-  
 
     @include mq("phone-wide") {
       position: absolute;
@@ -836,7 +837,7 @@
   }
   @include mq("tablet") {
     font-size: 9px;
-    width: 78%;
+    width: 77%;
   }
   @include mq("tablet-wide") {
     font-size: 9px;
@@ -854,59 +855,42 @@
 
 .rewards__text--width {
   width: 80%;
-
-  @include mq("phone-wide") {
-
-  }
-  @include mq("tablet") {
- 
-  }
-  @include mq("tablet-wide") {
-
-  }
-  @include mq("desktop") {
-  
-  }
-  @include mq("desktop-wide") {
-    
-  }
 }
 
-.promo__image {
+.promo__image-block {
   @include mq("phone-wide") {
-
   }
   @include mq("tablet") {
     padding: 0;
     margin: 0;
     align-self: flex-end;
     padding-top: 78px;
-    flex-basis: 55%;
+    width: 55%;
   }
   @include mq("tablet-wide") {
     padding: 0;
     margin: 0;
     align-self: flex-end;
     padding-top: 78px;
-    flex-basis: 55%;
+    width: 60%;
   }
   @include mq("desktop") {
     padding: 0;
     margin: 0;
     align-self: flex-end;
     padding-top: 78px;
-    flex-basis: 55%;
+    width: 55%;
   }
   @include mq("desktop-wide") {
     padding: 0;
     margin: 0;
     align-self: flex-end;
     padding-top: 78px;
-    flex-basis: 55%;
+    width: 55%;
   }
 }
 
-.list__item:last-child{
+.list__item:last-child {
   margin-bottom: 0;
   margin-right: 0;
 }

@@ -2,13 +2,9 @@
   background-color: white;
 }
 
-.container{
-  max-width: 320px;
-}
-
 .section-14{
   text-align: center;
-  padding: 40px 40px 30px 40px;
+  padding: 40px 0 30px 0;
 }
 
 .section-14__main-block{
@@ -21,6 +17,7 @@
   max-height: 184px;  
   object-fit: cover; 
   display: block;
+  margin: auto;
 }
 
 .section-14__text--orange{
@@ -97,6 +94,7 @@
   font-family: "Acrom-ExtraBold",serif;
   font-size: 9px;
   max-width: 236px;
+  margin: auto;
   margin-bottom: 24px;
   text-transform: uppercase;
   text-align: left;
@@ -174,12 +172,8 @@
 // ------------------------------------------480
 
 @media (min-width:480px){
-  .container{
-    max-width: 480px;
-  }
-
   .section-14{
-    padding: 30px 62px 42px 62px;
+    padding: 30px 0 42px 0;
   }
 
   .section-14__image{
@@ -270,12 +264,8 @@
 
 // ------------------------------------------768
 @media (min-width:768px){
-  .container{
-    max-width: 768px;
-  }
-
   .section-14{
-    padding: 56px 64px 54px 64px;
+    padding: 54px 0;
     align-items: flex-start;
   }
 
@@ -340,7 +330,7 @@
   .section-14__list-title{
     font-size: 13.5px;
     max-width: 112px;
-    margin-bottom: 0px;
+    margin: 0px;
   }
   
   .section-14__list{
@@ -389,12 +379,8 @@
 
 // ------------------------------------------960
 @media (min-width:960px){
-  .container{
-    max-width: 960px;
-  }
-
   .section-14{
-    padding: 70px 80px 68px 80px;
+    padding: 70px 0;
   }
 
   .section-14__main-block{
@@ -479,12 +465,8 @@
 
 // ----------------------------1200
 @media (min-width:1200px){
-  .container{
-    max-width: 1200px;
-  }
-
   .section-14{
-    padding: 70px 274px 64px 274px;
+    padding: 64px 0;
   }
 
   .section-14__main-block{
@@ -560,12 +542,8 @@
 // ------------------------------1440
 
 @media (min-width:1440px){
-  .container{
-    max-width: 1440px;
-  }
-
   .section-14{
-    padding: 74px 282px 76px 282px;
+    padding: 76px 0;
   }
 
   .section-14__main-block{
