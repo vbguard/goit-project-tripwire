@@ -28,23 +28,28 @@
   text-transform: uppercase;
   line-height: 1.333;
   text-align: left;
-  padding: 0 30px;
+  margin: auto;
   margin-bottom: 16px;
+  max-width: 128px;
 
   @include mq("phone-wide") {
     font-size: 18px;
+    max-width: 190px;
   }
   @include mq("tablet") {
     font-size: 26.92px;
+    max-width: 200px;    
   }
   @include mq("tablet-wide") {
     font-size: 33.65px;
+    max-width: 242px;
   }
   @include mq("desktop") {
     font-size: 30px;
   }
   @include mq("desktop-wide") {
     font-size: 36px;
+    max-width: 260px;
   }
 }
 
@@ -212,7 +217,7 @@
 @media (max-width: 768px) {
   .section-09__header {
     background-position: bottom left;
-    margin: 0 60px;
+    margin: 0;
     padding-bottom: 40px;
   }
 }
