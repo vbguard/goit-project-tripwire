@@ -8,16 +8,20 @@
     padding-bottom: 36px;
   }
   @media screen and (min-width: 768px) {
+    padding-top: 32px;
     padding-bottom: 32px;
   }
   @media screen and (min-width: 960px) {
+    padding-top: 42px;
     padding-bottom: 42px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 60px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   @media screen and (min-width: 1440px) {
-    padding-bottom: 72px;
+    padding-top: 76px;
+    padding-bottom: 76px;
   }
 }
 

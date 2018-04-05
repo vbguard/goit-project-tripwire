@@ -25,13 +25,19 @@
       left: -95px;
     }
     @media screen and (min-width: 960px) {
-      padding-bottom: 42px;
+      top: 385px;
+      font-size: 175px;
+      left: -115px;
     }
     @media screen and (min-width: 1200px) {
-      padding-bottom: 60px;
+      top: 350px;
+      font-size: 156px;
+      left: -95px;
     }
     @media screen and (min-width: 1440px) {
-      padding-bottom: 72px;
+      top: 420px;
+      font-size: 187.5px;
+      left: -120px;
     }
   }
   &::before {
@@ -60,13 +66,22 @@
       background-position: 60% 50%;
     }
     @media screen and (min-width: 960px) {
-      padding-bottom: 42px;
+      top: 0px;
+      width: 321.1px;
+      height: 300px;
+      background-position: 60% 50%;
     }
     @media screen and (min-width: 1200px) {
-      padding-bottom: 60px;
+      top: 0px;
+      width: 286.5px;
+      height: 267.5px;
+      background-position: 60% 50%;
     }
     @media screen and (min-width: 1440px) {
-      padding-bottom: 72px;
+      top: 0px;
+      width: 343.5px;
+      height: 321px;
+      background-position: 60% 50%;
     }
   }
 }
@@ -85,10 +100,10 @@
       padding-bottom: 42px;
     }
     @media screen and (min-width: 1200px) {
-      padding-bottom: 60px;
+      padding-bottom: 64px;
     }
     @media screen and (min-width: 1440px) {
-      padding-bottom: 72px;
+      padding-bottom: 76px;
     }
 }
 // Box position on tablet -> desktop
@@ -145,18 +160,12 @@
   }
   @media screen and (min-width: 960px) {
     max-width: 280px;
-    text-align: left;
-    margin: 0;
   }
   @media screen and (min-width: 1200px) {
     max-width: 252px;
-    text-align: left;
-    margin: 0;
   }
   @media screen and (min-width: 1440px) {
     max-width: 300px;
-    text-align: left;
-    margin: 0;
   }
 
   &-caption {
@@ -234,16 +243,16 @@
       @include font-media(20.5, 25.5);
     }
     @media screen and (min-width: 768px) {
-      @include font-media(27, 35);
+      @include font-media(25, 30);
     }
     @media screen and (min-width: 960px) {
-      @include font-media(33.5, 42);
+      @include font-media(30, 39);
     }
     @media screen and (min-width: 1200px) {
-      @include font-media(30, 37.5);
+      @include font-media(28, 36);
     }
     @media screen and (min-width: 1440px) {
-      @include font-media(36, 45);
+      @include font-media(34, 42);
     }
     &--bold {
       font-family: $acrom-bold;
@@ -357,10 +366,7 @@
     justify-content: flex-start;
   }
   @media screen and (min-width: 1440px) {
-    display: flex;
     flex: 0 0 636px;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -395,30 +401,30 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
     padding-left: 0;
-    flex: 0 0 22%;
+    flex: 0 0 139px;
     &:nth-last-child(-n+4) {
       margin-bottom: 0;
     }
   }
   @media screen and (min-width: 960px) {
     margin-bottom: 24px;
-    max-width: 420px;
+    flex: 0 0 180px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     padding-right: 16px;
     flex: 0 0 178px;
-    &:nth-child(6){ order:2 }
+    &:nth-child(2){ order:7 }
+    &:nth-child(3){ order:5 }
     &:nth-child(4){ order:3 }
     &:nth-child(5){ order:4 }
-    &:nth-child(3){ order:5 }
-    &:nth-child(8){ order:6 }
-    &:nth-child(2){ order:7 }
+    &:nth-child(6){ order:2 }
     &:nth-child(7){ order:8 }
+    &:nth-child(8){ order:6 }
   }
   @media screen and (min-width: 1440px) {
-    margin-bottom: 24px;
-    max-width: 197px;
+    margin-bottom: 22px;
+    flex: 0 0 212px;
   }
 
 }
