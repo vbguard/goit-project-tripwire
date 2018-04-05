@@ -2,12 +2,43 @@
 // section padding top & bottom
 .section-05 {
   padding: 10px 12px 26px 12px;
+  @media screen and (min-width: 480px) {
+    padding-top: 14px;
+    padding-bottom: 44px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 960px) {
+    padding-bottom: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 72px;
+  }
 }
 // Heading for section
 .slider__heading {
   max-width: 198px;
   margin: auto;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    max-width: 297px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
   &-caption {
     margin: 0;
     padding-left: 26px;
@@ -15,6 +46,22 @@
     text-transform: initial;
     letter-spacing: -0.1px;
     @include heading-style ($acrom-medium, 9px, 13px, #000, initial, left);
+    @media screen and (min-width: 480px) {
+      padding-left: 38px;
+      @include font-text-13();
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
     &::before {
       position: absolute;
       left: 0;
@@ -24,6 +71,23 @@
       width: 13px;
       height: 1.5px;
       background-color: #000;
+      @media screen and (min-width: 480px) {
+        width: 19.5px;
+        height: 2.3px;
+        top: 8px;
+      }
+      @media screen and (min-width: 768px) {
+
+      }
+      @media screen and (min-width: 960px) {
+
+      }
+      @media screen and (min-width: 1200px) {
+
+      }
+      @media screen and (min-width: 1440px) {
+
+      }
     }
 
     &--bgc {
@@ -37,6 +101,25 @@
     margin-bottom: 28px;
     max-width: 137px ;
     @include heading-style ($acrom-extrabold, 12px, 16px, #000, uppercase, left);
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      margin: auto;
+      margin-bottom: 42px;
+      max-width: 200px;
+      @include font-media (18,24);
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
     &--bold {
       font-family: $acrom-bold;
     }
@@ -45,9 +128,27 @@
 
 .slider-box {
   position: relative;
-  max-width: 196px;
+  width: 196px;
+  height: 142px;
   margin: auto;
   margin-top: 26px;
+  @media screen and (min-width: 480px) {
+    width: 293px;
+    height: 212px;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .slider-comment {
@@ -56,6 +157,22 @@
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.15);
   width: 196px;
   height: 142px;
+  @media screen and (min-width: 480px) {
+    width: 293px;
+    height: 212px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .slider-content {
@@ -63,6 +180,22 @@
   width: 196px;
   height: 142px;
   margin: 0;
+  @media screen and (min-width: 480px) {
+    width: 293px;
+    height: 212px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 // Content for slider
@@ -71,11 +204,41 @@
   display: inline-block;
   vertical-align: top;
   padding: 12px 12px 12px 8px;
+  @media screen and (min-width: 480px) {
+
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .users-comment__image--box {
   width: 36px;
   height: 36px;
+  @media screen and (min-width: 480px) {
+
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .users-comment__data--title {
@@ -88,6 +251,21 @@
   text-transform: uppercase;
   line-height: 6.25px;
   text-align: left;
+  @media screen and (min-width: 480px) {
+
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .scrolling-text {
@@ -130,6 +308,21 @@
   color: rgb(63, 65, 68);
   line-height: 6.25px;
   text-align: left;
+  @media screen and (min-width: 480px) {
+
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 // slider control
@@ -144,6 +337,21 @@
     display: inline-block;
     max-width: 24px;
     list-style: none;
+    @media screen and (min-width: 480px) {
+
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
   }
 }
 
@@ -158,6 +366,21 @@
   background-color: rgb(0, 0, 0);
   cursor: pointer;
   z-index: 166;
+  @media screen and (min-width: 480px) {
+
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .slick-dots {
@@ -169,6 +392,21 @@
     display: inline-block;
     margin-right: 14px;
     line-height: 0.5;
+    @media screen and (min-width: 480px) {
+
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
     &:nth-last-child(1) {
       margin-right: 0;
     }

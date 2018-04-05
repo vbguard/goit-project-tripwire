@@ -3,11 +3,43 @@
 .section-04 {
   padding-top: 2px;
   padding-bottom: 26px;
+  @media screen and (min-width: 480px) {
+    padding-top: 4px;
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 960px) {
+    padding-bottom: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 72px;
+  }
 }
 
 // Article
 .about-it__article {
   text-align: center;
+  margin-bottom: 32px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 // Image in article
@@ -15,24 +47,74 @@
   max-height: 115px;
   margin-bottom: 22px;
   overflow: hidden;
+  @media screen and (min-width: 480px) {
+    max-height: 172.5px;
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .about-it__image {
   transform: translateY(-48px) scale(1.02);
+  @media screen and (min-width: 480px) {
+    transform: translateY(-70px) scale(1.02);
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 // article title
 .about-it__title {
   margin: 0;
+  margin: auto;
   margin-bottom: 20px;
   max-width: 170px;
-  @include heading-style ($acrom-extrabold, 12px, 16px, $primary-color, uppercase, left) &--bgc {
+  @include heading-style ($acrom-extrabold, 12px, 16px, $primary-color, uppercase, left)
+
+  @media screen and (min-width: 480px) {
+    @include font-media (18,24);
+    max-width: 256px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
+  &--bgc {
     display: inline-block;
     padding: 0 2px;
     background-color: rgb(0, 0, 0);
     color: $primary-color;
     text-align: center;
-    line-height: 12px;
+    line-height: 1;
   }
 }
 
@@ -42,6 +124,21 @@
   color: rgb(0, 0, 0);
   line-height: 13px;
   text-align: left;
+  @media screen and (min-width: 480px) {
+    @include font-text-13();
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .about-it__text {
@@ -51,6 +148,21 @@
   color: rgb(63, 65, 68);
   line-height: 14px;
   text-align: left;
+  @media screen and (min-width: 480px) {
+    @include font-text-13();
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
   &--bgc {
     padding: 0 2px 0 3px;
     background-color: rgb(22, 235, 254);
@@ -62,12 +174,43 @@
   max-width: 197px;
   margin: auto;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    max-width: 292px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
   &-caption {
     margin: 0;
     padding-left: 18px;
     position: relative;
     text-transform: initial;
     @include heading-style ($acrom-medium, 9px, 13px, #000, initial, left);
+    @media screen and (min-width: 480px) {
+      padding-left: 26px;
+      @include font-text-13();
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
     &::before {
       position: absolute;
       left: 0;
@@ -77,12 +220,46 @@
       width: 9px;
       height: 2px;
       background-color: #000;
+      @media screen and (min-width: 480px) {
+        width: 13.5px;
+        height: 3px;
+        top: 8px;
+      }
+      @media screen and (min-width: 768px) {
+
+      }
+      @media screen and (min-width: 960px) {
+
+      }
+      @media screen and (min-width: 1200px) {
+
+      }
+      @media screen and (min-width: 1440px) {
+
+      }
     }
   }
   &-title {
     margin: 0;
     margin-bottom: 28px;
     @include heading-style ($acrom-extrabold, 12px, 16px, #000, uppercase, left);
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      margin-bottom: 42px;
+      @include font-media (18,24);
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
     &--bold {
       font-family: $acrom-bold;
     }
@@ -113,6 +290,22 @@
   padding-left: 26px;
   max-width: 274px;
   position: relative;
+  @media screen and (min-width: 480px) {
+    padding-left: 38px;
+    max-width: 412px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
   &::before {
     position: absolute;
     left: 14px;
@@ -122,6 +315,24 @@
     background-color: rgb(0, 0, 0);
     width: 3.1px;
     height: 3.1px;
+    @media screen and (min-width: 480px) {
+      width: 4.7px;
+      height: 4.7px;
+      top: 10px;
+      left: 18px;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
   }
   &:nth-last-child(1) {
     margin-bottom: 0px;
@@ -136,6 +347,21 @@
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 13px;
+  @media screen and (min-width: 480px) {
+    @include font-text-13();
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .about-it__item-descr {
@@ -144,4 +370,19 @@
   font-family: $acrom-regular;
   color: rgb(0, 0, 0);
   line-height: 13px;
+  @media screen and (min-width: 480px) {
+    @include font-text-13();
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
