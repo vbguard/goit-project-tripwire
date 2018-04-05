@@ -20,7 +20,9 @@
       left: -70px;
     }
     @media screen and (min-width: 768px) {
-      top: 223px;
+      top: 310px;
+      font-size: 140px;
+      left: -95px;
     }
     @media screen and (min-width: 960px) {
       padding-bottom: 42px;
@@ -167,14 +169,13 @@
       @include font-media(20.5, 25.5);
     }
     @media screen and (min-width: 768px) {
-      @include font-media(27, 33.5);
+      @include font-media(27, 35);
 
     }
     &--bold {
       font-family: $acrom-bold;
     }
     &--bgc {
-      display: inline-block;
       padding: 0 3px;
       background-color: rgb(0, 0, 0);
       color: $primary-color;
@@ -182,7 +183,6 @@
       line-height: 1;
       @media screen and (min-width: 768px) {
         text-align: left;
-
       }
     }
 
@@ -221,6 +221,9 @@
   @media screen and (min-width: 480px) {
     @include font-media(13.5,19.5);
   }
+  @media screen and (min-width: 480px) {
+    @include font-media(17,20);
+  }
 }
 
 .earn__list {
@@ -229,9 +232,15 @@
   padding: 0;
   list-style: none;
   @media screen and (min-width: 480px) {
-    @include font-media(13.5,19.5);
     margin-top: 23px;
     margin-bottom: 44px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -254,10 +263,22 @@
       height: 8px;
       left: 18px;
     }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   @media screen and (min-width: 480px) {
+    margin-bottom: 24px;
     padding-left: 36px;
     max-width: 420px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    padding-left: 0;
+    flex: 0 0 22%;
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -271,10 +292,16 @@
   &--bold {
     font-family: $acrom-bold;
     letter-spacing: 0px;
+    @media screen and (min-width: 768px) {
+      @include font-media(9,13.5);
+    }
   }
   @media screen and (min-width: 480px) {
     @include font-media(13.5,19.5);
-    margin-bottom: 24px;
+
+  }
+  @media screen and (min-width: 768px) {
+    @include font-media(8,13.5);
   }
 }
 
@@ -290,5 +317,11 @@
   @media screen and (min-width: 480px) {
     @include font-media(13.5,19.5);
     max-width: 296px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font-media(9.5,13.5);
+    max-width: 202px;
+    text-align: left;
+    margin-right: 0;
   }
 }

@@ -29,7 +29,10 @@
     margin-bottom: 50px;
   }
   @media screen and (min-width: 768px) {
-
+    margin-bottom: 0;
+    max-width: 274px;
+    display: inline-block;
+    text-align: initial;
   }
   @media screen and (min-width: 960px) {
 
@@ -47,12 +50,16 @@
   max-height: 115px;
   margin-bottom: 22px;
   overflow: hidden;
+  object-fit: contain;
   @media screen and (min-width: 480px) {
     max-height: 172.5px;
     margin-bottom: 36px;
   }
   @media screen and (min-width: 768px) {
-
+    width: 274px;
+    min-height: 280px;
+    max-height: 280px;
+    margin-bottom: 34px;
   }
   @media screen and (min-width: 960px) {
 
@@ -71,7 +78,7 @@
     transform: translateY(-70px) scale(1.02);
   }
   @media screen and (min-width: 768px) {
-
+    transform: translateY(50px) translateX(65px) scale(1.6);
   }
   @media screen and (min-width: 960px) {
 
@@ -97,7 +104,13 @@
     max-width: 256px;
   }
   @media screen and (min-width: 768px) {
-
+    display: inline-block;
+    max-width: 77px;
+    font-size: 9px;
+    line-height: 14.5px;
+    margin: 0;
+    margin-right: 28px;
+    vertical-align: top;
   }
   @media screen and (min-width: 960px) {
 
@@ -109,7 +122,6 @@
 
   }
   &--bgc {
-    display: inline-block;
     padding: 0 2px;
     background-color: rgb(0, 0, 0);
     color: $primary-color;
@@ -117,7 +129,12 @@
     line-height: 1;
   }
 }
-
+.about-it__subtitle--box {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    max-width: 168px;
+  }
+}
 .about-it__subtitle {
   font-size: 9px;
   font-family: $acrom-bold;
@@ -128,7 +145,11 @@
     @include font-text-13();
   }
   @media screen and (min-width: 768px) {
-
+    display: inline-block;
+    max-width: 168px;
+    font-size: 9px;
+    line-height: 13.5px;
+    margin-bottom: 10px;
   }
   @media screen and (min-width: 960px) {
 
@@ -152,7 +173,9 @@
     @include font-text-13();
   }
   @media screen and (min-width: 768px) {
-
+    max-width: 168px;
+    font-size: 8px;
+    line-height: 12px;
   }
   @media screen and (min-width: 960px) {
 
@@ -169,6 +192,13 @@
   }
 }
 
+.about-it__box--second {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    max-width: 274px;
+    margin-left: 54px;
+  }
+}
 // Heading for section
 .about-it__heading {
   max-width: 197px;
@@ -178,7 +208,8 @@
     max-width: 292px;
   }
   @media screen and (min-width: 768px) {
-
+    max-width: 240px;
+    margin: 0;
   }
   @media screen and (min-width: 960px) {
 
@@ -200,7 +231,8 @@
       @include font-text-13();
     }
     @media screen and (min-width: 768px) {
-
+      padding-left: 38px;
+      @include font-media (9,13.5);
     }
     @media screen and (min-width: 960px) {
 
@@ -226,7 +258,9 @@
         top: 8px;
       }
       @media screen and (min-width: 768px) {
-
+        width: 28px;
+        height: 3.3px;
+        top: 8px;
       }
       @media screen and (min-width: 960px) {
 
@@ -249,7 +283,9 @@
       @include font-media (18,24);
     }
     @media screen and (min-width: 768px) {
-
+      text-align: left;
+      margin-bottom: 22px;
+      @include font-media (27,33.5);
     }
     @media screen and (min-width: 960px) {
 
@@ -265,14 +301,14 @@
     }
     &--letter {
       letter-spacing: -0.1px;
+      @media screen and (min-width: 768px) {
+        letter-spacing: 0;
+      }
     }
     &--bgc {
-      display: inline-block;
       padding: 0 5px;
       background-color: rgb(0, 0, 0);
       color: $primary-color;
-      min-width: 182px;
-      text-align: center;
     }
   }
 }
@@ -283,6 +319,19 @@
   margin-top: 28px;
   padding: 0;
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 43px;
+  }
+  @media screen and (min-width: 960px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1440px) {
+
+  }
 }
 
 .about-it__items {
@@ -295,7 +344,9 @@
     max-width: 412px;
   }
   @media screen and (min-width: 768px) {
-
+    margin-bottom: 20px;
+    padding-left: 28px;
+    max-width: 264px;
   }
   @media screen and (min-width: 960px) {
 
@@ -322,7 +373,10 @@
       left: 18px;
     }
     @media screen and (min-width: 768px) {
-
+      width: 6.7px;
+      height: 6.7px;
+      top: 4px;
+      left: 10px;
     }
     @media screen and (min-width: 960px) {
 
@@ -351,7 +405,8 @@
     @include font-text-13();
   }
   @media screen and (min-width: 768px) {
-
+    @include font-media (9,14.5);
+    margin-bottom: 10px;
   }
   @media screen and (min-width: 960px) {
 
@@ -374,7 +429,7 @@
     @include font-text-13();
   }
   @media screen and (min-width: 768px) {
-
+    @include font-media (8,12);
   }
   @media screen and (min-width: 960px) {
 
