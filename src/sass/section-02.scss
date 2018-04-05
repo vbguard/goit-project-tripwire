@@ -138,11 +138,10 @@
     max-height: 132px;
     margin-bottom: 44px;
   }
-
 }
 
 .earn__image {
-  transform: translateY(-50px);
+  transform: translateY(-40px);
   @media screen and (min-width: 480px) {
     transform: translateY(-64px) scale(1);
   }
