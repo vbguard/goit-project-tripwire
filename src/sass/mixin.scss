@@ -1,0 +1,61 @@
+//For Pseudo
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// For Media
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type==max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+//For media - use mixin mq
+$breakpoints: (
+  "phone": 320px,
+  "phone-wide": 480px,
+  "tablet": 768px,
+  "tablet-wide": 960px,
+  "desktop": 1200px,
+  "desktop-wide": 1440px
+);
+
+// Mixin typography;
+
+@mixin font($color,$font-family,$font-size,$font-weight,$line-height,$text-transform) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+@mixin center($margin-r, $margin-l, $text-align) {
+  margin-right: $margin-r;
+  margin-left: $margin-l;
+  text-align: $text-align;
+}
+
+@mixin heading-style($font-family-heading, $font-size-heading, $line-height-heading, $color-heading, $text-transform-heading, $text-align-heading) {
+  font-family: $font-family-heading;
+  font-size: $font-size-heading;
+  line-height: $line-height-heading;
+  color: $color-heading;
+  text-transform: $text-transform-heading;
+  text-align: $text-align-heading;
+}
+
+@mixin font-media ($font-size-media, $line-height-media) {
+  font-size: $font-size-media+px;
+  line-height: $line-height-media+px;
+}

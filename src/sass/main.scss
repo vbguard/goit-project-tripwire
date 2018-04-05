@@ -1,0 +1,43 @@
+// MAIN css
+// for all section container max width individual @media rules ANOTHER!!!!
+.container {
+  max-width: 320px;
+  margin: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 960px) {
+    max-width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
+}
+
+.main {
+  padding: 38px 12px 28px 12px;
+
+  @media screen and (min-width: 480px) {
+    padding: 57px 18px 28px 18px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 112px 64px 96px 64px;
+  }
+  @media screen and (min-width: 960px) {
+    padding: 140px 80px 120px 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 124px 244px 122px 244px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 150px 292px 148px 292px;
+  }
+}
+
