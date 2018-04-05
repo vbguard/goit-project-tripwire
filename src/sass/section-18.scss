@@ -1,74 +1,82 @@
-
-.wrapper-section18 {
-  background-color: $primary-white-color;
-}
-
 .section18 {
-  padding: 0 36px 52px;
+  padding-top: 20px;
+  padding-bottom: 24px;
 
   @media (min-width: 480px) and (max-width: 767px) {
-    padding: 0 54px 70px;
+    padding-top: 31px;
+    padding-bottom: 37px;
   }
   @media (min-width: 768px) and (max-width: 959px) {
-    padding: 0 62px 80px;
+    padding-top: 49px;
+    padding-bottom: 45px;
     position: relative;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
-    padding: 0 76px 100px;
+    padding-top: 60px;
+    padding-bottom: 55px;
     position: relative;
   }
   @media (min-width: 1200px) and (max-width: 1439px) {
-    padding: 0 240px 100px;
+    padding-top: 61px;
+    padding-bottom: 55px;
     position: relative;
   }
   @media (min-width: 1440px) {
-    padding: 0 290px 130px;
+    padding-top: 70px;
+    padding-bottom: 68px;
     position: relative;
   }
 }
 
 .section18-price-inner {
- 
   @media (min-width: 768px) and (max-width: 959px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 54px;
+    padding-top: 24px;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 54px;
+    padding-top: 24px;
   }
   @media (min-width: 1200px) and (max-width: 1439px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 54px;
+    padding-top: 24px;
   }
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 54px;
+    padding-top: 24px;
   }
 }
 
 .section18__title-important {
-  @include font($selected-text-black,$acrom-extrabold,12px,700,normal,uppercase);
+  @include font(
+    $selected-text-black,
+    $acrom-extrabold,
+    12px,
+    700,
+    normal,
+    uppercase
+  );
   @include center(auto, auto, center);
-  margin-top: 0;
+  margin-bottom: 10px;
 
   @media (min-width: 480px) and (max-width: 767px) {
     font-size: 18px;
+    margin-bottom: 20px;
   }
   @media (min-width: 768px) and (max-width: 959px) {
     font-size: 27px;
     display: inline-block;
     position: absolute;
     top: 10%;
-    right: 23%;
+    right: 17%;
     margin: 0;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
@@ -76,7 +84,7 @@
     display: inline-block;
     position: absolute;
     top: 10%;
-    right: 22%;
+    right: 15%;
     margin: 0;
   }
   @media (min-width: 1200px) and (max-width: 1439px) {
@@ -85,7 +93,7 @@
     position: absolute;
     margin: 0;
     top: 9%;
-    right: 30%;
+    right: 15%;
   }
   @media (min-width: 1440px) {
     font-size: 36px;
@@ -93,28 +101,29 @@
     position: absolute;
     margin: 0;
     top: 6%;
-    right: 30%;
+    right: 15%;
   }
 }
 
 .section18-price {
   @include center(auto, auto, center);
-  width: 247px;
+  width: 248px;
   height: 183px;
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
   background-color: #052139;
   padding: 50px;
+  margin-bottom: 20px;
 
   @media (min-width: 480px) and (max-width: 767px) {
     width: 370px;
-    height: 274px;
+    height: 278px;
     padding: 74px;
-    margin: 0;
+    margin-bottom: 38px;
   }
   @media (min-width: 768px) and (max-width: 959px) {
     width: 258px;
     height: 192px;
-    padding: 56px;
+    padding: 40px;
     margin: 0;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
@@ -164,7 +173,7 @@
   }
   @media (min-width: 768px) and (max-width: 959px) {
     flex-basis: 62px;
-    font-size: 9px; 
+    font-size: 9px;
     line-height: 20px;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
@@ -208,8 +217,14 @@
 }
 
 .section18-price__number {
-
-  @include font($primary-white-color,$acrom-extrabold,10px,700,normal,uppercase);
+  @include font(
+    $primary-white-color,
+    $acrom-extrabold,
+    10px,
+    700,
+    normal,
+    uppercase
+  );
 
   @media (min-width: 480px) and (max-width: 767px) {
     font-size: 14px;
@@ -276,34 +291,19 @@
 }
 
 .section18-content {
-  @include center(auto, auto, center);
-
-  &--margin-top {
-    margin-top: 26px;
-
-    @media (min-width: 480px) and (max-width: 767px) {
-      margin-top: 34px;
-    }
-    @media (min-width: 768px) and (max-width: 959px) {
-      margin-top: 0px;
-      flex-basis: 42%;
-      margin: 0;
-    }
-    @media (min-width: 960px) and (max-width: 1199px) {
-      margin-top: 0px;
-      margin: 0;
-      flex-basis: 42%;
-    }
-    @media (min-width: 1200px) and (max-width: 1439px) {
-      margin-top: 0px;
-      margin: 0;
-      flex-basis: 42%;
-    }
-    @media (min-width: 1440px) {
-      margin-top: 0px;
-      margin: 0;
-      flex-basis: 42%;
-    }
+  @media (min-width: 480px) and (max-width: 767px) {
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    flex-basis: 50%;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    flex-basis: 42%;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    flex-basis: 42%;
+  }
+  @media (min-width: 1440px) {
+    flex-basis: 42%;
   }
 }
 
@@ -312,44 +312,39 @@
   margin-top: 0;
   margin-bottom: 20px;
   padding-left: 0;
+  max-width: 198px;
 
   @media (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 26px;
+    max-width: 298px;
   }
   @media (min-width: 768px) and (max-width: 959px) {
     margin-bottom: 26px;
+    max-width: 176px;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
     margin-bottom: 26px;
+    max-width: 218px;
   }
   @media (min-width: 1200px) and (max-width: 1439px) {
     margin-bottom: 26px;
+    max-width: 198px;
   }
   @media (min-width: 1440px) {
     margin-bottom: 26px;
+    max-width: 236px;
   }
 }
 
 .section18-content__item-text:not(:last-child) {
   margin-bottom: 10px;
-  padding: 0 26px;
-
-  @media (min-width: 960px) and (max-width: 1199px) {
-    padding: 0 44px;
-  }
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    padding: 0 44px;
-  }
-  @media (min-width: 1440px) {
-    padding: 0 44px;
-  }
 }
 
 .section18-content__item-text {
   list-style: none;
+  position: relative;
 
   &:last-child {
-
     &::before {
       content: "";
       display: inline-block;
@@ -357,16 +352,21 @@
       width: 14px;
       height: 19px;
       fill: #000000;
-      margin-right: 10px;
+      position: absolute;
+      left: -10%;
+      top: 21%;
 
       @media (min-width: 960px) and (max-width: 1199px) {
         margin-right: 27px;
+        top: 21%;
       }
       @media (min-width: 1200px) and (max-width: 1439px) {
         margin-right: 27px;
+        top: 21%;
       }
       @media (min-width: 1440px) {
         margin-right: 27px;
+        top: 21%;
       }
     }
   }
@@ -378,7 +378,7 @@
   display: inline-block;
 
   &--bold {
-    @include font($selected-text-black, $acrom-bold, 10px, 700,normal, none);
+    @include font($selected-text-black, $acrom-bold, 10px, 700, normal, none);
 
     @media (min-width: 480px) and (max-width: 767px) {
       font-size: 14px;
@@ -418,7 +418,14 @@
   }
 
   &--highlight {
-    @include font($selected-text-orange,$acrom-regular,10px,500,normal,none);
+    @include font(
+      $selected-text-orange,
+      $acrom-regular,
+      10px,
+      500,
+      normal,
+      none
+    );
     width: 84%;
 
     @media (min-width: 480px) and (max-width: 767px) {
@@ -445,40 +452,57 @@
 .section18-content__button {
   outline: none;
   border: none;
-  width: 83%;
   height: 27px;
   box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
   background-color: $color-button;
-  @include font($primary-white-color, $acrom-extrabold, 6px, 400, 9.73px, uppercase);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+
+  @include font(
+    $primary-white-color,
+    $acrom-extrabold,
+    6px,
+    400,
+    9.73px,
+    uppercase
+  );
   letter-spacing: 1.2px;
 
   @media (min-width: 480px) and (max-width: 767px) {
     font-size: 10px;
+    max-width: 298px;
+    height: 40px;
   }
   @media (min-width: 768px) and (max-width: 959px) {
     font-size: 8px;
+    max-width: 204px;
+    height: 30px;
   }
   @media (min-width: 960px) and (max-width: 1199px) {
     font-size: 8px;
-    width: 74%;
+    max-width: 218px;
+    height: 30px;
   }
   @media (min-width: 1200px) and (max-width: 1439px) {
     font-size: 8px;
-    width: 74%;
+    max-width: 198px;
+    height: 30px;
   }
   @media (min-width: 1440px) {
     font-size: 8px;
-    width: 76%;
+    max-width: 236px;
+    height: 30px;
   }
 
   &:hover {
-   box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
-   background-color: $color-hover-button;
+    box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+    background-color: $color-hover-button;
   }
 
   &:active {
-   box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
-   background-color: $color-clic-button;
+    box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+    background-color: $color-clic-button;
   }
 }
-

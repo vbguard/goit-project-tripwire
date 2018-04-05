@@ -1,19 +1,19 @@
 .section {
-  padding: 30px 68px;
+  padding: 30px 0 20px;
   @include mq("phone-wide") {
-    padding: 44px 56px;
+    padding: 44px 0 30px;
   }
   @include mq("tablet") {
-    padding: 48px 64px;
+    padding: 48px 0;
   }
   @include mq("tablet-wide") {
-    padding: 60px 80px;
+    padding: 60px 0;
   }
   @include mq("desktop") {
-    padding: 60px 244px;
+    padding: 62px 0;
   }
   @include mq("desktop-wide") {
-    padding: 72px 292px;
+    padding: 76px 0;
   }
 }
 .bonus {
