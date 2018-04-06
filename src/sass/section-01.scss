@@ -3,39 +3,46 @@
 .masthead {
   position: relative;
   background: url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_320.png'), #181c27;
-  background-position: 50% 180px, center;
+  background-position: 50% 182px, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 212px, cover;
+  z-index: -5;
 
   @media screen and (min-width: 480px) {
     background: url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_480.png'), #181c27;
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 254px, center;
     background-size: 328px, cover;
+
   }
 
   @media screen and (min-width: 768px) {
-    background: url('../img/masthead-bg-man_768.png'), url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_768.png'), #181c27;
+    background: url('../img/masthead-bg-man_768.png'), url('../img/masthead-bg-text_768.png'), url('../img/masthead-bg-mask_768.png'), #181c27;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 56px, 50% 254px, center;
-    background-size: 466px, 328px, cover;
+    background-position: 238px 90px, 50% 50%, center;
+    background-size: 466px 636px, 623px auto, cover;
   }
-  // &::after {
-  //   content: '';
-  //   display: inline-block;
-  //   width: 100%;
-  //   height: 100%;
-  //   border-width: 0.313px;
-  //   border-color: rgb(255, 255, 255);
-  //   border-style: dotted;
-  //   opacity: 0.5;
-  //   position: absolute;
-  //   left: 311px;
-  //   top: -2px;
-  //   width: 1px;
-  //   height: 613px;
-  //   z-index: -1;
-  // }
+
+  @media screen and (min-width: 960px) {
+    background: url('../img/masthead-bg-man_960.png'), url('../img/masthead-bg-text_960.png'), url('../img/masthead-bg-mask_960.png'), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 335px 130px, 50% 50%, center;
+    background-size: 542px 755px, 774px auto, cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: url('../img/masthead-bg-man_1200.png'), url('../img/masthead-bg-text_1200.png'), url('../img/masthead-bg-mask_1200.png'), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 390px 55px, 50% 50%, center;
+    background-size: 579px 779px, 687px auto, cover;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background: url('../img/masthead-bg-man_1440.png'), url('../img/masthead-bg-text_1440.png'), url('../img/masthead-bg-mask_1440.png'), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 524px 112px, 50% 50%, center;
+    background-size: 623px 850px, 820px auto, cover;
+  }
 }
 
 .masthead-box {
@@ -45,16 +52,16 @@
     padding: 15px 18px 38px 18px;
   }
   @media screen and (min-width: 768px) {
-    padding: 22px 64px 34px 64px;
+    padding: 22px 64px 96px 64px;
   }
   @media screen and (min-width: 960px) {
-    padding: 28px 80px 42px 80px;
+    padding: 28px 80px 120px 80px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 26px 38px 38px 38px;
+    padding: 26px 38px 108px 38px;
   }
   @media screen and (min-width: 1440px) {
-    padding: 30px 44px 44px 44px;
+    padding: 30px 44px 128px 44px;
   }
 }
 
@@ -66,12 +73,34 @@
     left: 12;
     content: '';
     width: calc(296px /3);
-    height: 430px;
+    height: 500px;
     border-width: 0.208px;
     border-color: rgb(255, 255, 255);
     border-style: dotted;
-    opacity: 0.2;
-    z-index: 1;
+    opacity: 0.08;
+    z-index: -1;
+    @media screen and (min-width: 480px) {
+      height: 700px;
+      width: calc(444px / 3);
+    }
+    @media screen and (min-width: 768px) {
+      height: 615px;
+      width: calc(640px / 3);
+    }
+    @media screen and (min-width: 960px) {
+      width: calc(800px / 3);
+      height: 700px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc(714px / 3);
+      height: 1000px;
+      left: 246px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: calc(856px / 3);
+      height: 1500px;
+      left: 294px;
+    }
   }
   &::after {
     position: absolute;
@@ -79,12 +108,114 @@
     right: 12px;
     content: '';
     width: calc(296px /3);
-    height: 430px;
+    height: 500px;
     border-width: 0.208px;
     border-color: rgb(255, 255, 255);
     border-style: dotted;
-    opacity: 0.2;
-    z-index: 1;
+    opacity: 0.08;
+    z-index: -1;
+    @media screen and (min-width: 480px) {
+      height: 700px;
+      width: calc(444px / 3);
+      right: 18px;
+    }
+    @media screen and (min-width: 768px) {
+      height: 700px;
+      width: calc(640px / 3);
+      right: 64px;
+    }
+    @media screen and (min-width: 960px) {
+      width: calc(800px / 3);
+      right: 80px;
+      height: 800px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc(714px / 3);
+      right: 246px;
+      height: 1000px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: calc(856px / 3);
+      right: 294px;
+      height: 1500px;
+    }
+  }
+}
+
+// Masthead Counter
+.masthead__page-counter {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    background-image: url('../img/masthead-bg-page_1440.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    bottom: 32px;
+    left: 64px;
+    width: 25px;
+    height: 50px;
+  }
+  @media screen and (min-width: 960px) {
+    width: 40px;
+    height: 60px;
+    left: 80px;
+    background-size: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 50px;
+    left: 40px;
+    background-size: 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 40px;
+    height: 60px;
+    left: 80px;
+    background-size: 100%;
+  }
+}
+
+// Mast Header Social
+.hero__social {
+  display: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    bottom: 54px;
+    left: 610px;
+  }
+  @media screen and (min-width: 960px) {
+    left: 765px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 1085px;
+    bottom: -80px;
+  }
+  @media screen and (min-width: 1440px) {
+    left: 1305px;
+
+  }
+
+  &-link {
+    display: inline-block;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    @media screen and (min-width: 960px) {
+      width: 12px;
+    }
+  }
+}
+.facebook-icon {
+  margin-right: 10px;
+  @media screen and (min-width: 1440px) {
+    margin-right: 22px;
   }
 }
 
@@ -98,6 +229,18 @@
   @media screen and (min-width: 480px) {
     margin-bottom: 22px;
   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+  }
+  @media screen and (min-width: 960px) {
+    margin-bottom: 58px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 62px;
+  }
 }
 
 // Logo
@@ -108,22 +251,28 @@
   text-indent: -9999px;
 }
 
-.logo__link {
-  width: 44px;
-  height: 15px;
-
-  // @media screen and (min-width: 480px) {
-  //   width: 66px;
-  //   height: 23px;
-  // }
-}
-
 .logo__image {
   width: 44px;
   height: 15px;
 
   @media screen and (min-width: 480px) {
     width: 66px;
+    height: 23px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 63px;
+    height: 21px;
+  }
+  @media screen and (min-width: 960px) {
+    width: 71px;
+    height: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 63px;
+    height: 19px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 75px;
     height: 23px;
   }
 }
@@ -143,14 +292,80 @@
       width: 27px;
       height: 16.5px;
     }
+    @media screen and (min-width: 768px) {
+      width: 12.9px;
+      height: 7.9px;
+    }
+    @media screen and (min-width: 960px) {
+      width: 16.1px;
+      height: 9.8px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 14.3px;
+      height: 8.7px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 17.2px;
+      height: 10.5px;
+    }
   }
 }
 
 // Masthead HERO
 .hero {
+  @media screen and (min-width: 1200px) {
+    max-width: 714px;
+    margin: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 856px;
+  }
+}
+//Masthead Hero content positioning
+.hero__container {
+  &--title {
+    @media screen and (min-width: 768px) {
+      max-width: 368px;
+      display: inline-block;
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 412px;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 492px;
+    }
+  }
+  &--subject {
+    @media screen and (min-width: 768px) {
+      margin-left: 122px;
+      max-width: 150px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    @media screen and (min-width: 960px) {
+      margin-left: 164px;
+      max-width: 186px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 130px;
+      max-width: 168px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-left: 166px;
+      max-width: 200px;
+    }
+  }
+}
+
+
+.hero {
   &__title {
     margin: 0;
     margin: auto;
+    position: relative;
     max-width: 164px;
     color: $primary-color;
     font-family: $acrom-extrabold;
@@ -160,11 +375,99 @@
     &--weight {
       font-family: $acrom-bold;
     }
+    &--media-320-480{
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+    &--media-768-1440 {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+      }
+    }
+    &--flash {
+      display: block;
+      margin-left: 82px;
+      @media screen and (min-width: 960px) {
+        margin-left: 98px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-left: 90px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-left: 106px;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 44.8px;
+        height: 6.7px;
+        background: #fff;
+        bottom: 80px;
+        right: 140px;
+        @media screen and (min-width: 960px) {
+          width: 56px;
+          height: 8.4px;
+          bottom: 100px;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 50px;
+          height: 7.5px;
+          bottom: 90px;
+        }
+        @media screen and (min-width: 1440px) {
+          width: 60px;
+          height: 9px;
+          bottom: 105px;
+        }
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        width: 56.1px;
+        height: 6.7px;
+        background: #fff;
+        bottom: 25px;
+        left: 0px;
+        @media screen and (min-width: 960px) {
+          width: 70.1px;
+          height: 8.4px;
+          bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 62.5px;
+          height: 7.5px;
+        }
+        @media screen and (min-width: 1440px) {
+          width: 75px;
+          height: 9px;
+          bottom: 35px;
+        }
+      }
+    }
     // Media for .hero__title
     @media screen and (min-width: 480px) {
       max-width: 250px;
       font-size: 30px;
       line-height: 39px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 368px;
+      margin: 0;
+      @include font-media (44.5,56);
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 458px;
+      @include font-media (56,70);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 410px;
+      @include font-media (50,62.5);
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 490px;
+      @include font-media (60,75);
     }
   }
   &__subtitle {
@@ -196,6 +499,26 @@
         line-height: 11.71px;
         left: -25px;
       }
+      @media screen and (min-width: 768px) {
+        @include font-media (13.5, 16.8);
+        left: -25px;
+        top: -2px;
+      }
+      @media screen and (min-width: 960px) {
+        @include font-media (16.8, 21);
+        left: -25px;
+        top: -4px;
+      }
+      @media screen and (min-width: 1200px) {
+        @include font-media (13.5, 16.8);
+        left: -25px;
+        top: -2px;
+      }
+      @media screen and (min-width: 1440px) {
+        @include font-media (13.5, 16.8);
+        left: -25px;
+        top: -2px;
+      }
     }
     &::after {
       position: absolute;
@@ -213,6 +536,26 @@
         line-height: 11.71px;
         right: -30px;
       }
+      @media screen and (min-width: 768px) {
+        @include font-media (13.5, 16.8);
+        bottom: -2px;
+        right: -30px;
+      }
+      @media screen and (min-width: 960px) {
+        @include font-media (13.5, 16.8);
+        bottom: -4px;
+        right: -30px;
+      }
+      @media screen and (min-width: 1200px) {
+        @include font-media (13.5, 16.8);
+        bottom: -2px;
+        right: -30px;
+      }
+      @media screen and (min-width: 1440px) {
+        @include font-media (13.5, 16.8);
+        bottom: -2px;
+        right: -30px;
+      }
     }
     // Media for .hero__subtitle
     @media screen and (min-width: 480px) {
@@ -222,12 +565,40 @@
       text-align: center;
       margin-bottom: 158px;
     }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-left: 56px;
+      margin-top: 30px;
+      max-width: 172px;
+      @include font-media (8,13.5)
+      text-align: left;
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 216px;
+      margin-top: 42px;
+      margin-left: 70px;
+      @include font-media(9.8,16.5);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 194px;
+      margin-top: 36px;
+      margin-left: 60px;
+      @include font-media(8.7,15);
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 230px;
+      margin-top: 44px;
+      margin-left: 72px;
+      @include font-media(10.5,18);
+    }
   }
+
+
   &__subject {
     margin: 0;
     margin-left: 26.51px;
     max-width: 223px;
-    height: 23px;
+    // height: 23px;
     color: $primary-color;
     font-family: $acrom-extrabold;
     font-size: 9px;
@@ -251,13 +622,51 @@
         font-size: 13.5px;
         line-height: 19.5px;
       }
+      @media screen and (min-width: 768px) {
+        margin: 0;
+        margin-top: 16px;
+        max-width: 138px;
+        @include font-media (9,13.5);
+      }
+      @media screen and (min-width: 960px) {
+        margin-top: 22px;
+        max-width: 170px;
+        @include font-media (11.2,16.5);
+      }
+      @media screen and (min-width: 1200px) {
+        margin-top: 18px;
+        max-width: 152px;
+        @include font-media (10,15);
+      }
+      @media screen and (min-width: 1440px) {
+        margin-top: 22px;
+        max-width: 182px;
+        @include font-media (12,18);
+      }
     }
     // Media for .hero__subject
     @media screen and (min-width: 480px) {
-      max-width: 340px;
+      max-width: 376px;
       margin-left: 40px;
       font-size: 13.5px;
       line-height: 19.5px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 150px;
+      margin: 0;
+      @include font-media (10,16.5);
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 186px;
+      @include font-media (12.6,21);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 166px;
+      @include font-media (11.2,18.75);
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 200px;
+      @include font-media (13.5,22.5);
     }
   }
 }
@@ -277,29 +686,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  &:hover {
-    transform: scale(1.01);
-    background-color: #17ecff;
-    box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
-    font-size: 8.5px;
-
-// Media for .hero_button:hover
-    @media screen and (min-width: 480px) {
-      box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
-      font-size: 12.5px;
-    }
-  }
-  &:active {
-    background-color: #06a4b2;
-    box-shadow: 0 3px 4px rgba(6, 164, 178, 0.26);
-    font-size: 8.5px;
-
-// Media for .hero_button:active
-    @media screen and (min-width: 480px) {
-      box-shadow: 0px 5px 6px 0px rgba(6, 164, 178, 0.26);
-      font-size: 12.5px;
-    }
-  }
+  z-index: 20;
 
   // Media for .hero_button
   @media screen and (min-width: 480px) {
@@ -308,6 +695,89 @@
     font-size: 12px;
     line-height: 54px;
     letter-spacing: 1px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-left: 56px;
+    margin-top: 26px;
+    font-size: 6.4px;
+    line-height: 29px;
+    width: 111px;
+    height: 29px;
+  }
+  @media screen and (min-width: 960px) {
+    width: 136.7px;
+    height: 35px;
+    @include font-media(8,35);
+    margin-top: 32px;
+    margin-left: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 121.8px;
+    height: 31.2px;
+    @include font-media(6.8,31.2);
+    margin-top: 30px;
+    margin-left: 62px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 146.2px;
+    height: 37.5px;
+    @include font-media(8.25,37.5);
+    margin-top: 36px;
+    margin-left: 76px;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #17ecff;
+    box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+    font-size: 8.5px;
+
+    // Media for .hero_button:hover
+    @media screen and (min-width: 480px) {
+      box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+      font-size: 12.5px;
+    }
+
+    @media screen and (min-width: 768px) {
+      box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+      font-size: 6px;
+      background-color: rgb(23, 236, 255);
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 186px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 200px;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 220px;
+    }
+  }
+
+  &:active {
+    background-color: #06a4b2;
+    box-shadow: 0 3px 4px rgba(6, 164, 178, 0.26);
+    font-size: 8.5px;
+
+    // Media for .hero_button:active
+    @media screen and (min-width: 480px) {
+      box-shadow: 0px 5px 6px 0px rgba(6, 164, 178, 0.26);
+      font-size: 12.5px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 6px;
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 186px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 200px;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 220px;
+    }
   }
 
 }
