@@ -220,28 +220,40 @@
 
 .slider-content {
   position: relative;
-  width: 196px;
-  height: 142px;
+  max-width: 196px;
+  max-height: 142px;
+  min-width: 196px;
+  min-height: 142px;
   margin: 0;
   @media screen and (min-width: 480px) {
-    width: 293px;
-    height: 212px;
+    max-width: 293px;
+    max-height: 212px;
+    min-width: 293px;
+    min-height: 212px;
   }
   @media screen and (min-width: 768px) {
-    width: 420px;
-    height: 304px;
+    max-width: 420px;
+    max-height: 304px;
+    min-width: 420px;
+    min-height: 304px;
   }
   @media screen and (min-width: 960px) {
-    width: 526px;
-    height: 380px;
+    max-width: 526px;
+    max-height: 380px;
+    min-width: 526px;
+    min-height: 380px;
   }
   @media screen and (min-width: 1200px) {
-    width: 469px;
-    height: 339px;
+    max-width: 469px;
+    max-height: 339px;
+    min-width: 469px;
+    min-height: 339px;
   }
   @media screen and (min-width: 1440px) {
-    width: 562.5px;
-    height: 406.5px;
+    max-width: 562.5px;
+    max-height: 406.5px;
+    min-width: 562.5px;
+    min-height: 406.5px;
   }
 }
 
@@ -376,28 +388,31 @@
 .slider-control {
   &__number {}
   &__btn {
+    & > .next{
+      margin-right: 1px;
+    }
     margin: 0;
     padding: 0;
     position: absolute;
     bottom: -12px;
     right: 0;
     display: inline-block;
-    max-width: 24px;
+    // max-width: 24px;
     list-style: none;
     @media screen and (min-width: 480px) {
-
+      bottom: -14px;
     }
     @media screen and (min-width: 768px) {
-
+      bottom: -20px;
     }
     @media screen and (min-width: 960px) {
-
+      bottom: -25px;
     }
     @media screen and (min-width: 1200px) {
-
+      bottom: -22.5px;
     }
     @media screen and (min-width: 1440px) {
-
+      bottom: -27px;
     }
   }
 }
@@ -414,19 +429,34 @@
   cursor: pointer;
   z-index: 166;
   @media screen and (min-width: 480px) {
-
+    width: 14px;
+    height: 14px;
+    line-height: 12px;
+    font-size: 12px;
   }
   @media screen and (min-width: 768px) {
-
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 14px;
   }
   @media screen and (min-width: 960px) {
-
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 20px;
   }
   @media screen and (min-width: 1200px) {
-
+    width: 22.5px;
+    height: 22.5px;
+    line-height: 20px;
+    font-size: 18px;
   }
   @media screen and (min-width: 1440px) {
-
+    width: 27px;
+    height: 27px;
+    line-height: 24px;
+    font-size: 22px;
   }
 }
 
@@ -440,19 +470,19 @@
     margin-right: 14px;
     line-height: 0.5;
     @media screen and (min-width: 480px) {
-
+      line-height: 10px;
     }
     @media screen and (min-width: 768px) {
-
+      line-height: 12px;
     }
     @media screen and (min-width: 960px) {
-
+      line-height: 12px;
     }
     @media screen and (min-width: 1200px) {
-
+      line-height: 12px;
     }
     @media screen and (min-width: 1440px) {
-
+      line-height: 15px;
     }
     &:nth-last-child(1) {
       margin-right: 0;
@@ -468,6 +498,21 @@
     font-family: $acrom-extrabold;
     color: rgb(0, 0, 0);
     outline: none;
+    @media screen and (min-width: 480px) {
+      font-size: 3.9px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 5.61px;
+    }
+    @media screen and (min-width: 960px) {
+      font-size: 7px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 6.25px;
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: 7.5px;
+    }
   }
 }
 
@@ -485,8 +530,26 @@
     border-color: rgb(0, 0, 0);
     border-style: solid;
     background-color: #000;
+    @media screen and (min-width: 480px) {
+
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 960px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+      border-width: 1px;
+      width: 15px;
+      top: 9px;
+      left: -6px;
+    }
   }
   &>button[type="button"] {
-    transform: scale(1.5);
+    transform: scale(1.7) translateY(-0.5px);
   }
 }
