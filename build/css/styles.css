@@ -574,9 +574,10 @@ input[type="radio"].visually-hidden {
 .masthead {
   position: relative;
   background: url("../img/masthead-bg-text.png"), url("../img/masthead-bg-mask_320.png"), #181c27;
-  background-position: 50% 180px, center;
+  background-position: 50% 182px, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 212px, cover;
+  z-index: -5;
 }
 
 .masthead-box {
@@ -593,12 +594,12 @@ input[type="radio"].visually-hidden {
   left: 12;
   content: '';
   width: calc(296px /3);
-  height: 430px;
+  height: 500px;
   border-width: 0.208px;
   border-color: white;
   border-style: dotted;
-  opacity: 0.2;
-  z-index: 1;
+  opacity: 0.08;
+  z-index: -1;
 }
 
 .line-bg::after {
@@ -607,12 +608,37 @@ input[type="radio"].visually-hidden {
   right: 12px;
   content: '';
   width: calc(296px /3);
-  height: 430px;
+  height: 500px;
   border-width: 0.208px;
   border-color: white;
   border-style: dotted;
-  opacity: 0.2;
-  z-index: 1;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+.masthead__page-counter {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero__social {
+  display: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__social-link {
+  display: inline-block;
+  text-decoration: none;
+  width: 10px;
+  height: 10px;
+}
+
+.facebook-icon {
+  margin-right: 10px;
 }
 
 .masthead__navigation {
@@ -627,11 +653,6 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   font-size: 0;
   text-indent: -9999px;
-}
-
-.logo__link {
-  width: 44px;
-  height: 15px;
 }
 
 .logo__image {
@@ -653,6 +674,7 @@ input[type="radio"].visually-hidden {
 .hero__title {
   margin: 0;
   margin: auto;
+  position: relative;
   max-width: 164px;
   color: #fff;
   font-family: "Acrom-ExtraBold", sans-serif;
@@ -663,6 +685,35 @@ input[type="radio"].visually-hidden {
 
 .hero__title--weight {
   font-family: "Acrom-Bold", sans-serif;
+}
+
+.hero__title--media-768-1440 {
+  display: none;
+}
+
+.hero__title--flash {
+  display: block;
+  margin-left: 82px;
+}
+
+.hero__title--flash::after {
+  position: absolute;
+  content: '';
+  width: 44.8px;
+  height: 6.7px;
+  background: #fff;
+  bottom: 80px;
+  right: 140px;
+}
+
+.hero__title--flash::before {
+  position: absolute;
+  content: '';
+  width: 56.1px;
+  height: 6.7px;
+  background: #fff;
+  bottom: 25px;
+  left: 0px;
 }
 
 .hero__subtitle {
@@ -708,7 +759,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-left: 26.51px;
   max-width: 223px;
-  height: 23px;
   color: #fff;
   font-family: "Acrom-ExtraBold", sans-serif;
   font-size: 9px;
@@ -741,6 +791,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  z-index: 20;
 }
 
 .hero__button:hover {
@@ -3434,6 +3485,17 @@ input[type="radio"].visually-hidden {
     padding: 15px 18px 38px 18px;
   }
 
+  .line-bg::before {
+    height: 700px;
+    width: calc(444px / 3);
+  }
+
+  .line-bg::after {
+    height: 700px;
+    width: calc(444px / 3);
+    right: 18px;
+  }
+
   .masthead__navigation {
     margin-bottom: 22px;
   }
@@ -3484,10 +3546,18 @@ input[type="radio"].visually-hidden {
   }
 
   .hero__subject {
-    max-width: 340px;
+    max-width: 376px;
     margin-left: 40px;
     font-size: 13.5px;
     line-height: 19.5px;
+  }
+
+  .hero__button {
+    width: 218px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 54px;
+    letter-spacing: 1px;
   }
 
   .hero__button:hover {
@@ -3498,14 +3568,6 @@ input[type="radio"].visually-hidden {
   .hero__button:active {
     box-shadow: 0px 5px 6px 0px rgba(6, 164, 178, 0.26);
     font-size: 12.5px;
-  }
-
-  .hero__button {
-    width: 218px;
-    height: 54px;
-    font-size: 12px;
-    line-height: 54px;
-    letter-spacing: 1px;
   }
 
   .earn::after {
@@ -4366,14 +4428,143 @@ input[type="radio"].visually-hidden {
   }
 
   .masthead {
-    background: url("../img/masthead-bg-man_768.png"), url("../img/masthead-bg-text.png"), url("../img/masthead-bg-mask_768.png"), #181c27;
+    background: url("../img/masthead-bg-man_768.png"), url("../img/masthead-bg-text_768.png"), url("../img/masthead-bg-mask_768.png"), #181c27;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 56px, 50% 254px, center;
-    background-size: 466px, 328px, cover;
+    background-position: 238px 90px, 50% 50%, center;
+    background-size: 466px 636px, 623px auto, cover;
   }
 
   .masthead-box {
-    padding: 22px 64px 34px 64px;
+    padding: 22px 64px 96px 64px;
+  }
+
+  .line-bg::before {
+    height: 615px;
+    width: calc(640px / 3);
+  }
+
+  .line-bg::after {
+    height: 700px;
+    width: calc(640px / 3);
+    right: 64px;
+  }
+
+  .masthead__page-counter {
+    display: inline-block;
+    background-image: url("../img/masthead-bg-page_1440.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    bottom: 32px;
+    left: 64px;
+    width: 25px;
+    height: 50px;
+  }
+
+  .hero__social {
+    display: inline-block;
+    bottom: 54px;
+    left: 610px;
+  }
+
+  .masthead__navigation {
+    margin-bottom: 44px;
+  }
+
+  .logo__image {
+    width: 63px;
+    height: 21px;
+  }
+
+  .menu--button {
+    width: 12.9px;
+    height: 7.9px;
+  }
+
+  .hero__container--title {
+    max-width: 368px;
+    display: inline-block;
+  }
+
+  .hero__container--subject {
+    margin-left: 122px;
+    max-width: 150px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .hero__title--media-320-480 {
+    display: none;
+  }
+
+  .hero__title--media-768-1440 {
+    display: inline-block;
+  }
+
+  .hero__title {
+    max-width: 368px;
+    margin: 0;
+    font-size: 44.5px;
+    line-height: 56px;
+  }
+
+  .hero__subtitle::before {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    left: -25px;
+    top: -2px;
+  }
+
+  .hero__subtitle::after {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    bottom: -2px;
+    right: -30px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 0;
+    margin-left: 56px;
+    margin-top: 30px;
+    max-width: 172px;
+    font-size: 8px;
+    line-height: 13.5px;
+    text-align: left;
+  }
+
+  .hero__subject-text {
+    margin: 0;
+    margin-top: 16px;
+    max-width: 138px;
+    font-size: 9px;
+    line-height: 13.5px;
+  }
+
+  .hero__subject {
+    max-width: 150px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 16.5px;
+  }
+
+  .hero__button {
+    margin: 0;
+    margin-left: 56px;
+    margin-top: 26px;
+    font-size: 6.4px;
+    line-height: 29px;
+    width: 111px;
+    height: 29px;
+  }
+
+  .hero__button:hover {
+    box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+    font-size: 6px;
+    background-color: #17ecff;
+  }
+
+  .hero__button:active {
+    font-size: 6px;
   }
 
   .earn::after {
@@ -6099,8 +6290,138 @@ input[type="radio"].visually-hidden {
     padding: 140px 80px 120px 80px;
   }
 
+  .masthead {
+    background: url("../img/masthead-bg-man_960.png"), url("../img/masthead-bg-text_960.png"), url("../img/masthead-bg-mask_960.png"), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 335px 130px, 50% 50%, center;
+    background-size: 542px 755px, 774px auto, cover;
+  }
+
   .masthead-box {
-    padding: 28px 80px 42px 80px;
+    padding: 28px 80px 120px 80px;
+  }
+
+  .line-bg::before {
+    width: calc(800px / 3);
+    height: 700px;
+  }
+
+  .line-bg::after {
+    width: calc(800px / 3);
+    right: 80px;
+    height: 800px;
+  }
+
+  .masthead__page-counter {
+    width: 40px;
+    height: 60px;
+    left: 80px;
+    background-size: 100%;
+  }
+
+  .hero__social {
+    left: 765px;
+  }
+
+  .hero__social-link {
+    width: 12px;
+  }
+
+  .masthead__navigation {
+    margin-bottom: 58px;
+  }
+
+  .logo__image {
+    width: 71px;
+    height: 22px;
+  }
+
+  .menu--button {
+    width: 16.1px;
+    height: 9.8px;
+  }
+
+  .hero__container--title {
+    max-width: 450px;
+  }
+
+  .hero__container--subject {
+    margin-left: 164px;
+    max-width: 186px;
+  }
+
+  .hero__title--flash {
+    margin-left: 98px;
+  }
+
+  .hero__title--flash::after {
+    width: 56px;
+    height: 8.4px;
+    bottom: 100px;
+  }
+
+  .hero__title--flash::before {
+    width: 70.1px;
+    height: 8.4px;
+    bottom: 30px;
+  }
+
+  .hero__title {
+    max-width: 458px;
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  .hero__subtitle::before {
+    font-size: 16.8px;
+    line-height: 21px;
+    left: -25px;
+    top: -4px;
+  }
+
+  .hero__subtitle::after {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    bottom: -4px;
+    right: -30px;
+  }
+
+  .hero__subtitle {
+    max-width: 216px;
+    margin-top: 42px;
+    margin-left: 70px;
+    font-size: 9.8px;
+    line-height: 16.5px;
+  }
+
+  .hero__subject-text {
+    margin-top: 22px;
+    max-width: 170px;
+    font-size: 11.2px;
+    line-height: 16.5px;
+  }
+
+  .hero__subject {
+    max-width: 186px;
+    font-size: 12.6px;
+    line-height: 21px;
+  }
+
+  .hero__button {
+    width: 136.7px;
+    height: 35px;
+    font-size: 8px;
+    line-height: 35px;
+    margin-top: 32px;
+    margin-left: 70px;
+  }
+
+  .hero__button:hover {
+    max-width: 186px;
+  }
+
+  .hero__button:active {
+    max-width: 186px;
   }
 
   .earn::after {
@@ -7016,8 +7337,144 @@ input[type="radio"].visually-hidden {
     padding: 124px 244px 122px 244px;
   }
 
+  .masthead {
+    background: url("../img/masthead-bg-man_1200.png"), url("../img/masthead-bg-text_1200.png"), url("../img/masthead-bg-mask_1200.png"), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 390px 55px, 50% 50%, center;
+    background-size: 579px 779px, 687px auto, cover;
+  }
+
   .masthead-box {
-    padding: 26px 38px 38px 38px;
+    padding: 26px 38px 108px 38px;
+  }
+
+  .line-bg::before {
+    width: calc(714px / 3);
+    height: 1000px;
+    left: 246px;
+  }
+
+  .line-bg::after {
+    width: calc(714px / 3);
+    right: 246px;
+    height: 1000px;
+  }
+
+  .masthead__page-counter {
+    width: 40px;
+    height: 50px;
+    left: 40px;
+    background-size: 100%;
+  }
+
+  .hero__social {
+    left: 1085px;
+    bottom: -80px;
+  }
+
+  .masthead__navigation {
+    margin-bottom: 52px;
+  }
+
+  .logo__image {
+    width: 63px;
+    height: 19px;
+  }
+
+  .menu--button {
+    width: 14.3px;
+    height: 8.7px;
+  }
+
+  .hero {
+    max-width: 714px;
+    margin: auto;
+  }
+
+  .hero {
+    max-width: 856px;
+  }
+
+  .hero__container--title {
+    max-width: 412px;
+  }
+
+  .hero__container--subject {
+    margin-left: 130px;
+    max-width: 168px;
+  }
+
+  .hero__title--flash {
+    margin-left: 90px;
+  }
+
+  .hero__title--flash::after {
+    width: 50px;
+    height: 7.5px;
+    bottom: 90px;
+  }
+
+  .hero__title--flash::before {
+    width: 62.5px;
+    height: 7.5px;
+  }
+
+  .hero__title {
+    max-width: 410px;
+    font-size: 50px;
+    line-height: 62.5px;
+  }
+
+  .hero__subtitle::before {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    left: -25px;
+    top: -2px;
+  }
+
+  .hero__subtitle::after {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    bottom: -2px;
+    right: -30px;
+  }
+
+  .hero__subtitle {
+    max-width: 194px;
+    margin-top: 36px;
+    margin-left: 60px;
+    font-size: 8.7px;
+    line-height: 15px;
+  }
+
+  .hero__subject-text {
+    margin-top: 18px;
+    max-width: 152px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .hero__subject {
+    max-width: 166px;
+    font-size: 11.2px;
+    line-height: 18.75px;
+  }
+
+  .hero__button {
+    width: 121.8px;
+    height: 31.2px;
+    font-size: 6.8px;
+    line-height: 31.2px;
+    margin-top: 30px;
+    margin-left: 62px;
+  }
+
+  .hero__button:hover {
+    max-width: 200px;
+  }
+
+  .hero__button:active {
+    max-width: 200px;
   }
 
   .earn::after {
@@ -8224,8 +8681,139 @@ input[type="radio"].visually-hidden {
     padding: 150px 292px 148px 292px;
   }
 
+  .masthead {
+    background: url("../img/masthead-bg-man_1440.png"), url("../img/masthead-bg-text_1440.png"), url("../img/masthead-bg-mask_1440.png"), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 524px 112px, 50% 50%, center;
+    background-size: 623px 850px, 820px auto, cover;
+  }
+
   .masthead-box {
-    padding: 30px 44px 44px 44px;
+    padding: 30px 44px 128px 44px;
+  }
+
+  .line-bg::before {
+    width: calc(856px / 3);
+    height: 1500px;
+    left: 294px;
+  }
+
+  .line-bg::after {
+    width: calc(856px / 3);
+    right: 294px;
+    height: 1500px;
+  }
+
+  .masthead__page-counter {
+    width: 40px;
+    height: 60px;
+    left: 80px;
+    background-size: 100%;
+  }
+
+  .hero__social {
+    left: 1305px;
+  }
+
+  .facebook-icon {
+    margin-right: 22px;
+  }
+
+  .masthead__navigation {
+    margin-bottom: 62px;
+  }
+
+  .logo__image {
+    width: 75px;
+    height: 23px;
+  }
+
+  .menu--button {
+    width: 17.2px;
+    height: 10.5px;
+  }
+
+  .hero__container--title {
+    max-width: 492px;
+  }
+
+  .hero__container--subject {
+    margin-left: 166px;
+    max-width: 200px;
+  }
+
+  .hero__title--flash {
+    margin-left: 106px;
+  }
+
+  .hero__title--flash::after {
+    width: 60px;
+    height: 9px;
+    bottom: 105px;
+  }
+
+  .hero__title--flash::before {
+    width: 75px;
+    height: 9px;
+    bottom: 35px;
+  }
+
+  .hero__title {
+    max-width: 490px;
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  .hero__subtitle::before {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    left: -25px;
+    top: -2px;
+  }
+
+  .hero__subtitle::after {
+    font-size: 13.5px;
+    line-height: 16.8px;
+    bottom: -2px;
+    right: -30px;
+  }
+
+  .hero__subtitle {
+    max-width: 230px;
+    margin-top: 44px;
+    margin-left: 72px;
+    font-size: 10.5px;
+    line-height: 18px;
+  }
+
+  .hero__subject-text {
+    margin-top: 22px;
+    max-width: 182px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .hero__subject {
+    max-width: 200px;
+    font-size: 13.5px;
+    line-height: 22.5px;
+  }
+
+  .hero__button {
+    width: 146.2px;
+    height: 37.5px;
+    font-size: 8.25px;
+    line-height: 37.5px;
+    margin-top: 36px;
+    margin-left: 76px;
+  }
+
+  .hero__button:hover {
+    max-width: 220px;
+  }
+
+  .hero__button:active {
+    max-width: 220px;
   }
 
   .earn::after {
