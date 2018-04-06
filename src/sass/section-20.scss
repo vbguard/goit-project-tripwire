@@ -1,0 +1,304 @@
+
+.footer {
+  background-color: #181c27;
+}
+
+.container-footer {
+  padding: 24px 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 38px 20px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    padding: 56px 66px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    padding: 70px 82px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 30px 246px;
+  }
+  @media (min-width: 1440px) {
+    padding: 38px 292px;
+  }
+}
+
+.footer-logo, 
+.footer-logo__image {
+  width: 27px;
+  height: 9px;
+  display: inline-block;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 42px;
+    height: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    width: 58px;
+    height: 20px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    width: 74px;
+    height: 24px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    width: 74px;
+    height: 24px;
+  }
+  @media (min-width: 1440px) {
+    width: 76px;
+    height: 24px;
+  }
+}
+
+.footer-logo__link {
+  text-decoration: none;
+  display: block;
+}
+
+.footer-address__title {
+  @include font($primary-white-color, $acrom-regular, 4px, 400, normal, uppercase);
+  font-style: normal;
+  margin: 0;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 6px;
+    margin-bottom: 4px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 6px;
+    margin-bottom: 4px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+}
+
+.footer-address__link {
+  @include font(#a2a2a2, $acrom-regular, 4px, 400, normal, none);
+  text-decoration: none;
+  font-style: normal;
+  display: inline-block;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 6px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 6px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 10px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 10px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 10px;
+  }
+}
+
+.footer-social__link {
+  @include font($primary-white-color, $acrom-regular, 4px, 400, normal, none);
+  text-decoration: none;
+  font-style: normal;
+  display: inline-block;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 6px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 6px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 10px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 10px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 10px;
+  }
+}
+
+.footer-social__list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-social__item {
+  list-style: none;
+  line-height: 0;
+}
+
+.footer-social__item:not(:last-child) {
+  @media (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 2px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    margin-bottom: 2px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    margin-bottom: 4px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    margin-bottom: 4px;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 4px;
+  }
+}
+
+.footer-button {
+  background-color: transparent;
+  outline: none;
+  width: 58px;
+  height: 16px;
+  border: 0.5px solid #1b4371;
+  @include font($primary-white-color, $acrom-extrabold, 4px, 700, normal, uppercase);
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 6px;
+    width: 88px;
+    height: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 6px;
+    width: 124px;
+    height: 28px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 10px;
+    width: 154px;
+    height: 34px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 10px;
+    width: 138px;
+    height: 30px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 10px;
+    width: 165px;
+    height: 36px;
+  }
+
+  &:hover {
+    background-color: $color-hover-button;  
+  }
+
+  &:active {
+    background-color: $color-clic-button;
+  }
+}
+
+.footer-address__location,
+.footer-address__company {
+  line-height: 0;
+  width: 44px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 46%;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    width: 46%;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    width: 46%;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    width: 46%;
+  }
+  @media (min-width: 1440px) {
+    width: 46%;
+  }
+}
+
+.footer-address {
+  display: flex;
+}
+
+.main-footer {
+  background-color: #202020;
+}
+
+.container-maine-footer {
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    padding: 10px 60px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    padding: 10px 78px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 10px 240px;
+  }
+  @media (min-width: 1440px) {
+    padding: 10px 292px;
+  }
+}
+
+.main-footer__text {
+  @include font(#65666a, $gilroy-extrabold, 4px, 700, normal, none);
+  margin: 0;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 6px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    font-size: 6px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    font-size: 10px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    font-size: 10px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 10px;
+  }
+}
+
+.main-footer__emblem {
+  width: 9px;
+  height: 5px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 16px;
+    height: 10px;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    width: 19px;
+    height: 10px;
+  }
+  @media (min-width: 960px) and (max-width: 1199px) {
+    width: 24px;
+    height: 15px;
+  }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    width: 19px;
+    height: 14px;
+  }
+  @media (min-width: 1440px) {
+    width: 22px;
+    height: 15px;
+  }
+}

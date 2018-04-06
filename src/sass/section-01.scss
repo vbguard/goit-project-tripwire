@@ -1,0 +1,313 @@
+// Section 01
+// Masthead Background
+.masthead {
+  position: relative;
+  background: url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_320.png'), #181c27;
+  background-position: 50% 180px, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 212px, cover;
+
+  @media screen and (min-width: 480px) {
+    background: url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_480.png'), #181c27;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 254px, center;
+    background-size: 328px, cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    background: url('../img/masthead-bg-man_768.png'), url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_768.png'), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 50% 56px, 50% 254px, center;
+    background-size: 466px, 328px, cover;
+  }
+  // &::after {
+  //   content: '';
+  //   display: inline-block;
+  //   width: 100%;
+  //   height: 100%;
+  //   border-width: 0.313px;
+  //   border-color: rgb(255, 255, 255);
+  //   border-style: dotted;
+  //   opacity: 0.5;
+  //   position: absolute;
+  //   left: 311px;
+  //   top: -2px;
+  //   width: 1px;
+  //   height: 613px;
+  //   z-index: -1;
+  // }
+}
+
+.masthead-box {
+  padding: 10px 12px 26px 12px;
+  // Media for .master-wrap (section)
+  @media screen and (min-width: 480px) {
+    padding: 15px 18px 38px 18px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 22px 64px 34px 64px;
+  }
+  @media screen and (min-width: 960px) {
+    padding: 28px 80px 42px 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 26px 38px 38px 38px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 30px 44px 44px 44px;
+  }
+}
+
+.line-bg {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 12;
+    content: '';
+    width: calc(296px /3);
+    height: 430px;
+    border-width: 0.208px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    opacity: 0.2;
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    content: '';
+    width: calc(296px /3);
+    height: 430px;
+    border-width: 0.208px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    opacity: 0.2;
+    z-index: 1;
+  }
+}
+
+// Masthrad HEADER
+.masthead__navigation {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 22px;
+  }
+}
+
+// Logo
+.masthead__logo {
+  margin: 0;
+  display: inline-block;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.logo__link {
+  width: 44px;
+  height: 15px;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 66px;
+  //   height: 23px;
+  // }
+}
+
+.logo__image {
+  width: 44px;
+  height: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 66px;
+    height: 23px;
+  }
+}
+
+// menu
+.menu {
+  &--button {
+    width: 18px;
+    height: 11px;
+    background-image: url('../img/burg_menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-indent: -9999px;
+    font-size: 0;
+    @media screen and (min-width: 480px) {
+      width: 27px;
+      height: 16.5px;
+    }
+  }
+}
+
+// Masthead HERO
+.hero {
+  &__title {
+    margin: 0;
+    margin: auto;
+    max-width: 164px;
+    color: $primary-color;
+    font-family: $acrom-extrabold;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    &--weight {
+      font-family: $acrom-bold;
+    }
+    // Media for .hero__title
+    @media screen and (min-width: 480px) {
+      max-width: 250px;
+      font-size: 30px;
+      line-height: 39px;
+    }
+  }
+  &__subtitle {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 106px;
+    max-width: 243px;
+    position: relative;
+    color: $primary-color;
+    font-family: $acrom-bold;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: -0.25px;
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: -17px;
+      content: '<';
+      color: #17ecff;
+      font-family: $acrom-extrabold;
+      font-size: 15px;
+      line-height: 8px;
+      text-transform: uppercase;
+      // Media for .hero__subtitle::before
+      @media screen and (min-width: 480px) {
+        font-size: 22.5px;
+        line-height: 11.71px;
+        left: -25px;
+      }
+    }
+    &::after {
+      position: absolute;
+      bottom: 4px;
+      right: -20px;
+      content: '/>';
+      color: #17ecff;
+      font-family: $acrom-extrabold;
+      font-size: 15px;
+      line-height: 8px;
+      text-transform: uppercase;
+      // Media for .hero__subtitle::after
+      @media screen and (min-width: 480px) {
+        font-size: 22.5px;
+        line-height: 11.71px;
+        right: -30px;
+      }
+    }
+    // Media for .hero__subtitle
+    @media screen and (min-width: 480px) {
+      max-width: 370px;
+      font-size: 13.5px;
+      line-height: 19.5px;
+      text-align: center;
+      margin-bottom: 158px;
+    }
+  }
+  &__subject {
+    margin: 0;
+    margin-left: 26.51px;
+    max-width: 223px;
+    height: 23px;
+    color: $primary-color;
+    font-family: $acrom-extrabold;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    &-text {
+      max-width: 245px;
+      margin-top: 10px;
+      margin-bottom: 26px;
+      margin-left: 26.51px;
+      color: #afb0b3;
+      font-family: $acrom-medium;
+      font-size: 9px;
+      line-height: 13px;
+      // Media for .hero__subject-text
+      @media screen and (min-width: 480px) {
+        margin-top: 20px;
+        margin-bottom: 38px;
+        margin-left: 40px;
+        max-width: 370px;
+        font-size: 13.5px;
+        line-height: 19.5px;
+      }
+    }
+    // Media for .hero__subject
+    @media screen and (min-width: 480px) {
+      max-width: 340px;
+      margin-left: 40px;
+      font-size: 13.5px;
+      line-height: 19.5px;
+    }
+  }
+}
+
+// Button HERO
+.hero__button {
+  display: block;
+  margin: auto;
+  width: 145px;
+  height: 36px;
+  background-color: #ff6b08;
+  box-shadow: 0 3px 4px rgba(196, 87, 15, 0.26);
+  color: $primary-color;
+  font-family: $acrom-extrabold;
+  font-size: 8px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    transform: scale(1.01);
+    background-color: #17ecff;
+    box-shadow: 0 3px 4px rgba(23, 236, 255, 0.26);
+    font-size: 8.5px;
+
+// Media for .hero_button:hover
+    @media screen and (min-width: 480px) {
+      box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+      font-size: 12.5px;
+    }
+  }
+  &:active {
+    background-color: #06a4b2;
+    box-shadow: 0 3px 4px rgba(6, 164, 178, 0.26);
+    font-size: 8.5px;
+
+// Media for .hero_button:active
+    @media screen and (min-width: 480px) {
+      box-shadow: 0px 5px 6px 0px rgba(6, 164, 178, 0.26);
+      font-size: 12.5px;
+    }
+  }
+
+  // Media for .hero_button
+  @media screen and (min-width: 480px) {
+    width: 218px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 54px;
+    letter-spacing: 1px;
+  }
+
+}
