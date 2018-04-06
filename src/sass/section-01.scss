@@ -15,10 +15,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    background: url('../img/masthead-bg-page_768.png'), url('../img/masthead-bg-man_768.png'), url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_768.png'), #181c27;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 30px 34px, 50% 56px, 50% 254px, center;
-    background-size: 20px, 466px, 328px, cover;
+    background: url('../img/masthead-bg-man_768.png'), url('../img/masthead-bg-text.png'), url('../img/masthead-bg-mask_768.png'), #181c27;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 50% 56px, 50% 254px, center;
+    background-size: 466px, 328px, cover;
   }
   // &::after {
   //   content: '';
@@ -55,6 +55,36 @@
   }
   @media screen and (min-width: 1440px) {
     padding: 30px 44px 44px 44px;
+  }
+}
+
+.line-bg {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 12;
+    content: '';
+    width: calc(296px /3);
+    height: 430px;
+    border-width: 0.208px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    opacity: 0.2;
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    content: '';
+    width: calc(296px /3);
+    height: 430px;
+    border-width: 0.208px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    opacity: 0.2;
+    z-index: 1;
   }
 }
 
