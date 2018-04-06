@@ -1,0 +1,341 @@
+.section {
+  padding: 20px 0 22px;
+  @include mq("phone-wide") {
+    padding: 30px 0 34px;
+  }
+  @include mq("tablet") {
+    padding: 44px 0 48px;
+  }
+  @include mq("tablet-wide") {
+    padding: 54px 0 60px;
+  }
+  @include mq("desktop") {
+    padding: 62px 0;
+  }
+  @include mq("desktop-wide") {
+    padding: 76px 0;
+  }
+}
+.received {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq("tablet") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.received__content {
+  @include mq("tablet") {
+    flex: 0 0 330px;
+    position: relative;
+  }
+  @include mq("tablet-wide") {
+    flex: 0 0 410px;
+  }
+  @include mq("desktop") {
+    flex: 0 0 366px;
+  }
+  @include mq("desktop-wide") {
+    flex: 0 0 440px;
+  }
+}
+.received__title {
+  font-size: 12px;
+  font-family: $acrom-extrabold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 30px;
+  @include mq("phone-wide") {
+    font-size: 18px;
+    margin-bottom: 46px;
+  }
+  @include mq("tablet") {
+    font-size: 26.92px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 33.65px;
+    margin-bottom: 64px;
+  }
+  @include mq("desktop") {
+    font-size: 30px;
+    margin-bottom: 58px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 36px;
+    margin-bottom: 68px;
+    line-height: 1.25;
+  }
+}
+.received__list {
+  counter-reset: list;
+  @include mq("tablet") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.received__item-counter {
+  display: inline-block;
+}
+.received__item {
+  display: flex;
+  &::before {
+    display: inline-block;
+    counter-increment: list;
+    content: "0" counter(list) "." url("../img/section15-17-aqua-square.svg");
+    font-size: 10.71px;
+    font-family: "Acrom-ExtraBold";
+    margin-right: 10px;
+    text-align: right;
+    line-height: 1.2;
+    width: 24px;
+    @include mq("phone-wide") {
+      font-size: 16.07px;
+      margin-right: 16px;
+    }
+    @include mq("tablet") {
+      font-size: 16.82px;
+    }
+    @include mq("tablet-wide") {
+      font-size: 21.03px;
+      margin-right: 20px;
+    }
+    @include mq("desktop-wide") {
+      font-size: 18.75px;
+    }
+    @include mq("desktop-wide") {
+      font-size: 22.5px;
+      margin-right: 22px;
+    }
+  }
+  @include mq("tablet") {
+    flex: 0 0 150px;
+  }
+  @include mq("tablet-wide") {
+    flex: 0 0 184px;
+  }
+  @include mq("desktop") {
+    flex: 0 0 166px;
+  }
+  @include mq("desktop-wide") {
+    flex: 0 0 198px;
+  }
+}
+.received__item:not(:last-child) {
+  margin-bottom: 20px;
+  @include mq("phone-wide") {
+    margin-bottom: 28px;
+  }
+  @include mq("tablet-wide") {
+    margin-bottom: 40px;
+  }
+  @include mq("desktop") {
+    margin-bottom: 32px;
+  }
+  @include mq("desktop-wide") {
+    margin-bottom: 40px;
+  }
+}
+.received__item:last-child {
+  margin-bottom: 28px;
+  @include mq("phone-wide") {
+    margin-bottom: 46px;
+  }
+  @include mq("tablet") {
+    margin-bottom: 0;
+  }
+}
+.received__item-title {
+  font-size: 9px;
+  font-family: $acrom-medium;
+  color: rgb(0, 0, 0);
+  line-height: 1.444;
+  text-align: left;
+  position: relative;
+  margin-bottom: 8px;
+  @include mq("phone-wide") {
+    font-size: 13.5px;
+    margin-bottom: 12px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 1.625;
+    margin-bottom: 10px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 11.22px;
+    margin-bottom: 14px;
+  }
+  @include mq("desktop") {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 12px;
+    margin-bottom: 14px;
+    line-height: 1.625;
+  }
+}
+.received__item-text {
+  font-size: 9px;
+  font-family: $acrom-regular;
+  color: rgb(63, 65, 68);
+  line-height: 1.444;
+  text-align: left;
+  @include mq("phone-wide") {
+    font-size: 13.5px;
+  }
+  @include mq("tablet") {
+    font-size: 7.85px;
+    line-height: 1.286;
+  }
+  @include mq("tablet-wide") {
+    font-size: 9.81px;
+  }
+  @include mq("desktop") {
+    font-size: 8.75px;
+  }
+  @include mq("desktop-wide") {
+    font-size: 10.5px;
+  }
+}
+.received__button-block {
+  text-align: center;
+  @include mq("tablet") {
+    position: absolute;
+    left: 190px;
+    bottom: 6px;
+  }
+  @include mq("tablet-wide") {
+    left: 240px;
+  }
+  @include mq("desktop") {
+    left: 184px;
+  }
+  @include mq("desktop-wide") {
+    left: 250px;
+  }
+}
+.received__description {
+  display: block;
+  font-size: 9px;
+  font-family: $acrom-medium;
+  color: rgb(255, 107, 8);
+  line-height: 1.444;
+  text-align: center;
+  margin-bottom: 22px;
+  position: relative;
+  &::before {
+    display: inline-block;
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 1px;
+    height: 9.916px;
+    fill: #000000;
+    top: 0;
+    left: -6px;
+    transform: rotate(30deg) translateY(25%);
+    @include mq("phone-wide") {
+      width: 2px;
+      height: 18px;
+      left: -10px;
+    }
+    @include mq("tablet") {
+      left: -12px;
+    }
+    @include mq("desktop") {
+      height: 22px;
+    }
+    @include mq("desktop-wide") {
+      height: 26px;
+      left: -14px;
+    }
+  }
+  @include mq("phone-wide") {
+    font-size: 13.5px;
+  }
+  @include mq("tablet") {
+    font-size: 8.97px;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 12px;
+    max-width: 80px;
+  }
+  @include mq("tablet-wide") {
+    font-size: 11.22px;
+    margin-bottom: 14px;
+    max-width: 100px;
+  }
+  @include mq("desktop") {
+    font-size: 10px;
+    max-width: 104px;
+  }
+}
+.received__button {
+  width: 143px;
+  height: 30px;
+  background-color: rgb(255, 107, 8);
+  border: 0;
+  box-shadow: 0px 3px 4px 0px rgba(196, 87, 15, 0.26);
+  font-size: 7.21px;
+  font-family: $acrom-extrabold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  &:hover {
+    background-color: #17ecff;
+  }
+  &:target {
+    background-color: #06a4b2;
+  }
+  @include mq("phone-wide") {
+    font-size: 10.81px;
+    box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+    width: 215px;
+    height: 46px;
+  }
+  @include mq("tablet") {
+    font-size: 6.73px;
+    width: 133px;
+    height: 29px;
+    box-shadow: 0px 7px 10px 0px rgba(196, 87, 15, 0.26);
+  }
+  @include mq("tablet-wide") {
+    font-size: 8.41px;
+    width: 166px;
+    height: 36px;
+    box-shadow: 0px 9px 13px 0px rgba(196, 87, 15, 0.26);
+  }
+  @include mq("desktop") {
+    font-size: 7.5px;
+    width: 148px;
+    height: 32px;
+  }
+}
+.received__img {
+  display: none;
+  @include mq("tablet") {
+    display: block;
+    width: 258px;
+    height: 308px;
+    object-fit: cover;
+  }
+  @include mq("tablet-wide") {
+    width: 320px;
+    height: 386px;
+  }
+  @include mq("desktop") {
+    width: 286px;
+    height: 344px;
+  }
+  @include mq("desktop-wide") {
+    width: 344px;
+    height: 414px;
+  }
+}
